@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.shape.SVGPath?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<fx:root styleClass="interface" type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml">
+    <Label styleClass="h2" text="%title.interface.radar" wrapText="true">
+        <graphic>
+            <SVGPath content="%svg.path.radar" fill="#d8d8d8" scaleX="0.75" scaleY="0.75" styleClass="icon" />
+        </graphic>
+        <VBox.margin>
+            <Insets bottom="10.0" top="40.0" />
+        </VBox.margin>
+    </Label>
+    <TableView fx:id="radarTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn prefWidth="140.0" text="%column.radar.date">
+                <cellValueFactory>
+                    <PropertyValueFactory property="date" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="90.0" text="%column.radar.ammo" >
+                <cellValueFactory>
+                    <PropertyValueFactory property="ammo" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="70.0" text="%column.radar.effect">
+                <cellValueFactory>
+                    <PropertyValueFactory property="effect" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="90.0" text="%column.radar.fuse">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fuse" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="70.0" text="%column.radar.zone">
+                <cellValueFactory>
+                    <PropertyValueFactory property="zone" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="90.0" text="%column.radar.temperature">
+                <cellValueFactory>
+                    <PropertyValueFactory property="temperature" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="100.0" text="%column.radar.velocity">
+                <cellValueFactory>
+                    <PropertyValueFactory property="velocity" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <HBox alignment="CENTER_RIGHT" spacing="10.0">
+        <children>
+            <Button fx:id="image" mnemonicParsing="false" styleClass="form-button" text="%button.radar.image">
+                <graphic>
+                    <Region styleClass="svg-icon, image" />
+                </graphic>
+            </Button>
+            <Button fx:id="reset" mnemonicParsing="false" styleClass="form-button" text="%button.reset">
+                <graphic>
+                    <Region styleClass="svg-icon, start" />
+                </graphic>
+            </Button>
+            <Button fx:id="cancel" mnemonicParsing="false" styleClass="form-button" text="%button.cancel">
+                <graphic>
+                    <Region styleClass="svg-icon, close" />
+                </graphic>
+            </Button>
+        </children>
+        <padding>
+            <Insets bottom="10.0" top="10.0" />
+        </padding>
+    </HBox>
+    <stylesheets>
+        <URL value="@../../css/variables.css" />
+        <URL value="@../../css/general.css" />
+    </stylesheets>
+</fx:root>

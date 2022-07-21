@@ -1,0 +1,66 @@
+.fxvk {
+    -fx-background-color: -color-brownish-gray;
+}
+
+.fxvk .key{
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-border-image-source: null;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-background-color: radial-gradient(center 50% 50%, radius 60%, derive(-color-white, -65%), -color-black);
+}
+
+.fxvk .key:hover{
+    -fx-background-color: -color-yellow;
+}
+
+.fxvk-secondary{
+}
+
+.shift-icon {
+}
+
+.capslock-icon{
+}
+
+.shift{
+    -fx-fill: -color-white;
+}
+
+.special {
+    -fx-fill: -color-white;
+}
+
+.backspace{
+    -fx-fill: -color-white;
+}
+
+.enter {
+    -fx-fill: -color-white;
+}
+
+.hide{
+    -fx-fill: -color-white;
+}
+
+.multi-char-text{
+    -fx-fill: -color-white;
+}
+
+.key-text {
+    -fx-fill: -color-white;
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+}
+
+.key-alttext{
+    -fx-fill: -color-white;
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+}
+
+.key-icon {
+    -fx-fill: -color-white;
+}
+
+.multi-char-text{
+    -fx-fill: -color-white;
+}

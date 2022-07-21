@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.dynamicts.neli.ui.interfaces.utm.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root spacing="8.0" style="-fx-background-color: #303030;" type="javafx.scene.layout.VBox"
+         xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Coordenada fx:id="coordenadasDeseadas" titleText="Coordenadas Deseadas"
+                    innerBoxStyleClass="background-brownish-grey"/>
+        <Coordenada fx:id="coordenadasDelSistema" titleText="Coordenadas Del Sistema"/>
+        <Coordenada fx:id="coordenadasDeImpacto" titleText="Coordenadas de Impacto"/>
+    </children>
+</fx:root>

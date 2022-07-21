@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root maxWidth="-Infinity" minWidth="-Infinity" styleClass="data-field" type="javafx.scene.layout.Pane"
+         xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+
+    <children>
+
+
+        <Text fx:id="title" layoutX="4.0" layoutY="13.0" styleClass="align-left, font-12, value, din-regular, white-two"
+              text="Title" wrappingWidth="192.0"/>
+        <Text fx:id="subtitle" layoutX="4.0" layoutY="27.0"
+              styleClass="align-left, font-12, value, din-regular, white-two"  textAlignment="LEFT"
+              wrappingWidth="65.0"/>
+
+        <Text fx:id="measure" layoutX="73.0" layoutY="28.0" strokeLineJoin="ROUND"
+              styleClass="align-right, font-14, value, din-regular, white-two, din-bold" text="-000.00 m"
+              textAlignment="RIGHT" wrappingWidth="124.0"/>
+
+
+    </children>
+    <stylesheets>
+        <URL value="@../../../css/variables.css"/>
+        <URL value="@../../../css/general.css"/>
+        <URL value="@../../../css/home/data_field.css"/>
+    </stylesheets>
+</fx:root>

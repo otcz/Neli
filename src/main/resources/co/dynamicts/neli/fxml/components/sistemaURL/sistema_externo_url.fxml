@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<fx:root fx:id="webViewWrapper" styleClass="bordeContenido" type="javafx.scene.layout.AnchorPane"
+         xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/sistemaURL/style_sistemaURL.css"/>
+        <URL value="@/css/common/common_paginas.css"/>
+
+    </stylesheets>
+    <children>
+        <Label fx:id="noUrlLabel"/>
+        <WebView fx:id="urlWebView"/>
+        <AnchorPane fx:id="headerPane">
+            <children>
+
+
+                <Button fx:id="refreshButton" layoutX="5.0" maxHeight="20.0" maxWidth="21.0" minHeight="20.0"
+                        minWidth="21.0" prefHeight="20.0" prefWidth="21.0">
+
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="21.0" layoutX="11.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@/images/refresh-right3x.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="closeButton" layoutX="34.0" maxHeight="20.0" maxWidth="21.0" minHeight="20.0"
+                        minWidth="21.0" prefHeight="20.0" prefWidth="21.0">
+
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@/images/close3x.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+            </children>
+        </AnchorPane>
+
+    </children>
+</fx:root>

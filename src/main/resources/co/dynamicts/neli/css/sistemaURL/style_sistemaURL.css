@@ -1,0 +1,59 @@
+
+#urlWebView {
+    -fx-min-height: 608px;
+    -fx-max-height: 608px;
+    -fx-pref-height: 608px;
+    -fx-min-width: 634px;
+    -fx-max-width: 634px;
+    -fx-pref-width: 634px;
+}
+
+#webViewWrapper {
+    -fx-min-height: 608px;
+    -fx-max-height: 608px;
+    -fx-pref-height: 608px;
+    -fx-min-width: 634px;
+    -fx-max-width: 634px;
+    -fx-pref-width: 634px;
+    -fx-background-color: #191919;
+    -fx-border-color: #606060;
+    -fx-spacing: 16px;
+}
+
+#headerPane {
+    -fx-min-height: 30px;
+    -fx-max-height: 30px;
+    -fx-pref-height: 30px;
+    -fx-min-width: 634px;
+    -fx-max-width: 634px;
+    -fx-pref-width: 634px;
+    -fx-background-color: #606060;
+    -fx-translate-y: 0;
+    -fx-translate-x: 0;
+}
+
+#noUrlLabel {
+    -fx-min-height: 634px;
+    -fx-max-height: 634px;
+    -fx-pref-height: 634px;
+
+    -fx-min-width: 608px;
+    -fx-max-width: 608px;
+    -fx-pref-width: 608px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: DINPro-Regular;
+    -fx-font-size: 24px;
+}
+
+.button {
+    -fx-min-height: 30px;
+    -fx-max-height: 30px;
+    -fx-pref-height: 30px;
+
+    -fx-min-width: 30px;
+    -fx-max-width: 30px;
+    -fx-pref-width: 30px;
+    -fx-background-color: transparent;
+}

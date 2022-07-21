@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.dynamicts.neli.ui.component.cms.*?>
+<?import co.dynamicts.neli.ui.component.common.*?>
+<?import co.dynamicts.neli.ui.component.home.top.menu.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<fx:root styleClass="pageSize" style="-fx-background-color: transparent;" type="javafx.scene.layout.VBox"
+         xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/common/style_page_title.css" />
+    </stylesheets>
+
+    <children>
+        <StackPane styleClass="top-menu" prefHeight="32" maxHeight="32" minHeight="32"/>
+        <PageTitle fx:id="titleCMS"/>
+        <AnchorPane styleClass="contentSize">
+            <children>
+                <CMSComponent/>
+            </children>
+        </AnchorPane>
+
+    </children>
+</fx:root>

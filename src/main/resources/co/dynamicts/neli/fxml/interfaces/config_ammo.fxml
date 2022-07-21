@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.control.Separator?>
+<fx:root styleClass="interface" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <Label styleClass="h2" text="%title.interface.ammo" wrapText="true">
+        <graphic>
+            <SVGPath content="%svg.path.ammo" fill="#d8d8d8" scaleX="0.75" scaleY="0.75" styleClass="icon" />
+        </graphic>
+        <VBox.margin>
+            <Insets bottom="10.0" top="40.0" />
+        </VBox.margin>
+    </Label>
+    <HBox spacing="10.0">
+        <children>
+            <VBox>
+                <children>
+                     <GridPane hgap="16.0" minWidth="290.0" styleClass="panel" vgap="5.0">
+                         <columnConstraints>
+                             <ColumnConstraints hgrow="SOMETIMES" />
+                             <ColumnConstraints hgrow="SOMETIMES" />
+                         </columnConstraints>
+                         <rowConstraints>
+                             <RowConstraints vgrow="SOMETIMES" />
+                             <RowConstraints vgrow="SOMETIMES" />
+                             <RowConstraints vgrow="SOMETIMES" />
+                             <RowConstraints vgrow="SOMETIMES" />
+                             <RowConstraints vgrow="SOMETIMES" />
+                             <RowConstraints vgrow="SOMETIMES" />
+                             <RowConstraints vgrow="SOMETIMES" />
+                             <RowConstraints vgrow="SOMETIMES" />
+                             <RowConstraints vgrow="SOMETIMES" />
+                             <RowConstraints vgrow="SOMETIMES" />
+                             <RowConstraints vgrow="SOMETIMES" />
+                             <RowConstraints vgrow="SOMETIMES" />
+                             <RowConstraints vgrow="SOMETIMES" />
+                         </rowConstraints>
+                         <children>
+                             <Label text="%label.ammo.type" >
+                                 <padding>
+                                     <Insets top="16.0"/>
+                                 </padding>
+                             </Label>
+                             <ComboBox fx:id="ammoType" GridPane.rowIndex="1" />
+                             <Label text="%label.ammo.qty" GridPane.columnIndex="1" >
+                                 <padding>
+                                     <Insets top="16.0"/>
+                                 </padding>
+                             </Label>
+                             <TextField fx:id="ammoQty" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                             <Label text="%label.fuze" GridPane.rowIndex="2" >
+                                 <padding>
+                                     <Insets top="16.0"/>
+                                 </padding>
+                             </Label>
+                             <ComboBox fx:id="ammoFuze" GridPane.rowIndex="3" />
+                             <Label text="%label.fuze.effect" GridPane.columnIndex="1" GridPane.rowIndex="2" >
+                                 <padding>
+                                     <Insets top="16.0"/>
+                                 </padding>
+                             </Label>
+                             <TextField fx:id="fuzeEffect" GridPane.columnIndex="1" GridPane.rowIndex="3" editable="false" />
+                             <Label text="%label.explosion.height" GridPane.rowIndex="4" >
+                                 <padding>
+                                     <Insets top="16.0"/>
+                                 </padding>
+                             </Label>
+                             <TextField fx:id="ammoExplosion" GridPane.rowIndex="5" />
+                             <Label text="%label.weight.box" GridPane.columnIndex="1" GridPane.rowIndex="4" >
+                                 <padding>
+                                     <Insets top="16.0"/>
+                                 </padding>
+                             </Label>
+                             <ComboBox fx:id="ammoWeightBox" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                             <Label text="%label.load.zone" GridPane.rowIndex="6" >
+                                 <padding>
+                                     <Insets top="16.0"/>
+                                 </padding>
+                             </Label>
+                             <ComboBox fx:id="ammoZone" GridPane.rowIndex="7" />
+                             <Label text="%label.propellant" GridPane.columnIndex="1" GridPane.rowIndex="6" >
+                                 <padding>
+                                     <Insets top="16.0"/>
+                                 </padding>
+                             </Label>
+                             <TextField fx:id="ammoProp" GridPane.columnIndex="1" GridPane.rowIndex="7" editable="false"/>
+                             <Label text="%label.temperature" GridPane.rowIndex="8" >
+                                 <padding>
+                                     <Insets top="16.0"/>
+                                 </padding>
+                             </Label>
+                             <TextField fx:id="ammoTemperature" GridPane.rowIndex="9" />
+                             <HBox alignment="CENTER_LEFT" spacing="10.0" GridPane.columnSpan="2147483647"  GridPane.rowIndex="10">
+                                 <children>
+                                     <Button fx:id="cancel" mnemonicParsing="false" styleClass="form-button" text="%button.cancel">
+                                         <graphic>
+                                             <Region styleClass="svg-icon, close" />
+                                         </graphic>
+                                     </Button>
+                                     <Button fx:id="accept" mnemonicParsing="false" styleClass="form-button" text="%button.save">
+                                         <graphic>
+                                             <Region styleClass="svg-icon, save" />
+                                         </graphic>
+                                     </Button>
+                                 </children>
+                                 <padding>
+                                     <Insets top="24.0" bottom="16.0"/>
+                                 </padding>
+                             </HBox>
+                             <!--<Label text="%label.municion.manejo" GridPane.rowIndex="11"/>-->
+                             <Separator prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="11"/>
+                             <HBox alignment="CENTER" spacing="10.0" GridPane.columnSpan="2147483647"  GridPane.rowIndex="12">
+                                 <children>
+                                     <Button fx:id="add" mnemonicParsing="false" styleClass="form-button" prefWidth="178.0" text="%button.add">
+                                         <graphic>
+                                             <Region styleClass="svg-icon, add" />
+                                         </graphic>
+                                     </Button>
+                                     <Button fx:id="delete" mnemonicParsing="false" styleClass="form-button" prefWidth="178.0" text="%button.deleted">
+                                         <graphic>
+                                             <Region styleClass="svg-icon, delete" />
+                                         </graphic>
+                                     </Button>
+                                     <Button fx:id="edit" mnemonicParsing="false" styleClass="form-button" prefWidth="178.0" text="%button.edit">
+                                         <graphic>
+                                             <Region styleClass="svg-icon, edit" />
+                                         </graphic>
+                                     </Button>
+                                 </children>
+                                 <padding>
+                                     <Insets top="16.0" />
+                                 </padding>
+                             </HBox>
+                         </children>
+                     </GridPane>
+                </children>
+            </VBox>
+            <!--<VBox minWidth="290.0" prefHeight="200.0" prefWidth="100.0" spacing="16.0" styleClass="panel">-->
+                <!--<children>-->
+                    <!--<Label text="%label.ammo.detail" />-->
+                    <!--<HBox spacing="16.0">-->
+                        <!--<children>-->
+                            <!--<ImageView fitHeight="249.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="0">-->
+                                <!--<image>-->
+                                    <!--<Image url="@../../images/ammo.png" />-->
+                                <!--</image>-->
+                            <!--</ImageView>-->
+                            <!--<VBox>-->
+                                <!--<children>-->
+                                    <!--<Label text="HE MI" />-->
+                                    <!--<Label text="105H" />-->
+                                    <!--<Label text="Comp 8" />-->
+                                    <!--<Label text="ARTRIDGE" />-->
+                                    <!--<Label text="SUPPLE CS" />-->
+                                <!--</children>-->
+                            <!--</VBox>-->
+                        <!--</children>-->
+                    <!--</HBox>-->
+                <!--</children>-->
+             <!--</VBox>-->
+        </children>
+    </HBox>
+    <stylesheets>
+        <URL value="@../../css/variables.css" />
+        <URL value="@../../css/general.css" />
+    </stylesheets>
+</fx:root>

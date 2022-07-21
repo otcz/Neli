@@ -1,0 +1,44 @@
+@font-face {
+    -fx-font-family: "DINPro-Regular";
+    src: url('/fonts/DINPro-Regular.otf');
+}
+
+#checkWrapper {
+    -fx-background-color: rgba(25, 25, 25, 0.5);
+
+    -fx-max-width: 268px;
+    -fx-min-width: 268px;
+    -fx-pref-width: 268px;
+
+    -fx-pref-height: 34px;
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+
+    -fx-spacing: 8px;
+    -fx-padding: 8px 8px 8px 8px;
+    -fx-border-color: #606060;
+}
+
+#checkWrapper .label {
+    -fx-pref-height: 26px;
+    -fx-min-height: 26px;
+    -fx-max-height: 26px;
+    -fx-translate-y: -5px;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-font-family: DINPro-Regular;
+}
+
+#checkBigCircle {
+    -fx-translate-y: -1px;
+    -fx-stroke-width: 1px;
+    -fx-fill: rgba(25, 25, 25, 0.5);
+    -fx-stroke: #606060;
+}
+
+#checkMinicircle {
+    -fx-translate-y: -1px;
+    -fx-stroke-width: 0px;
+    -fx-fill: rgba(25, 25, 25, 0.5);
+    -fx-stroke: rgba(25, 25, 25, 0.5);
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Arc?>
+
+<fx:root type="javafx.scene.layout.StackPane" maxHeight="360.0" maxWidth="665.0" minHeight="720.0" minWidth="665.0"
+         opacity="0.8" prefHeight="350.0" prefWidth="665.0" style="-fx-background-color: #191919;"
+         xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Arc fx:id="yellowArc2" fill="#ffffff00" length="360.0" radiusX="55.0" radiusY="56.0" stroke="#5e5e5e"
+             strokeType="INSIDE"/>
+        <Arc fx:id="yellowArc" fill="#ffffff00" length="270.0" opacity="1" radiusX="55.0" radiusY="55.0" rotate="90.0"
+             stroke="#fcb400" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0"/>
+    </children>
+</fx:root>

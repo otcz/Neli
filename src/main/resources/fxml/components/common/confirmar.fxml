@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.dynamicts.neli.ui.component.common.ButtonImage?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<fx:root type="StackPane" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/common/style_ventanas.css"/>
+    </stylesheets>
+
+    <children>
+        <AnchorPane fx:id="confirmacionMunicion" maxHeight="163.0" maxWidth="341.0"
+                    minHeight="163.0" minWidth="341.0" prefHeight="163.0" prefWidth="341.0"
+                    style="-fx-background-color: #191919;">
+
+            <children>
+                <ImageView fx:id="bullet" fitHeight="31.0" fitWidth="31.0" layoutX="155.0" layoutY="16.0"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@/images/municiones3x.png"/>
+                    </image>
+                </ImageView>
+                <Button fx:id="closeButton" prefWidth="15" prefHeight="15" layoutX="310.0" layoutY="10.0"
+                        style="-fx-background-color: transparent;">
+                    <graphic>
+                        <Pane>
+                            <children>
+                                <ImageView fx:id="close" fitHeight="10.0" fitWidth="10.0"
+                                           pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/images/close3x.png"/>
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                    </graphic>
+                </Button>
+                <Label fx:id="ingresar" text="Se agregó municion" styleClass="ingresar"/>
+                <ButtonImage fx:id="aceptar" layoutX="95.0" layoutY="103.0"/>
+            </children>
+        </AnchorPane>
+    </children>
+</fx:root>

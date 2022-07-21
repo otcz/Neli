@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" minWidth="242" maxWidth="242" prefWidth="242">
+    <Label fx:id="title">Coordinate Title</Label>
+    <GridPane fx:id="gridPane" styleClass="grid-coordinate" vgap="4.0">
+         <columnConstraints>
+             <ColumnConstraints halignment="CENTER" hgrow="NEVER" minWidth="17.0" prefWidth="17.0" maxWidth="17.0" />
+             <ColumnConstraints halignment="CENTER" hgrow="NEVER" minWidth="71.0" prefWidth="71.0" maxWidth="71.0" />
+             <ColumnConstraints halignment="CENTER" hgrow="NEVER" minWidth="71.0" prefWidth="71.0" maxWidth="71.0" />
+             <ColumnConstraints halignment="CENTER" hgrow="NEVER" minWidth="71.0" prefWidth="71.0" maxWidth="71.0" />
+         </columnConstraints>
+         <rowConstraints>
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+            <children>
+                <Label fx:id="latitudeNS" styleClass="label-coordinate-pole" text="N" />
+                <Label fx:id="latitudeGrades" styleClass="label-coordinate-number" text="000˚" GridPane.columnIndex="1" />
+                <Label fx:id="latitudeMinutes" styleClass="label-coordinate-number" text="00'" GridPane.columnIndex="2" />
+                <Label fx:id="latitudeSeconds" styleClass="label-coordinate-number" text="00.00&quot;" GridPane.columnIndex="3" />
+                <Label fx:id="longitudeWE" styleClass="label-coordinate-pole" text="W" GridPane.rowIndex="1" />
+                <Label fx:id="longitudeGrades" styleClass="label-coordinate-number" text="000˚" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label fx:id="longitudeMinutes" styleClass="label-coordinate-number" text="00'" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Label fx:id="longitudeSeconds" styleClass="label-coordinate-number" text="00.00&quot;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Label fx:id="height" styleClass="label-coordinate-number" text="9999" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Label styleClass="label-coordinate-masl" text="%label.masl" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            </children>
+          <padding>
+             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+          </padding>
+    </GridPane>
+    <stylesheets>
+        <URL value="@../../css/variables.css" />
+        <URL value="@../../css/general.css" />
+        <URL value="@../../css/coordinates.css" />
+    </stylesheets>
+</fx:root>

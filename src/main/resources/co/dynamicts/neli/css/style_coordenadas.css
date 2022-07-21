@@ -1,0 +1,92 @@
+
+
+#coordenadaWrapper {
+    -fx-min-height: 102px;
+    -fx-max-height: 102px;
+    -fx-pref-height: 102px;
+    -fx-max-width: 244px;
+    -fx-min-width: 244px;
+    -fx-pref-width: 244px;
+    -fx-border-color: #606060;
+    -fx-border-width: 1px;
+    -fx-spacing: 8px;
+    -fx-padding: 0px 8px 8px 8px;
+}
+
+#nWrapper {
+    -fx-min-height: 26px;
+    -fx-max-height: 26px;
+    -fx-pref-height: 26px;
+}
+
+#wWrapper, #nWrapper {
+    -fx-min-height: 26px;
+    -fx-max-height: 26px;
+    -fx-pref-height: 26px;
+    -fx-spacing: 4px;
+}
+
+#coordenadaWrapper .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: DINPro-Bold;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+#tituloCoordenada {
+    -fx-text-fill: #d8d8d8;
+    -fx-font-family: DINPro-Bold;
+    -fx-font-size: 14px;
+}
+
+#cardinalidadLatitud, #cardinalidadLongitud {
+    -fx-max-width: 17px;
+    -fx-min-width: 17px;
+    -fx-pref-width: 17px;
+    -fx-font-size: 18px;
+    -fx-translate-y: 6px;
+}
+
+#latitudGrados, #longitudGrados {
+    -fx-max-width: 43px;
+    -fx-min-width: 43px;
+    -fx-pref-width: 43px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-font-size: 20px;
+}
+
+#latitudMinutos, #longitudMinutos {
+    -fx-max-width: 64px;
+    -fx-min-width: 64px;
+    -fx-pref-width: 64px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-font-size: 20px;
+    -fx-translate-x: 14px;
+}
+
+#latitudSegundos, #longitudSegundos {
+    -fx-max-width: 64px;
+    -fx-min-width: 64px;
+    -fx-pref-width: 64px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-font-size: 20px;
+    -fx-translate-x: 28px;
+}
+
+#metros {
+    -fx-max-width: 244px;
+    -fx-min-width: 244px;
+    -fx-pref-width: 244px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-font-size: 20px;
+}
+
+.background-brownish-grey {
+
+    -fx-background-color: rgba(96, 96, 96, 0.5);
+
+}

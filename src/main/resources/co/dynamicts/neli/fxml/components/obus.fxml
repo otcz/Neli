@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<fx:root
+        alignment="TOP_CENTER"
+        prefHeight="190.0"
+        prefWidth="660.0"
+        maxHeight="190.0"
+        maxWidth="-Infinity"
+        styleClass="clock"
+        type="javafx.scene.layout.StackPane"
+        xmlns="http://javafx.com/javafx/8.0.172-ea"
+        xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane scaleY="0.30" translateY="-80.0" StackPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="compassImageView" fitHeight="660.0" fitWidth="660.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/compass.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <ImageView fitHeight="120.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../images/cannon.png" />
+        </ImageView>
+    </children>
+</fx:root>

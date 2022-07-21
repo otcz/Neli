@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<fx:root fx:id="baseButton" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" mnemonicParsing="false" type="javafx.scene.control.Button" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/common/style_button_image.css" />
+    </stylesheets>
+    <graphic>
+        <HBox fx:id="flowWrapper">
+            <children>
+                <Label fx:id="imageButtonLabel" text="Label" />
+                <ImageView fx:id="imageViewButton" fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </HBox>
+    </graphic>
+</fx:root>

@@ -1,0 +1,12 @@
+.enabled {
+    -fx-text-fill: #ffffff;
+}
+
+.disabled {
+    -fx-text-fill: #303030;
+}
+
+.button {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-border-radius: 4px;
+}

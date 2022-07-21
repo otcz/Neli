@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.dynamicts.neli.ui.component.common.ButtonImage?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root fx:id="historialWrapper" type="javafx.scene.layout.VBox"
+         xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1"
+         styleClass="tableHistorial, contenidoHistorial">
+
+    <stylesheets>
+        <URL value="@/css/historial/style_tabla_historial.css"/>
+        <URL value="@/css/common/common_paginas.css"/>
+    </stylesheets>
+
+    <children>
+        <Label fx:id="labelTitulo" text="TABLA DE HISTORIAL"/>
+        <TableView fx:id="historialTable" maxHeight="430.0" minHeight="437.0" prefHeight="437.0">
+            <columns>
+                <TableColumn fx:id="columnaMunicion"/>
+                <TableColumn fx:id="columnaZona"/>
+                <TableColumn fx:id="columnaFecha"/>
+                <TableColumn fx:id="columnaTemperatura"/>
+                <TableColumn fx:id="columnaVelocidad"/>
+            </columns>
+        </TableView>
+        <ButtonImage fx:id="resetHistorial"/>
+    </children>
+
+</fx:root>

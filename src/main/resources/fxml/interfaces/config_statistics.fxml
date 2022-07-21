@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<fx:root spacing="8.0" styleClass="interface" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <HBox spacing="8.0">
+        <Label styleClass="h2" text="%title.interface.statistics">
+            <graphic>
+                <SVGPath content="%svg.path.statistics" fill="#d8d8d8" scaleX="0.75" scaleY="0.75" styleClass="icon" />
+            </graphic>
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+        </Label>
+        <VBox alignment="CENTER" maxWidth="70.0" spacing="8.0">
+            <Label text="EFC" />
+            <TextField fx:id="efcTextField" alignment="CENTER" editable="false" text="16" />
+        </VBox>
+    </HBox>
+
+    <Label text="105 HEMI" />
+    <BarChart fx:id="barChart0" prefHeight="250.0" titleSide="LEFT">
+        <xAxis>
+            <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT" />
+        </yAxis>
+    </BarChart>
+    <Label text="105 HE-ERSOBB" />
+    <BarChart fx:id="barChart1" prefHeight="250.0" titleSide="LEFT">
+        <xAxis>
+            <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT" />
+        </yAxis>
+    </BarChart>
+    <stylesheets>
+        <URL value="@../../css/variables.css" />
+        <URL value="@../../css/general.css" />
+    </stylesheets>
+</fx:root>

@@ -1,0 +1,219 @@
+
+#ammunitionSetupWrapper {
+    -fx-min-width: 634px;
+    -fx-max-width: 634px;
+    -fx-pref-width: 634px;
+    -fx-spacing: 16px;
+    -fx-background-color: #191919;
+}
+
+#espoletaHBox, #presicion, #accuracy2, #projectilInfo, #HBox1, #desviacion1, #desviacion2 {
+    -fx-min-height: 54px;
+    -fx-max-height: 54px;
+    -fx-pref-height: 54px;
+}
+
+#bottomButton {
+    -fx-min-height: 70px;
+    -fx-max-height: 70px;
+    -fx-pref-height: 70px;
+
+    -fx-translate-y: 16px;
+    -fx-translate-x: 206px;
+}
+
+#ammunitionSetupWrapper #titleLabelCMS {
+    -fx-text-fill: #d8d8d8d8;
+}
+
+#ammunitionSetupWrapper #menuTitle {
+    -fx-text-fill: #d8d8d8d8;
+}
+
+#baseButton {
+    -fx-min-width: 191px;
+    -fx-max-width: 191px;
+    -fx-pref-width: 191px;
+    -fx-min-height: 44px;
+    -fx-max-height: 44px;
+    -fx-pref-height: 44px;
+}
+
+#titleLabel {
+    -fx-min-height: 16px;
+    -fx-max-height: 16px;
+    -fx-pref-height: 16px;
+    -fx-min-width: 340px;
+    -fx-max-width: 340px;
+    -fx-pref-width: 340px;
+    -fx-font-family: DINPro-Bold;
+    -fx-text-fill: #d8d8d8d8;
+    -fx-background-color: #191919;
+}
+
+#ammunitionSetupWrapper #titleLabelCMS {
+    -fx-min-width: 195px;
+    -fx-max-width: 195px;
+    -fx-pref-width: 195px;
+}
+
+#ammunitionSetupWrapper #labelWrapperCMS {
+    -fx-min-width: 195px;
+    -fx-max-width: 195px;
+    -fx-pref-width: 95px;
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+    -fx-pref-height: 34px;
+}
+
+#ammunitionSetupWrapper #measureLabelCMS {
+    -fx-min-width: 195px;
+    -fx-max-width: 195px;
+    -fx-pref-width: 95px;
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+    -fx-pref-height: 34px;
+}
+
+#projectilInfo #measureLabelCMS {
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+    -fx-pref-height: 34px;
+}
+
+#projectilInfo #titleLabelCMS, #labelWrapperCMS, #measureLabelCMS {
+    -fx-min-width: 143px;
+    -fx-max-width: 143px;
+    -fx-pref-width: 143px;
+}
+
+#projectilInfo #measureLabelCMS {
+    -fx-min-width: 143px;
+    -fx-max-width: 143px;
+    -fx-pref-width: 143px;
+}
+
+#projectilInfo #labelWrapperCMS {
+    -fx-min-width: 143px;
+    -fx-max-width: 143px;
+    -fx-pref-width: 143px;
+}
+
+HBox {
+    -fx-spacing: 8px;
+}
+
+#projectilInfo {
+    -fx-spacing: 9px;
+}
+
+#menuTitle {
+}
+
+#menu {
+    -fx-translate-y: 4px;
+    -fx-min-width: 195px;
+    -fx-max-width: 195px;
+    -fx-pref-width: 95px;
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+    -fx-pref-height: 34px;
+}
+
+#machWrapper {
+    -fx-max-width: 602px;
+    -fx-min-width: 602px;
+    -fx-pref-width: 602px;
+    -fx-max-height: 120px;
+    -fx-min-height: 120px;
+    -fx-pref-height: 120px;
+}
+
+#ZoneWrapper {
+    -fx-max-width: 6500px;
+    -fx-min-width: 602px;
+    -fx-pref-width: 602px;
+    -fx-max-height: 120px;
+    -fx-min-height: 120px;
+    -fx-pref-height: 120px;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: #191919;
+    -fx-border-color: #191919;
+    -fx-background-radius: 0.0em;
+    -fx-border-radius: 2.0em;
+}
+
+.scroll-bar:horizontal .track {
+    -fx-background-radius: 0.0em;
+    -fx-border-radius: 0.0em;
+}
+
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0.0em;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: #191919;
+    -fx-background-radius: 0.0em;
+    -fx-padding: 0.0 10.0 0.0 0.0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0.0em 0.0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0.0 0.0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #d8d8d8;
+    -fx-background-insets: 2.0, 0.0, 0.0;
+    -fx-background-radius: 2.0em;
+}
+
+.button {
+    -fx-min-height: 44px;
+    -fx-max-height: 44px;
+    -fx-pref-height: 44px;
+    -fx-min-width: 142px;
+    -fx-max-width: 142px;
+    -fx-pref-width: 142px;
+    -fx-translate-y: 16px;
+}
+
+#titleLabel {
+    -fx-min-height: 16px;
+    -fx-max-height: 16px;
+    -fx-pref-height: 16px;
+    -fx-min-width: 340px;
+    -fx-max-width: 340px;
+    -fx-pref-width: 340px;
+    -fx-font-family: DINPro-regular;
+    -fx-font-weight: bold;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-color: #191919;
+}
+
+.spacingVBox {
+    -fx-spacing: 20px;
+}
+
+.spacingHBox {
+    -fx-spacing: 8px;
+}
+
+
+
+

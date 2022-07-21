@@ -1,0 +1,66 @@
+#cpaWrapperVBox {
+    -fx-pref-width: 634px;
+    -fx-max-width: 634px;
+    -fx-min-width: 634px;
+    -fx-min-height: 608px;
+    -fx-mmax-height: 608px;
+    -fx-pref-height: 608px;
+    -fx-background-color: #191919;
+    -fx-padding: 16px 0px 18px 17px;
+    -fx-spacing: 16px;
+}
+
+.button {
+    -fx-pref-width: 142px;
+    -fx-max-width: 142px;
+    -fx-min-width: 142px;
+    -fx-min-height: 44px;
+    -fx-mmax-height: 44px;
+    -fx-pref-height: 44px;
+    -fx-padding: 0px 0px 0px 0px;
+}
+
+#fasesGrid {
+    -fx-hgap: 8px;
+    -fx-vgap: 24px;
+}
+
+#parametrosGrid {
+    -fx-hgap: 6px;
+    -fx-vgap: 11px;
+    -fx-translate-y: 27px;
+}
+
+#labelFases {
+    -fx-pref-width: 340px;
+    -fx-max-width: 340px;
+    -fx-min-width: 340px;
+    -fx-min-height: 16px;
+    -fx-mmax-height: 16px;
+    -fx-pref-height: 16px;
+    -fx-background-color: #191919;
+    -fx-text-fill: #d8d8d8;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+#labelParametros {
+    -fx-pref-width: 340px;
+    -fx-max-width: 340px;
+    -fx-min-width: 340px;
+    -fx-min-height: 16px;
+    -fx-mmax-height: 16px;
+    -fx-pref-height: 16px;
+    -fx-background-color: #191919;
+    -fx-text-fill: #d8d8d8;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-translate-y: 27px;
+}
+
+#buttonHBox {
+    -fx-translate-y: 43px;
+    -fx-spacing: 11px;
+}

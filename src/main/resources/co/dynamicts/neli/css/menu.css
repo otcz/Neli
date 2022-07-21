@@ -1,0 +1,74 @@
+.icon-button{
+    -size: 75;
+    -hsize: 74;
+    -fx-text-fill: -custom-primary-color;
+    -fx-min-height: -hsize;
+    -fx-min-width: -size;
+    -fx-max-height: -hsize;
+    -fx-max-width: -size;
+    -fx-padding: 0;
+    -fx-font-size: 10;
+    -fx-background-color: -custom-background-color;
+    -fx-border: solid 1px -custom-primary-color;
+    -fx-content-display: top;
+    -fx-border-color: -color-brownish-gray;
+    -fx-border-width: 1 1 1 1;
+}
+
+.icon-button:hover, .icon-button.selected {
+    -fx-background-color: -color-brownish-gray;
+    -fx-border-color: #FCB400;
+    -fx-text-fill: #FCB400;
+}
+
+.func {
+    -fx-background-radius:0;
+    -fx-background-size: 16 16;
+    -fx-background-position: right top;
+    -fx-background-repeat: no-repeat;
+}
+
+.func:hover {
+}
+
+.func-1 { -fx-background-image: url('../images/func/f1_off.png'); }
+.func-1:hover, .func-1.selected { -fx-background-image: url('../images/func/f1_on.png'); }
+.func-2 { -fx-background-image: url('../images/func/f2_off.png'); }
+.func-2:hover, .func-2.selected { -fx-background-image: url('../images/func/f2_on.png'); }
+.func-3 { -fx-background-image: url('../images/func/f3_off.png'); }
+.func-3:hover, .func-3.selected { -fx-background-image: url('../images/func/f3_on.png'); }
+.func-4 { -fx-background-image: url('../images/func/f4_off.png'); }
+.func-4:hover, .func-4.selected { -fx-background-image: url('../images/func/f4_on.png'); }
+.func-5 { -fx-background-image: url('../images/func/f5_off.png'); }
+.func-5:hover, .func-5.selected { -fx-background-image: url('../images/func/f5_on.png'); }
+.func-6 { -fx-background-image: url('../images/func/f6_off.png'); }
+.func-6:hover, .func-6.selected { -fx-background-image: url('../images/func/f6_on.png'); }
+.func-7 { -fx-background-image: url('../images/func/f7_off.png'); }
+.func-7:hover, .func-7.selected { -fx-background-image: url('../images/func/f7_on.png'); }
+.func-8 { -fx-background-image: url('../images/func/f8_off.png'); }
+.func-8:hover, .func-8.selected { -fx-background-image: url('../images/func/f8_on.png'); }
+.func-9 { -fx-background-image: url('../images/func/f9_off.png'); }
+.func-9:hover, .func-9.selected { -fx-background-image: url('../images/func/f9_on.png'); }
+.func-10 { -fx-background-image: url('../images/func/f10_off.png'); }
+.func-10:hover, .func-10.selected { -fx-background-image: url('../images/func/f10_on.png'); }
+.func-11 { -fx-background-image: url('../images/func/f11_off.png'); }
+.func-11:hover, .func-11.selected { -fx-background-image: url('../images/func/f11_on.png'); }
+.func-12 { -fx-background-image: url('../images/func/f12_off.png'); }
+.func-12:hover , .func-12.selected{ -fx-background-image: url('../images/func/f12_on.png'); }
+
+.icon-button SVGPath{
+    -fx-fill: -color-white-two;
+}
+
+.icon-button:hover SVGPath, .icon-button.selected SVGPath{
+    -fx-fill: -color-yellow;
+}
+
+.icon-button SVGPath {
+    -fx-background-color: -icon-paint;
+    -size: 30;
+    -fx-min-height: -size;
+    -fx-min-width: -size;
+    -fx-max-height: -size;
+    -fx-max-width: -size;
+}

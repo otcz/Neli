@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="116.0" maxWidth="50.0" minHeight="116.0" minWidth="50.0" prefHeight="116.0" prefWidth="50.0"
+         type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/10.0.2-internal"
+         xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fx:id="regla" blendMode="SRC_ATOP" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/componentes/home/Reglas/alcance_metros1xlong.png"/>
+            </image>
+            <viewport>
+                <Rectangle2D height="116.0" width="64.0"/>
+            </viewport>
+        </ImageView>
+    </children>
+</fx:root>

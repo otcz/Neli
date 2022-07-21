@@ -1,0 +1,107 @@
+.chart {
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-background-color:  -color-black-two;
+    -fx-max-width: 624px;
+    -fx-min-width: 624px;
+    -fx-pref-width: 624px;
+    -fx-max-height: 150px;
+    -fx-min-height: 150px;
+    -fx-pref-height: 150px;
+}
+
+.chart-content {
+    -fx-spacing: 10px;
+}
+
+.chart-series-line {
+    -fx-stroke-width: 1px;
+    -fx-stroke: #fcb400;
+}
+
+.chart-line-symbol {
+    -fx-background-color: -color-grayish;
+    -fx-max-height: 5px;
+    -fx-min-height: 5px;
+    -fx-pref-height: 5px;
+    -fx-max-width: 5px;
+    -fx-min-width: 5px;
+    -fx-pref-width: 5px;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-padding: 20px;
+}
+
+.chart-legend-item-symbol {
+    -fx-background-radius: 0;
+}
+
+.chart-legend-item {
+    -fx-text-fill: #191970;
+}
+
+.chart-plot-background {
+    -fx-background-color: -color-black-two;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: #191919;
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: #191919;
+}
+
+#xAxis {
+    -fx-tick-label-font: 10px "DIN Alternate";
+    -fx-tick-label-fill: #606060;
+    -fx-font-family: "DIN Alternate";
+    -fx-tick-length: 0px;
+    -fx-minor-tick-length: 0px;
+}
+
+#yAxis {
+    -fx-tick-label-font: 12px "DIN Alternate";
+    -fx-tick-label-fill: #ffffff;
+    -fx-font-family: "DIN Alternate";
+    -fx-tick-length: 12px;
+    -fx-minor-tick-length: 0px;
+}
+
+#yAxis .axis-tick-mark {
+    -fx-translate-x: 6px;
+}
+
+#dataGridCMS {
+    -fx-spacing: 20px;
+    -fx-vgap: 11px;
+    -fx-hgap: 8px;
+    -fx-padding: 16px 16px 16px 16px;
+}
+
+#VboxCMS {
+    -fx-background-color: -color-black-two;
+    -fx-border-color: -color-brownish-gray;
+    -fx-max-height: 608px;
+    -fx-min-height: 608px;
+    -fx-pref-height: 608px;
+    -fx-pref-width: 634px;
+    -fx-min-width: 634px;
+    -fx-max-width: 634px;
+}
+
+.button {
+    -fx-max-height: 44px;
+    -fx-min-height: 44px;
+    -fx-pref-height: 44px;
+    -fx-pref-width: 190px;
+    -fx-min-width: 190px;
+    -fx-max-width: 190px;
+    -fx-translate-y: 32px;
+}
+
+.button .label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}

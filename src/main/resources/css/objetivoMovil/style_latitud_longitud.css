@@ -1,0 +1,117 @@
+#coordenadaWrapper {
+    -fx-spacing: 4px;
+    -fx-background-color: #191919;
+    -fx-min-height: 54px;
+    -fx-max-height: 54px;
+    -fx-pref-height: 54px;
+    -fx-min-width: 500px;
+    -fx-max-width: 500px;
+    -fx-pref-width: 500px;
+}
+
+#titleLatitudLongitud {
+    -fx-min-height: 16px;
+    -fx-max-height: 16px;
+    -fx-pref-height: 16px;
+    -fx-min-width: 500px;
+    -fx-max-width: 500px;
+    -fx-pref-width: 500px;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-border-color: #191919;
+    -fx-background-color: #191919;
+    -fx-text-fill: #d8d8d8;
+    -fx-alignment: center-left;
+}
+
+#orientationHBox {
+    -fx-background-color: red;
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+    -fx-pref-height: 34px;
+    -fx-min-width: 72px;
+    -fx-max-width: 72px;
+    -fx-pref-width: 72px;
+}
+
+
+.orientationYellow{
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+    -fx-pref-height: 34px;
+    -fx-min-width: 36px;
+    -fx-max-width: 36px;
+    -fx-pref-width: 36px;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-border-color: #fcb400;
+    -fx-background-color: #fcb400;
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.orientationGray{
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+    -fx-pref-height: 34px;
+    -fx-min-width: 36px;
+    -fx-max-width: 36px;
+    -fx-pref-width: 36px;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-border-color: #303030;
+    -fx-background-color: #303030;
+    -fx-text-fill: #606060;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+
+}
+
+
+
+#coordenadaHBox {
+    -fx-spacing: 8px;
+    -fx-background-color: #191919;
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+    -fx-pref-height: 34px;
+    -fx-min-width: 500px;
+    -fx-max-width: 500px;
+    -fx-pref-width: 500px;
+}
+
+#degreesIV {
+    -fx-image: url("/images/coordenadas/circle3x.png");
+    -fx-translate-x: -4px;
+}
+
+#inchIV {
+    -fx-image: url("/images/coordenadas/inch3x.png");
+    -fx-translate-x: -4px;
+}
+
+#inchsIV {
+    -fx-image: url("/images/coordenadas/inchs3x.png");
+    -fx-translate-x: -4px;
+}
+
+.coordinate-text-field {
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+    -fx-pref-height: 34px;
+    -fx-min-width: 72px;
+    -fx-max-width: 72px;
+    -fx-pref-width: 72px;
+    -fx-border-color: #606060;
+    -fx-background-color: #191919;
+    -fx-text-fill: #ffffff;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+}

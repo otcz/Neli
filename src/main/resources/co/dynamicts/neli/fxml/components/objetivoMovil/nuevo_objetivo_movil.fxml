@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<?import co.dynamicts.neli.ui.component.moving_target.NewMovingTargetCoordinates?>
+<?import co.dynamicts.neli.ui.component.common.LabelTitle?>
+<?import co.dynamicts.neli.ui.component.common.ButtonImage?>
+<?import co.dynamicts.neli.ui.component.common.TextfieldTitle?>
+<fx:root type="javafx.scene.layout.VBox" fx:id="nuevoObjetivoMovil" xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         styleClass="nuevoObjetivoMovil">
+
+    <stylesheets>
+        <URL value="@/css/objetivoMovil/style_nuevo_objetivo_movil.css"/>
+        <URL value="@/css/common/common_paginas.css"/>
+    </stylesheets>
+
+    <children>
+        <Label fx:id="cdp1" text="COORDENADAS DE PARTIDA"/>
+
+        <NewMovingTargetCoordinates fx:id="longitud"/>
+        <NewMovingTargetCoordinates fx:id="latitud"/>
+
+        <Label fx:id="cdp" text="Altura"/>
+
+        <HBox fx:id="HBoxAltura">
+            <children>
+                <TextField fx:id="altura" text=""/>
+                <Label fx:id="msnm" text="M.S.N.M."/>
+            </children>
+        </HBox>
+
+        <Label fx:id="cdp2" text="COORDENADAS DE PARTIDA"/>
+        <TextfieldTitle fx:id="azumut"/>
+        <TextfieldTitle fx:id="velocidad"/>
+
+        <HBox fx:id="HBoxBotones">
+            <children>
+                <ButtonImage fx:id="aceptar" />
+                <ButtonImage fx:id="cancelar"/>
+            </children>
+        </HBox>
+
+    </children>
+</fx:root>

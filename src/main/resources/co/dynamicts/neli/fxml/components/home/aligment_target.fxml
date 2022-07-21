@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import java.net.URL?>
+<fx:root type="javafx.scene.layout.StackPane" prefHeight="200.0" prefWidth="200.0"
+         xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1">
+
+    <stylesheets>
+        <URL value="@/css/home/styleTarget.css"/>
+    </stylesheets>
+
+
+    <children>
+
+        <Circle fx:id="dianaCircle1" centerX="100.0" centerY="100.0" fill="#ffffff00" radius="98.0" stroke="WHITE"
+                strokeType="INSIDE"/>
+        <Circle fx:id="dianaCircle2" centerX="100.0" centerY="100.0" fill="#ffffff00" radius="95.0" stroke="WHITE"
+                strokeType="INSIDE"/>
+        <Circle fx:id="dianaCircle3" centerX="100.0" centerY="100.0" fill="#ffffff00" radius="93.0" stroke="WHITE"
+                strokeType="INSIDE"/>
+
+
+        <Line endX="100.0" endY="200.0" startX="100.0" stroke="#191919" strokeWidth="15"/>
+        <Line endY="100.0" endX="200.0" startY="100.0" stroke="#191919" strokeWidth="15"/>
+
+        <Line endX="100.0" endY="200.0" startX="100.0" stroke="WHITE" strokeWidth="2.0"/>
+        <Line endY="100.0" endX="200.0" startY="100.0" stroke="WHITE" strokeWidth="2.0"/>
+
+        <Circle fx:id="dianaCircle4" centerX="100.0" centerY="100.0" fill="#ffffff00" radius="60" stroke="WHITE"
+                strokeType="INSIDE"/>
+
+        <Circle fx:id="inCircle1" centerX="100.0" centerY="100.0" fill="#ffffff00" radius="30" stroke="WHITE"
+                strokeType="INSIDE"/>
+        <Circle fx:id="inCircle2" centerX="100.0" centerY="100.0" fill="#ffffff00" radius="15" stroke="WHITE"
+                strokeType="INSIDE"/>
+        <Circle fx:id="inCircle3" centerX="100.0" centerY="100.0" radius="9"
+                strokeType="INSIDE" styleClass="grayCircle"/>
+
+    </children>
+</fx:root>

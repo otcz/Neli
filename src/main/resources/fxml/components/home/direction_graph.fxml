@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="TOP_CENTER" prefHeight="230.0" prefWidth="200" spacing="8.0" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1">
+    <Label fx:id="titleLabel" styleClass="graficaTitle" text="Dirección" />
+    <Pane styleClass="border">
+
+        <children>
+            <AnchorPane fx:id="arcPane" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" rotate="130.8">
+                <children>
+                    <Arc fx:id="weaponArc" centerX="100.0" centerY="100.0" fill="#ff9f1f" length="99.0" opacity="0.52" radiusX="90.0" radiusY="88.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                    <Arc fx:id="cannonArc" centerX="100.0" centerY="100.0" fill="#c5cbd0" length="60.0" opacity="0.83" radiusX="90.0" radiusY="88.0" startAngle="60.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                </children>
+            </AnchorPane>
+
+
+
+        <StackPane fx:id="vehiculo" layoutX="62" layoutY="50">
+        <children>
+            <ImageView fx:id="vehicle" fitHeight="120.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../../images/componentes/home/direccion/Rectangle.png" />
+                </image>
+            </ImageView>
+        </children>
+        </StackPane>
+
+
+         <StackPane fx:id="componentWrapper">
+            <children>
+                  <ImageView fx:id="compass" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image url="@../../../images/componentes/home/direccion/Diana.png" />
+                      </image>
+                  </ImageView>
+                  <ImageView fx:id="cursor" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image url="@../../../images/componentes/home/direccion/Oval.png" />
+                      </image>
+                  </ImageView>
+      
+
+            </children>
+         </StackPane>
+
+
+            <StackPane fx:id="canon" layoutX="95.0" layoutY="75">
+                <children>
+                    <ImageView fx:id="trinca" fitHeight="50.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" translateY="25.0" visible="false">
+                        <image>
+                            <Image url="@../../../images/componentes/home/direccion/Canon_sin_Trinca.png" />
+                        </image>
+                    </ImageView>
+                    <ImageView fx:id="sinTrinca" fitHeight="50.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" translateY="25.0">
+                        <image>
+                            <Image url="@../../../images/componentes/home/direccion/Canon_en_Trinca.png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </StackPane>
+            <Label fx:id="labelEnTrinca" styleClass="labelAlerta" text="En trinca" textFill="#e1dbdb" wrapText="true">
+                <font>
+                    <Font size="31.0" />
+                </font>
+                <opaqueInsets>
+                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                </opaqueInsets>
+                <padding>
+                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                </padding>
+            </Label>
+            
+            <ImageView fx:id="azimuth" fitHeight="10.0" fitWidth="10.0" layoutX="95.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../../images/componentes/home/direccion/Azimut.png" />
+                </image>
+            </ImageView>
+        </children>
+    </Pane>
+    <stylesheets>
+        <URL value="@/css/home.css" />
+    </stylesheets>
+
+</fx:root>

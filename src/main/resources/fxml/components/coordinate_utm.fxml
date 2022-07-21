@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" minWidth="242" maxWidth="242" prefWidth="242">
+    <Label fx:id="title">Coordinate Title</Label>
+    <GridPane fx:id="gridPane" styleClass="grid-coordinate" vgap="4.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="NEVER" minWidth="35.0" prefWidth="35.0" maxWidth="35.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="NEVER" minWidth="100.0" prefWidth="100.0" maxWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="NEVER" minWidth="55.0" prefWidth="55.0" maxWidth="55.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="NEVER" minWidth="40.0" prefWidth="40.0" maxWidth="40.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Label styleClass="label-coordinate-pole" text="DE" />
+            <Label fx:id="eastUTM" styleClass="label-coordinate-number" text="999999" GridPane.columnIndex="1" />
+            <Label styleClass="label-coordinate-pole" text="%label.coordinate.use" GridPane.columnIndex="2" />
+            <Label fx:id="useUTM" styleClass="label-coordinate-number" text="99" GridPane.columnIndex="3" />
+            <Label fx:id="" styleClass="label-coordinate-pole" text="DN" GridPane.rowIndex="1" />
+            <Label fx:id="northUTM" styleClass="label-coordinate-number" text="999999" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label styleClass="label-coordinate-pole" text="%label.coordinate.band" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="bandUTM" styleClass="label-coordinate-number" text="N" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="height" styleClass="label-coordinate-number" text="9999" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="label-coordinate-masl" text="%label.masl" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        </children>
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </padding>
+    </GridPane>
+    <stylesheets>
+        <URL value="@../../css/variables.css" />
+        <URL value="@../../css/general.css" />
+        <URL value="@../../css/coordinates.css" />
+    </stylesheets>
+</fx:root>

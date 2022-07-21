@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.Pane?>
+<fx:root
+        alignment="CENTER_LEFT"
+        maxHeight="-Infinity"
+        prefHeight="28.0"
+        prefWidth="245.0"
+        styleClass="witness"
+        type="javafx.scene.layout.VBox"
+        xmlns="http://javafx.com/javafx/8.0.172-ea"
+        xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox alignment="CENTER_LEFT" minHeight="28.0" prefHeight="28.0" prefWidth="245.0">
+            <children>
+                <Label fx:id="titleLabel" minHeight="28.0" minWidth="118.0" styleClass="title" text="Title">
+                    <padding>
+                        <Insets left="8.0" right="8.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="statusLabel" maxHeight="-Infinity" minHeight="28.0" minWidth="132.0" prefHeight="28.0" styleClass="status" text="Status">
+                    <graphic>
+                        <Region minWidth="14.0" minHeight="18.0" prefWidth="14.0" prefHeight="18.0" maxWidth="14.0" maxHeight="18.0" style="-fx-background-color: white;" styleClass="region">
+                            <shape>
+                                <SVGPath fx:id="iconPath" content="%svg.path.signal" styleClass="icon-path" />
+                            </shape>
+                        </Region>
+                    </graphic>
+                    <padding>
+                        <Insets left="8.0" right="8.0" />
+                    </padding>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</fx:root>

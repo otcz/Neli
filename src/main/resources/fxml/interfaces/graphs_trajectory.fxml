@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<fx:root styleClass="page" type="VBox" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+
+    <children>
+        <StackPane maxHeight="32" minHeight="32" prefHeight="32" styleClass="top-menu" />
+        <Label styleClass="h2" text="%title.interface.graphs.trajectory" wrapText="true">
+            <graphic>
+                <SVGPath content="%svg.path.graphs.trajectory" fill="#d8d8d8" scaleX="0.75" scaleY="0.75" styleClass="icon" />
+            </graphic>
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+        </Label>
+
+        <VBox spacing="8.0" styleClass="graphics">
+            <children>
+                <Label alignment="CENTER" styleClass="labelTituloGraficacion" text="%label.graph" >
+                    <VBox.margin>
+                        <Insets left="45.0" />
+                    </VBox.margin>
+                </Label>
+                <LineChart fx:id="lineChart" alternativeColumnFillVisible="true" animated="false" horizontalGridLinesVisible="true" legendVisible="false" maxHeight="280.0" maxWidth="597.0" minHeight="280.0" minWidth="597.0" prefHeight="280.0" prefWidth="597.0" styleClass="chart" verticalGridLinesVisible="true">
+                    <xAxis>
+                        <NumberAxis maxWidth="550.0" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis maxHeight="280.0" side="LEFT" />
+                    </yAxis>
+                </LineChart>
+                <GridPane alignment="CENTER" hgap="5.0" maxWidth="500.0" styleClass="panel" vgap="5.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" />
+                        <ColumnConstraints hgrow="SOMETIMES" />
+                        <ColumnConstraints hgrow="SOMETIMES" />
+                        <ColumnConstraints hgrow="SOMETIMES" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="%label.graph.max.ordinate" GridPane.halignment="CENTER">
+                        <graphic>
+                            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@/images/OrdMax.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                        </Label>
+                        <Label text="%label.graph.aim" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/images/Pointing.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Label>
+                        <Label text="%label.graph.target" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/images/Target.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Label>
+                        <Label text="%label.graph.interval" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@/images/Inter.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="65.0" />
+                    </VBox.margin>
+                </GridPane>
+            </children>
+            <padding>
+                <Insets bottom="8.0" top="8.0" />
+            </padding>
+        </VBox>
+
+    </children>
+
+    <stylesheets>
+        <URL value="@../../css/variables.css" />
+        <URL value="@/css/graficacion/graficacion.css" />
+    </stylesheets>
+
+</fx:root>

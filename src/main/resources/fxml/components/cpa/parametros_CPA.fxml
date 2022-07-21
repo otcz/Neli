@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?><?import javafx.scene.layout.HBox?>
+
+<?import java.net.URL?>
+<?import co.dynamicts.neli.ui.component.common.LabelTitle?>
+<?import co.dynamicts.neli.ui.component.common.ButtonImage?>
+<?import co.dynamicts.neli.ui.component.common.TextfieldTitle?>
+<fx:root type="javafx.scene.layout.VBox" fx:id="cpaWrapperVBox" xmlns="http://javafx.com/javafx/8.0.231"
+         xmlns:fx="http://javafx.com/fxml/1" styleClass="bordeContenido">
+    <stylesheets>
+        <URL value="@/css/cpa/style_parametros_cpa.css"/>
+        <URL value="@/css/common/common_paginas.css"/>
+
+    </stylesheets>
+    <children>
+        <Label fx:id="labelFases" text="FASES DESTRINCADO Y TRINCADO"/>
+        <GridPane fx:id="fasesGrid">
+            <columnConstraints>
+                <ColumnConstraints/>
+                <ColumnConstraints/>
+                <ColumnConstraints/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints/>
+                <RowConstraints/>
+            </rowConstraints>
+            <children>
+                <TextfieldTitle fx:id="fase0" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextfieldTitle fx:id="fase1" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                <TextfieldTitle fx:id="fase2" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+                <TextfieldTitle fx:id="fase3" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            </children>
+        </GridPane>
+        <Label fx:id="labelParametros" text="PARAMETROS CONTROLADOR:"/>
+        <GridPane fx:id="parametrosGrid">
+            <columnConstraints>
+                <ColumnConstraints/>
+                <ColumnConstraints/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+            </rowConstraints>
+            <children>
+                <TextfieldTitle fx:id="lIzquierdo" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextfieldTitle fx:id="minErrorIzquierda" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextfieldTitle fx:id="maxErrorIzquierda" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextfieldTitle fx:id="cpAbajo" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <TextfieldTitle fx:id="lDerecho" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                <TextfieldTitle fx:id="minErrorDerecha" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                <TextfieldTitle fx:id="maxErrorDerecha" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                <TextfieldTitle fx:id="cpArriba" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            </children>
+        </GridPane>
+        <HBox fx:id="buttonHBox">
+            <children>
+                <ButtonImage fx:id="desbloquear"/>
+                <ButtonImage fx:id="actualizarParametros"/>
+                <ButtonImage fx:id="guardarParametros"/>
+                <ButtonImage fx:id="cpaMod"/>
+            </children>
+        </HBox>
+    </children>
+</fx:root>

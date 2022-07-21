@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root alignment="CENTER" minHeight="54.0" minWidth="140.0" prefHeight="54.0" prefWidth="140.0" styleClass="level" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <Label fx:id="titleLabel" styleClass="title" text="level" />
+    <Canvas fx:id="canvas" height="22.0" width="140.0" />
+    <Label fx:id="valueLabel" styleClass="value" text="0" VBox.vgrow="ALWAYS" />
+</fx:root>

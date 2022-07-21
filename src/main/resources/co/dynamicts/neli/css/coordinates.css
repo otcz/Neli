@@ -1,0 +1,37 @@
+.grid-coordinate {
+    -fx-border-color: -color-brownish-gray;
+    -fx-border-radius: 0;
+}
+
+.grid-coordinate.ok {
+    -fx-border-color: -color-seaweed;
+}
+
+.grid-coordinate.med {
+    -fx-border-color: -color-yellow;
+}
+
+.grid-coordinate.bad {
+    -fx-border-color: -color-grapefruit;
+}
+
+.grid-coordinate.wanted {
+    -fx-background-color: -color-brownish-gray-50;
+}
+
+.label-coordinate-number {
+    -fx-font-family: "DINPro-Medium", "sans-serif";
+    -fx-font-size: 24;
+    -fx-text-fill: -color-white;
+}
+
+.label-coordinate-pole {
+    -fx-font-family: "DINPro-Medium", "sans-serif";
+    -fx-font-size: 18;
+    -fx-text-fill: -color-white;
+}
+.label-coordinate-masl{
+    -fx-font-family: "DINPro-Medium", "sans-serif";
+    -fx-font-size: 12;
+    -fx-text-fill: -color-white;
+}

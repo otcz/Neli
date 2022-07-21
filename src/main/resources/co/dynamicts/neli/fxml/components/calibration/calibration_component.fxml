@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.dynamicts.neli.ui.component.calibration.CheckCalibration?>
+<?import co.dynamicts.neli.ui.component.common.ButtonImage?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<fx:root prefHeight="400.0" prefWidth="600.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/interfaces/calibracion/style_pagina_calibracion.css" />
+    </stylesheets>
+    <children>
+        <GridPane fx:id="calibracionGrid" alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="40.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="%label.orientation" />
+                <Label fx:id="azimutTubo" GridPane.rowIndex="1" />
+                <CheckCalibration fx:id="localisedTarget" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" />
+                <CheckCalibration fx:id="calibrationOrientation" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" />
+                <CheckCalibration fx:id="raceEnd" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" />
+                <CheckCalibration fx:id="communicationError" GridPane.columnSpan="2147483647" GridPane.rowIndex="5" />
+                <CheckCalibration fx:id="firstPieceAssembly" GridPane.columnSpan="2147483647" GridPane.rowIndex="6" />
+                <CheckCalibration fx:id="tubeOut" GridPane.columnSpan="2147483647" GridPane.rowIndex="7" />
+                <CheckCalibration fx:id="movingAlarm" GridPane.columnSpan="2147483647" GridPane.rowIndex="8" />
+                <Label text="%label.status.cpa" textAlignment="RIGHT" GridPane.columnSpan="2147483647" GridPane.rowIndex="9" />
+                <ButtonImage fx:id="calibrate" GridPane.rowIndex="10" />
+                <ButtonImage fx:id="HMS" GridPane.rowIndex="11" />
+                <ButtonImage fx:id="shutDown" GridPane.rowIndex="12" />
+                <ButtonImage fx:id="trincar" GridPane.rowIndex="13" />
+                <Label text="%label.elevation" GridPane.columnIndex="1" />
+                <Label fx:id="elevationTubo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <CheckCalibration fx:id="notLocatedTarget" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <CheckCalibration fx:id="elevationCalibration" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <CheckCalibration fx:id="finalDistance" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <CheckCalibration fx:id="syncMode" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <CheckCalibration fx:id="commandSequence" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <CheckCalibration fx:id="computedMatrix" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <CheckCalibration fx:id="offsetError" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <Label fx:id="statusCPA" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                <ButtonImage fx:id="waitingPosition" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                <ButtonImage fx:id="calibrateOffset" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                <ButtonImage fx:id="unlock" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                <ButtonImage fx:id="desTrincar" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            </children>
+        </GridPane>
+    </children>
+</fx:root>

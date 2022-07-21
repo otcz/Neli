@@ -1,0 +1,64 @@
+
+.label.label24 {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-font-size: 24;
+    -fx-text-fill: -color-white-two;
+}
+
+.label.label18 {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-font-size: 18;
+    -fx-text-fill: -color-white-two;
+}
+
+.label.label14 {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-font-size: 14;
+    -fx-text-fill: -color-white-two;
+}
+
+.gray-bg {
+    -fx-background-color: -color-black-two;
+}
+
+.gray-border {
+    -fx-border-radius: 0;
+    -fx-border-width: 1;
+    -fx-border-color: -color-brownish-gray-50;
+}
+
+.labelAlerta {
+    -fx-max-width: 90px;
+    -fx-min-width: 90px;
+    -fx-pref-width: 90px;
+
+    -fx-max-height: 32px;
+    -fx-min-height: 32px;
+    -fx-pref-height: 32px;
+
+    -fx-background-color:-color-black;
+    -fx-border-color: -color-grapefruit;
+
+    -fx-font-size: 12px;
+    -fx-font-family: DINPro-Bold;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-white;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+
+    -fx-translate-x: 55px;
+    -fx-translate-y: 82.5px;
+}
+
+.graficaTitle {
+    -fx-text-fill: -color-white;
+}
+
+.gradientOrdenMax {
+    -fx-background-color: linear-gradient(-color-black-two 0%, transparent 30%, transparent 70%, -color-black-two 100%);
+
+}
+
+.disabled-btn {
+    -fx-background-color: -color-brownish-gray;
+}

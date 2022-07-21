@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.control.ScrollPane?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.CheckBox?>
+<fx:root styleClass="interface" type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.172-ea">
+    <Label styleClass="h2" text="%title.interface.ports" wrapText="true">
+        <graphic>
+            <SVGPath content="%svg.path.puertos" fill="#d8d8d8" scaleX="0.75" scaleY="0.75" styleClass="icon" />
+        </graphic>
+        <VBox.margin>
+            <Insets bottom="10.0" top="40.0" />
+        </VBox.margin>
+    </Label>
+
+    <VBox spacing="10.0">
+        <children>
+            <GridPane hgap="5.0" maxWidth="645.0" minWidth="645.0" prefWidth="645.0" styleClass="panel" vgap="5.0">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" />
+                    <ColumnConstraints hgrow="SOMETIMES" />
+                    <ColumnConstraints hgrow="SOMETIMES" />
+                    <ColumnConstraints hgrow="SOMETIMES" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints vgrow="SOMETIMES" />
+                    <RowConstraints vgrow="SOMETIMES" />
+                    <RowConstraints vgrow="SOMETIMES" />
+                    <RowConstraints vgrow="SOMETIMES" />
+                    <RowConstraints vgrow="SOMETIMES" />
+                    <RowConstraints vgrow="SOMETIMES" />
+                </rowConstraints>
+                <HBox fx:id="headerPorts" GridPane.columnSpan="2147483647" >
+                    <children>
+                        <Label fx:id="headerPortTitle" text="%label.interface.ports.ports" />
+                        <TextField fx:id="ins"  text="INS" disable="true" />
+                        <TextField fx:id="cpa" text="CPA" disable="true" />
+                        <TextField fx:id="mvr" text="MVR" disable="true" />
+                    </children>
+                </HBox>
+                <HBox fx:id="numeroPuerto" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                    <children>
+                        <Label fx:id="numeroPuertoTitle" text="%label.interface.ports.numero" />
+                        <ComboBox fx:id="numeroPuertoINS" disable="true" />
+                        <ComboBox fx:id="numeroPuertoCPA" disable="true" />
+                        <ComboBox fx:id="numeroPuertoMVR" disable="true" />
+                    </children>
+                </HBox>
+                <HBox fx:id="baudRate" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+                    <children>
+                        <Label fx:id="baudRateTitle" text="%label.interface.ports.velocidad" />
+                        <ComboBox fx:id="baudRateINS" disable="true" />
+                        <ComboBox fx:id="baudRateCPA" disable="true" />
+                        <ComboBox fx:id="baudRateMVR" disable="true" />
+                    </children>
+                </HBox>
+                <HBox fx:id="paridad" GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
+                    <children>
+                        <Label fx:id="paridadTitle" text="%label.interface.ports.paridad" />
+                        <ComboBox fx:id="paridadINS" disable="true" />
+                        <ComboBox fx:id="paridadCPA" disable="true" />
+                        <ComboBox fx:id="paridadMVR" disable="true" />
+                    </children>
+                </HBox>
+                <HBox fx:id="bitsStop" GridPane.columnSpan="2147483647" GridPane.rowIndex="4">
+                    <children>
+                        <Label fx:id="bitsStopTitle" text="%label.interface.ports.stop" />
+                        <ComboBox fx:id="bitsStopINS" disable="true" />
+                        <ComboBox fx:id="bitsStopCPA" disable="true" />
+                        <ComboBox fx:id="bitsStopMVR" disable="true" />
+                    </children>
+                </HBox>
+                <HBox fx:id="control" GridPane.columnSpan="2147483647" GridPane.rowIndex="5">
+                    <children>
+                        <Label fx:id="controlTitle" text="%label.interface.ports.control" />
+                        <HBox alignment="CENTER" spacing="5.0">
+                            <Button fx:id="stopINS" mnemonicParsing="false" styleClass="form-button" text="%button.stop" disable="true" >
+                                <graphic>
+                                    <Region styleClass="svg-icon, stop" />
+                                </graphic>
+                            </Button>
+                            <Button fx:id="startINS" mnemonicParsing="false" styleClass="form-button" text="%button.start" disable="true" >
+                                <graphic>
+                                    <Region styleClass="svg-icon, start" />
+                                </graphic>
+                            </Button>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="5.0">
+                            <Button fx:id="stopCPA" mnemonicParsing="false" styleClass="form-button" text="%button.stop" disable="true" >
+                                <graphic>
+                                    <Region styleClass="svg-icon, stop" />
+                                </graphic>
+                            </Button>
+                            <Button fx:id="startCPA" mnemonicParsing="false" styleClass="form-button" text="%button.start" disable="true" >
+                                <graphic>
+                                    <Region styleClass="svg-icon, start" />
+                                </graphic>
+                            </Button>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="5.0">
+                            <Button fx:id="stopMVR" mnemonicParsing="false" styleClass="form-button" text="%button.stop" disable="true" >
+                                <graphic>
+                                    <Region styleClass="svg-icon, stop" />
+                                </graphic>
+                            </Button>
+                            <Button fx:id="startMVR" mnemonicParsing="false" styleClass="form-button" text="%button.start" disable="true" >
+                                <graphic>
+                                    <Region styleClass="svg-icon, start" />
+                                </graphic>
+                            </Button>
+                        </HBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" spacing="8.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="6">
+                    <children>
+                        <Button fx:id="edit" mnemonicParsing="false" styleClass="form-button" text="%button.edit">
+                            <graphic>
+                                <Region styleClass="svg-icon, edit" />
+                            </graphic>
+                        </Button>
+                        <Button fx:id="cancel" mnemonicParsing="false" styleClass="form-button" text="%button.cancel">
+                            <graphic>
+                                <Region styleClass="svg-icon, close" />
+                            </graphic>
+                        </Button>
+                        <Button fx:id="accept" mnemonicParsing="false" styleClass="form-button" text="%button.accept" disable="true">
+                            <graphic>
+                                <Region styleClass="svg-icon, save" />
+                            </graphic>
+                        </Button>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets top="10.0" />
+                    </padding>
+                </HBox>
+            </GridPane>
+        </children>
+    </VBox>
+    <stylesheets>
+        <URL value="@../../css/variables.css" />
+        <URL value="@../../css/general.css" />
+        <URL value="@../../css/ports.css" />
+    </stylesheets>
+</fx:root>

@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.control.ScrollPane?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.CheckBox?>
+<fx:root styleClass="interface" type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.172-ea">
+    <Label styleClass="h2" text="%title.interface.ammo.add" wrapText="true">
+        <graphic>
+            <SVGPath content="%svg.path.ammo" fill="#d8d8d8" scaleX="0.75" scaleY="0.75" styleClass="icon" />
+        </graphic>
+        <VBox.margin>
+            <Insets bottom="10.0" top="40.0" />
+        </VBox.margin>
+    </Label>
+
+    <HBox spacing="10.0">
+        <children>
+            <ScrollPane maxWidth="645.0" minWidth="645.0" prefWidth="645.0" styleClass="scrollPane">
+                <content>
+                    <VBox alignment="CENTER">
+                        <children>
+                            <GridPane hgap="5.0" maxWidth="612.0" prefWidth="612.0" vgap="5.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <Label text="%label.municion.manejo" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <Label text="%label.municion.tipo" GridPane.rowIndex="1" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="nombreMunicion" GridPane.rowIndex="2" />
+                                    <Label text="%label.municion.diametro" GridPane.columnIndex="1" GridPane.rowIndex="1" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="diametroMunicion" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="%label.municion.peso.proyectil" GridPane.columnIndex="2" GridPane.rowIndex="1" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="municionPesoProyectil" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+                                    <Label text="%label.municion.peso" GridPane.rowIndex="3" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="cambioMunicionPeso" GridPane.rowIndex="4" />
+                                    <Label text="%label.municion.peso.std" GridPane.columnIndex="1" GridPane.rowIndex="3" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <ComboBox fx:id="municionPesoSTD" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label text="%label.municion.num.zonas" GridPane.columnIndex="2" GridPane.rowIndex="3" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <ComboBox fx:id="municionNumZonas" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <Label text="%label.municion.ix0" GridPane.rowIndex="5" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="municionIx0" GridPane.rowIndex="6" />
+                                    <Label text="%label.municion.tc" GridPane.columnIndex="1" GridPane.rowIndex="5" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="municionTc" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label text="%label.municion.numero.espoletas" GridPane.columnIndex="2" GridPane.rowIndex="5" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <ComboBox fx:id="espoletas" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <Label text="%label.municion.efecto.municion" GridPane.rowIndex="8" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <ComboBox fx:id="efectoMunicion" GridPane.rowIndex="9" />
+                                    <Label text="%label.explosion.height" GridPane.columnIndex="1" GridPane.rowIndex="8" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="alturaExplo" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <Label text="%label.municion.efecto.municion.bengala" GridPane.columnIndex="2" GridPane.rowIndex="8" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="tiempoBengala" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                    <Label text="%label.municion.municionBB" GridPane.rowIndex="10" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <ComboBox fx:id="municionBB" GridPane.rowIndex="11" />
+
+                                </children>
+                                <padding>
+                                    <Insets bottom="16.0" top="8.0"/>
+                                </padding>
+                            </GridPane>
+
+                            <GridPane hgap="5.0" maxWidth="612.0" prefWidth="612.0" vgap="5.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <Label text="%label.municion.coeficientes" >
+                                    <padding>
+                                        <Insets bottom="16.0"/>
+                                    </padding>
+                                </Label>
+                                <HBox fx:id="header" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                                    <children>
+                                        <TextField fx:id="machTitle" text="%label.municion.corficientes.mach" editable="false" />
+                                        <TextField fx:id="cdTitle" text="%label.municion.corficientes.cd" editable="false" />
+                                        <TextField fx:id="cdaTitle" text="%label.municion.corficientes.cda" editable="false" />
+                                        <TextField fx:id="clTitle" text="%label.municion.corficientes.cl" editable="false" />
+                                        <TextField fx:id="claTitle" text="%label.municion.corficientes.cla" editable="false" />
+                                        <TextField fx:id="cmTitle" text="%label.municion.corficientes.cm" editable="false" />
+                                        <TextField fx:id="cmaTitle" text="%label.municion.corficientes.cma" editable="false" />
+                                        <TextField fx:id="cmagTitle" text="%label.municion.corficientes.cmag" editable="false" />
+                                        <TextField fx:id="cspinTitle" text="%label.municion.corficientes.cspin" editable="false" />
+                                        <TextField fx:id="cxbbTitle" text="%label.municion.corficientes.cxbb" editable="false" />
+                                        <TextField fx:id="iformTitle" text="%label.municion.corficientes.iform" editable="false" />
+                                        <TextField fx:id="iTitle" text="%label.municion.corficientes.i" editable="false" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row0" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+                                    <children>
+                                        <TextField fx:id="mach0" />
+                                        <TextField fx:id="cd0" />
+                                        <TextField fx:id="cda0" />
+                                        <TextField fx:id="cl0" />
+                                        <TextField fx:id="cla0" />
+                                        <TextField fx:id="cm0" />
+                                        <TextField fx:id="cma0" />
+                                        <TextField fx:id="cmag0" />
+                                        <TextField fx:id="cspin0" />
+                                        <TextField fx:id="cxbb0" />
+                                        <TextField fx:id="iform0" />
+                                        <TextField fx:id="i0" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row1" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
+                                    <children>
+                                        <TextField fx:id="mach1" />
+                                        <TextField fx:id="cd1" />
+                                        <TextField fx:id="cda1" />
+                                        <TextField fx:id="cl1" />
+                                        <TextField fx:id="cla1" />
+                                        <TextField fx:id="cm1" />
+                                        <TextField fx:id="cma1" />
+                                        <TextField fx:id="cmag1" />
+                                        <TextField fx:id="cspin1" />
+                                        <TextField fx:id="cxbb1" />
+                                        <TextField fx:id="iform1" />
+                                        <TextField fx:id="i1" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row2" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="4">
+                                    <children>
+                                        <TextField fx:id="mach2" />
+                                        <TextField fx:id="cd2" />
+                                        <TextField fx:id="cda2" />
+                                        <TextField fx:id="cl2" />
+                                        <TextField fx:id="cla2" />
+                                        <TextField fx:id="cm2" />
+                                        <TextField fx:id="cma2" />
+                                        <TextField fx:id="cmag2" />
+                                        <TextField fx:id="cspin2" />
+                                        <TextField fx:id="cxbb2" />
+                                        <TextField fx:id="iform2" />
+                                        <TextField fx:id="i2" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row3" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="5">
+                                    <children>
+                                        <TextField fx:id="mach3" />
+                                        <TextField fx:id="cd3" />
+                                        <TextField fx:id="cda3" />
+                                        <TextField fx:id="cl3" />
+                                        <TextField fx:id="cla3" />
+                                        <TextField fx:id="cm3" />
+                                        <TextField fx:id="cma3" />
+                                        <TextField fx:id="cmag3" />
+                                        <TextField fx:id="cspin3" />
+                                        <TextField fx:id="cxbb3" />
+                                        <TextField fx:id="iform3" />
+                                        <TextField fx:id="i3" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row4" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="6">
+                                    <children>
+                                        <TextField fx:id="mach4" />
+                                        <TextField fx:id="cd4" />
+                                        <TextField fx:id="cda4" />
+                                        <TextField fx:id="cl4" />
+                                        <TextField fx:id="cla4" />
+                                        <TextField fx:id="cm4" />
+                                        <TextField fx:id="cma4" />
+                                        <TextField fx:id="cmag4" />
+                                        <TextField fx:id="cspin4" />
+                                        <TextField fx:id="cxbb4" />
+                                        <TextField fx:id="iform4" />
+                                        <TextField fx:id="i4" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row5" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="7">
+                                    <children>
+                                        <TextField fx:id="mach5" />
+                                        <TextField fx:id="cd5" />
+                                        <TextField fx:id="cda5" />
+                                        <TextField fx:id="cl5" />
+                                        <TextField fx:id="cla5" />
+                                        <TextField fx:id="cm5" />
+                                        <TextField fx:id="cma5" />
+                                        <TextField fx:id="cmag5" />
+                                        <TextField fx:id="cspin5" />
+                                        <TextField fx:id="cxbb5" />
+                                        <TextField fx:id="iform5" />
+                                        <TextField fx:id="i5" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row6" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="8">
+                                    <children>
+                                        <TextField fx:id="mach6" />
+                                        <TextField fx:id="cd6" />
+                                        <TextField fx:id="cda6" />
+                                        <TextField fx:id="cl6" />
+                                        <TextField fx:id="cla6" />
+                                        <TextField fx:id="cm6" />
+                                        <TextField fx:id="cma6" />
+                                        <TextField fx:id="cmag6" />
+                                        <TextField fx:id="cspin6" />
+                                        <TextField fx:id="cxbb6" />
+                                        <TextField fx:id="iform6" />
+                                        <TextField fx:id="i6" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row7" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="9">
+                                    <children>
+                                        <TextField fx:id="mach7" />
+                                        <TextField fx:id="cd7" />
+                                        <TextField fx:id="cda7" />
+                                        <TextField fx:id="cl7" />
+                                        <TextField fx:id="cla7" />
+                                        <TextField fx:id="cm7" />
+                                        <TextField fx:id="cma7" />
+                                        <TextField fx:id="cmag7" />
+                                        <TextField fx:id="cspin7" />
+                                        <TextField fx:id="cxbb7" />
+                                        <TextField fx:id="iform7" />
+                                        <TextField fx:id="i7" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row8" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="10">
+                                    <children>
+                                        <TextField fx:id="mach8" />
+                                        <TextField fx:id="cd8" />
+                                        <TextField fx:id="cda8" />
+                                        <TextField fx:id="cl8" />
+                                        <TextField fx:id="cla8" />
+                                        <TextField fx:id="cm8" />
+                                        <TextField fx:id="cma8" />
+                                        <TextField fx:id="cmag8" />
+                                        <TextField fx:id="cspin8" />
+                                        <TextField fx:id="cxbb8" />
+                                        <TextField fx:id="iform8" />
+                                        <TextField fx:id="i8" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row9" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="11">
+                                    <children>
+                                        <TextField fx:id="mach9" />
+                                        <TextField fx:id="cd9" />
+                                        <TextField fx:id="cda9" />
+                                        <TextField fx:id="cl9" />
+                                        <TextField fx:id="cla9" />
+                                        <TextField fx:id="cm9" />
+                                        <TextField fx:id="cma9" />
+                                        <TextField fx:id="cmag9" />
+                                        <TextField fx:id="cspin9" />
+                                        <TextField fx:id="cxbb9" />
+                                        <TextField fx:id="iform9" />
+                                        <TextField fx:id="i9" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row10" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="12">
+                                    <children>
+                                        <TextField fx:id="mach10" />
+                                        <TextField fx:id="cd10" />
+                                        <TextField fx:id="cda10" />
+                                        <TextField fx:id="cl10" />
+                                        <TextField fx:id="cla10" />
+                                        <TextField fx:id="cm10" />
+                                        <TextField fx:id="cma10" />
+                                        <TextField fx:id="cmag10" />
+                                        <TextField fx:id="cspin10" />
+                                        <TextField fx:id="cxbb10" />
+                                        <TextField fx:id="iform10" />
+                                        <TextField fx:id="i10" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row11" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="13">
+                                    <children>
+                                        <TextField fx:id="mach11" />
+                                        <TextField fx:id="cd11" />
+                                        <TextField fx:id="cda11" />
+                                        <TextField fx:id="cl11" />
+                                        <TextField fx:id="cla11" />
+                                        <TextField fx:id="cm11" />
+                                        <TextField fx:id="cma11" />
+                                        <TextField fx:id="cmag11" />
+                                        <TextField fx:id="cspin11" />
+                                        <TextField fx:id="cxbb11" />
+                                        <TextField fx:id="iform11" />
+                                        <TextField fx:id="i11" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row12" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="14">
+                                    <children>
+                                        <TextField fx:id="mach12" />
+                                        <TextField fx:id="cd12" />
+                                        <TextField fx:id="cda12" />
+                                        <TextField fx:id="cl12" />
+                                        <TextField fx:id="cla12" />
+                                        <TextField fx:id="cm12" />
+                                        <TextField fx:id="cma12" />
+                                        <TextField fx:id="cmag12" />
+                                        <TextField fx:id="cspin12" />
+                                        <TextField fx:id="cxbb12" />
+                                        <TextField fx:id="iform12" />
+                                        <TextField fx:id="i12" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row13" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="15">
+                                    <children>
+                                        <TextField fx:id="mach13" />
+                                        <TextField fx:id="cd13" />
+                                        <TextField fx:id="cda13" />
+                                        <TextField fx:id="cl13" />
+                                        <TextField fx:id="cla13" />
+                                        <TextField fx:id="cm13" />
+                                        <TextField fx:id="cma13" />
+                                        <TextField fx:id="cmag13" />
+                                        <TextField fx:id="cspin13" />
+                                        <TextField fx:id="cxbb13" />
+                                        <TextField fx:id="iform13" />
+                                        <TextField fx:id="i13" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="row14" alignment="CENTER" GridPane.columnSpan="2147483647" GridPane.rowIndex="16">
+                                    <children>
+                                        <TextField fx:id="mach14" />
+                                        <TextField fx:id="cd14" />
+                                        <TextField fx:id="cda14" />
+                                        <TextField fx:id="cl14" />
+                                        <TextField fx:id="cla14" />
+                                        <TextField fx:id="cm14" />
+                                        <TextField fx:id="cma14" />
+                                        <TextField fx:id="cmag14" />
+                                        <TextField fx:id="cspin14" />
+                                        <TextField fx:id="cxbb14" />
+                                        <TextField fx:id="iform14" />
+                                        <TextField fx:id="i14" />
+                                    </children>
+                                </HBox>
+                                <Label text="" GridPane.columnSpan="2147483647" GridPane.rowIndex="17"/>
+                                <HBox fx:id="headerMcb" GridPane.columnSpan="2147483647" GridPane.rowIndex="18" >
+                                    <children>
+                                        <Label fx:id="headerMcbTitle" text="%label.municion.coeficientes.mcb" />
+                                        <TextField fx:id="mcb0" />
+                                        <TextField fx:id="mcb1" />
+                                        <TextField fx:id="mcb2" />
+                                        <TextField fx:id="mcb3" />
+                                        <TextField fx:id="mcb4" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="sc" GridPane.columnSpan="2147483647" GridPane.rowIndex="19" >
+                                    <children>
+                                        <Label fx:id="scTitle" text="%label.municion.coeficientes.sc" />
+                                        <TextField fx:id="sc0" />
+                                        <TextField fx:id="sc1" />
+                                        <TextField fx:id="sc2" />
+                                        <TextField fx:id="sc3" />
+                                        <TextField fx:id="sc4" />
+                                    </children>
+                                </HBox>
+                                <padding>
+                                    <Insets bottom="16.0" top="8.0"/>
+                                </padding>
+                            </GridPane>
+
+                            <GridPane hgap="5.0" maxWidth="612.0" prefWidth="612.0" vgap="5.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <Label text="%label.municion.zonas" />
+                                <HBox fx:id="checkZone" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" >
+                                    <children>
+                                        <Label fx:id="checkZoneTitle" text=" " />
+                                        <CheckBox fx:id="checkZone0" />
+                                        <CheckBox fx:id="checkZone1" />
+                                        <CheckBox fx:id="checkZone2" />
+                                        <CheckBox fx:id="checkZone3" />
+                                        <CheckBox fx:id="checkZone4" />
+                                        <CheckBox fx:id="checkZone5" />
+                                        <CheckBox fx:id="checkZone6" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="headerZone" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" >
+                                    <children>
+                                        <Label fx:id="headerZoneTitle" text="%label.municion.zonas.zona" />
+                                        <TextField fx:id="zone0"  text="1" editable="false" />
+                                        <TextField fx:id="zone1" text="2" editable="false" />
+                                        <TextField fx:id="zone2" text="3" editable="false" />
+                                        <TextField fx:id="zone3" text="4" editable="false" />
+                                        <TextField fx:id="zone4" text="5" editable="false" />
+                                        <TextField fx:id="zone5" text="6" editable="false" />
+                                        <TextField fx:id="zone6" text="7" editable="false" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="vel" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" >
+                                    <children>
+                                        <Label fx:id="velTitle" text="%label.municion.zonas.velocidad.std" />
+                                        <TextField fx:id="vel0" />
+                                        <TextField fx:id="vel1" />
+                                        <TextField fx:id="vel2" />
+                                        <TextField fx:id="vel3" />
+                                        <TextField fx:id="vel4" />
+                                        <TextField fx:id="vel5" />
+                                        <TextField fx:id="vel6" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajFD" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" >
+                                    <children>
+
+                                        <Label fx:id="ajFDTitle" text="%label.municion.zonas.ajuste.fd" />
+                                        <TextField fx:id="ajFD0" />
+                                        <TextField fx:id="ajFD1" />
+                                        <TextField fx:id="ajFD2" />
+                                        <TextField fx:id="ajFD3" />
+                                        <TextField fx:id="ajFD4" />
+                                        <TextField fx:id="ajFD5" />
+                                        <TextField fx:id="ajFD6" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajFMag" GridPane.columnSpan="2147483647" GridPane.rowIndex="5" >
+                                    <children>
+                                        <Label fx:id="ajFMagTitle" text="%label.municion.zonas.ajuste.fmag" />
+                                        <TextField fx:id="ajFMag0" />
+                                        <TextField fx:id="ajFMag1" />
+                                        <TextField fx:id="ajFMag2" />
+                                        <TextField fx:id="ajFMag3" />
+                                        <TextField fx:id="ajFMag4" />
+                                        <TextField fx:id="ajFMag5" />
+                                        <TextField fx:id="ajFMag6" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajFLA0" GridPane.columnSpan="2147483647" GridPane.rowIndex="6" >
+                                    <children>
+                                        <Label fx:id="ajFLA0Title" text="%label.municion.zonas.ajuste.fl.a0" />
+                                        <TextField fx:id="ajFLA00" />
+                                        <TextField fx:id="ajFLA01" />
+                                        <TextField fx:id="ajFLA02" />
+                                        <TextField fx:id="ajFLA03" />
+                                        <TextField fx:id="ajFLA04" />
+                                        <TextField fx:id="ajFLA05" />
+                                        <TextField fx:id="ajFLA06" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajFLA1" GridPane.columnSpan="2147483647" GridPane.rowIndex="7" >
+                                    <children>
+                                        <Label fx:id="ajFLA1Title" text="%label.municion.zonas.ajuste.fl.a1" />
+                                        <TextField fx:id="ajFLA10" />
+                                        <TextField fx:id="ajFLA11" />
+                                        <TextField fx:id="ajFLA12" />
+                                        <TextField fx:id="ajFLA13" />
+                                        <TextField fx:id="ajFLA14" />
+                                        <TextField fx:id="ajFLA15" />
+                                        <TextField fx:id="ajFLA16" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajFLA2" GridPane.columnSpan="2147483647" GridPane.rowIndex="8" >
+                                    <children>
+                                        <Label fx:id="ajFLA2Title" text="%label.municion.zonas.ajuste.fl.a2" />
+                                        <TextField fx:id="ajFLA20" />
+                                        <TextField fx:id="ajFLA21" />
+                                        <TextField fx:id="ajFLA22" />
+                                        <TextField fx:id="ajFLA23" />
+                                        <TextField fx:id="ajFLA24" />
+                                        <TextField fx:id="ajFLA25" />
+                                        <TextField fx:id="ajFLA26" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajFLA3" GridPane.columnSpan="2147483647" GridPane.rowIndex="9" >
+                                    <children>
+                                        <Label fx:id="ajFLA3Title" text="%label.municion.zonas.ajuste.fl.a3" />
+                                        <TextField fx:id="ajFLA30" />
+                                        <TextField fx:id="ajFLA31" />
+                                        <TextField fx:id="ajFLA32" />
+                                        <TextField fx:id="ajFLA33" />
+                                        <TextField fx:id="ajFLA34" />
+                                        <TextField fx:id="ajFLA35" />
+                                        <TextField fx:id="ajFLA36" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajFLA4" GridPane.columnSpan="2147483647" GridPane.rowIndex="10" >
+                                    <children>
+                                        <Label fx:id="ajFLA4Title" text="%label.municion.zonas.ajuste.fl.a4" />
+                                        <TextField fx:id="ajFLA40" />
+                                        <TextField fx:id="ajFLA41" />
+                                        <TextField fx:id="ajFLA42" />
+                                        <TextField fx:id="ajFLA43" />
+                                        <TextField fx:id="ajFLA44" />
+                                        <TextField fx:id="ajFLA45" />
+                                        <TextField fx:id="ajFLA46" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajiA0" GridPane.columnSpan="2147483647" GridPane.rowIndex="11" >
+                                    <children>
+                                        <Label fx:id="ajiA0Title" text="%label.municion.zonas.ajuste.i.a0" />
+                                        <TextField fx:id="ajiA00" />
+                                        <TextField fx:id="ajiA01" />
+                                        <TextField fx:id="ajiA02" />
+                                        <TextField fx:id="ajiA03" />
+                                        <TextField fx:id="ajiA04" />
+                                        <TextField fx:id="ajiA05" />
+                                        <TextField fx:id="ajiA06" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajiA1" GridPane.columnSpan="2147483647" GridPane.rowIndex="12" >
+                                    <children>
+                                        <Label fx:id="ajiA1Title" text="%label.municion.zonas.ajuste.i.a1" />
+                                        <TextField fx:id="ajiA10" />
+                                        <TextField fx:id="ajiA11" />
+                                        <TextField fx:id="ajiA12" />
+                                        <TextField fx:id="ajiA13" />
+                                        <TextField fx:id="ajiA14" />
+                                        <TextField fx:id="ajiA15" />
+                                        <TextField fx:id="ajiA16" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajiA2" GridPane.columnSpan="2147483647" GridPane.rowIndex="13" >
+                                    <children>
+                                        <Label fx:id="ajiA2Title" text="%label.municion.zonas.ajuste.i.a2" />
+                                        <TextField fx:id="ajiA20" />
+                                        <TextField fx:id="ajiA21" />
+                                        <TextField fx:id="ajiA22" />
+                                        <TextField fx:id="ajiA23" />
+                                        <TextField fx:id="ajiA24" />
+                                        <TextField fx:id="ajiA25" />
+                                        <TextField fx:id="ajiA26" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajiA3" GridPane.columnSpan="2147483647" GridPane.rowIndex="14" >
+                                    <children>
+                                        <Label fx:id="ajiA3Title" text="%label.municion.zonas.ajuste.i.a3" />
+                                        <TextField fx:id="ajiA30" />
+                                        <TextField fx:id="ajiA31" />
+                                        <TextField fx:id="ajiA32" />
+                                        <TextField fx:id="ajiA33" />
+                                        <TextField fx:id="ajiA34" />
+                                        <TextField fx:id="ajiA35" />
+                                        <TextField fx:id="ajiA36" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajiA4" GridPane.columnSpan="2147483647" GridPane.rowIndex="15" >
+                                    <children>
+                                        <Label fx:id="ajiA4Title" text="%label.municion.zonas.ajuste.i.a4" />
+                                        <TextField fx:id="ajiA40" />
+                                        <TextField fx:id="ajiA41" />
+                                        <TextField fx:id="ajiA42" />
+                                        <TextField fx:id="ajiA43" />
+                                        <TextField fx:id="ajiA44" />
+                                        <TextField fx:id="ajiA45" />
+                                        <TextField fx:id="ajiA46" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajTimeA0" GridPane.columnSpan="2147483647" GridPane.rowIndex="16" >
+                                    <children>
+                                        <Label fx:id="ajTimeA0Title" text="%label.municion.zonas.ajuste.time.a0" />
+                                        <TextField fx:id="ajTimeA00" />
+                                        <TextField fx:id="ajTimeA01" />
+                                        <TextField fx:id="ajTimeA02" />
+                                        <TextField fx:id="ajTimeA03" />
+                                        <TextField fx:id="ajTimeA04" />
+                                        <TextField fx:id="ajTimeA05" />
+                                        <TextField fx:id="ajTimeA06" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajTimeA1" GridPane.columnSpan="2147483647" GridPane.rowIndex="17" >
+                                    <children>
+                                        <Label fx:id="ajTimeA1Title" text="%label.municion.zonas.ajuste.time.a1" />
+                                        <TextField fx:id="ajTimeA10" />
+                                        <TextField fx:id="ajTimeA11" />
+                                        <TextField fx:id="ajTimeA12" />
+                                        <TextField fx:id="ajTimeA13" />
+                                        <TextField fx:id="ajTimeA14" />
+                                        <TextField fx:id="ajTimeA15" />
+                                        <TextField fx:id="ajTimeA16" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajTimeA2" GridPane.columnSpan="2147483647" GridPane.rowIndex="18" >
+                                    <children>
+                                        <Label fx:id="ajTimeA2Title" text="%label.municion.zonas.ajuste.time.a2" />
+                                        <TextField fx:id="ajTimeA20" />
+                                        <TextField fx:id="ajTimeA21" />
+                                        <TextField fx:id="ajTimeA22" />
+                                        <TextField fx:id="ajTimeA23" />
+                                        <TextField fx:id="ajTimeA24" />
+                                        <TextField fx:id="ajTimeA25" />
+                                        <TextField fx:id="ajTimeA26" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajTimeA3" GridPane.columnSpan="2147483647" GridPane.rowIndex="19" >
+                                    <children>
+                                        <Label fx:id="ajTimeA3Title" text="%label.municion.zonas.ajuste.time.a3" />
+                                        <TextField fx:id="ajTimeA30" />
+                                        <TextField fx:id="ajTimeA31" />
+                                        <TextField fx:id="ajTimeA32" />
+                                        <TextField fx:id="ajTimeA33" />
+                                        <TextField fx:id="ajTimeA34" />
+                                        <TextField fx:id="ajTimeA35" />
+                                        <TextField fx:id="ajTimeA36" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="ajTimeA4" GridPane.columnSpan="2147483647" GridPane.rowIndex="20" >
+                                    <children>
+                                        <Label fx:id="ajTimeA4Title" text="%label.municion.zonas.ajuste.time.a4" />
+                                        <TextField fx:id="ajTimeA40" />
+                                        <TextField fx:id="ajTimeA41" />
+                                        <TextField fx:id="ajTimeA42" />
+                                        <TextField fx:id="ajTimeA43" />
+                                        <TextField fx:id="ajTimeA44" />
+                                        <TextField fx:id="ajTimeA45" />
+                                        <TextField fx:id="ajTimeA46" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="prop" GridPane.columnSpan="2147483647" GridPane.rowIndex="21" >
+                                    <children>
+                                        <Label fx:id="propTitle" text="%label.municion.zonas.prop.name" />
+                                        <TextField fx:id="prop0" />
+                                        <TextField fx:id="prop1" />
+                                        <TextField fx:id="prop2" />
+                                        <TextField fx:id="prop3" />
+                                        <TextField fx:id="prop4" />
+                                        <TextField fx:id="prop5" />
+                                        <TextField fx:id="prop6" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="gradTemp" GridPane.columnSpan="2147483647" GridPane.rowIndex="22" >
+                                    <children>
+                                        <Label fx:id="gradTempTitle" text="%label.municion.zonas.grad.temp" />
+                                        <TextField fx:id="gradTemp0" />
+                                        <TextField fx:id="gradTemp1" />
+                                        <TextField fx:id="gradTemp2" />
+                                        <TextField fx:id="gradTemp3" />
+                                        <TextField fx:id="gradTemp4" />
+                                        <TextField fx:id="gradTemp5" />
+                                        <TextField fx:id="gradTemp6" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="pesoVel" GridPane.columnSpan="2147483647" GridPane.rowIndex="23" >
+                                    <children>
+                                        <Label fx:id="pesoVelTitle" text="%label.municion.zonas.peso.vel" />
+                                        <TextField fx:id="pesoVel0" />
+                                        <TextField fx:id="pesoVel1" />
+                                        <TextField fx:id="pesoVel2" />
+                                        <TextField fx:id="pesoVel3" />
+                                        <TextField fx:id="pesoVel4" />
+                                        <TextField fx:id="pesoVel5" />
+                                        <TextField fx:id="pesoVel6" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="qemaxr" GridPane.columnSpan="2147483647" GridPane.rowIndex="24" >
+                                    <children>
+                                        <Label fx:id="qemaxrTitle" text="%label.municion.zonas.qemaxr" />
+                                        <TextField fx:id="qemaxr0" />
+                                        <TextField fx:id="qemaxr1" />
+                                        <TextField fx:id="qemaxr2" />
+                                        <TextField fx:id="qemaxr3" />
+                                        <TextField fx:id="qemaxr4" />
+                                        <TextField fx:id="qemaxr5" />
+                                        <TextField fx:id="qemaxr6" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="kp" GridPane.columnSpan="2147483647" GridPane.rowIndex="25" >
+                                    <children>
+                                        <Label fx:id="kpTitle" text="%label.municion.zonas.k.p" />
+                                        <TextField fx:id="kp0"/>
+                                        <TextField fx:id="kp1"/>
+                                        <TextField fx:id="kp2"/>
+                                        <TextField fx:id="kp3"/>
+                                        <TextField fx:id="kp4"/>
+                                        <TextField fx:id="kp5"/>
+                                        <TextField fx:id="kp6"/>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="fibbA0" GridPane.columnSpan="2147483647" GridPane.rowIndex="26" >
+                                    <children>
+                                        <Label fx:id="fibbA0Title" text="%label.municion.zonas.fibb.a0" />
+                                        <TextField fx:id="fibbA00" />
+                                        <TextField fx:id="fibbA01" />
+                                        <TextField fx:id="fibbA02" />
+                                        <TextField fx:id="fibbA03" />
+                                        <TextField fx:id="fibbA04" />
+                                        <TextField fx:id="fibbA05" />
+                                        <TextField fx:id="fibbA06" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="fibbA1" GridPane.columnSpan="2147483647" GridPane.rowIndex="27" >
+                                    <children>
+                                        <Label fx:id="fibbA1Title" text="%label.municion.zonas.fibb.a1" />
+                                        <TextField fx:id="fibbA10"/>
+                                        <TextField fx:id="fibbA11"/>
+                                        <TextField fx:id="fibbA12"/>
+                                        <TextField fx:id="fibbA13"/>
+                                        <TextField fx:id="fibbA14"/>
+                                        <TextField fx:id="fibbA15"/>
+                                        <TextField fx:id="fibbA16"/>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="fibbA2" GridPane.columnSpan="2147483647" GridPane.rowIndex="28" >
+                                    <children>
+                                        <Label fx:id="fibbA2Title" text="%label.municion.zonas.fibb.a2" />
+                                        <TextField fx:id="fibbA20" />
+                                        <TextField fx:id="fibbA21" />
+                                        <TextField fx:id="fibbA22" />
+                                        <TextField fx:id="fibbA23" />
+                                        <TextField fx:id="fibbA24" />
+                                        <TextField fx:id="fibbA25" />
+                                        <TextField fx:id="fibbA26" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="fibbA3" GridPane.columnSpan="2147483647" GridPane.rowIndex="29" >
+                                    <children>
+                                        <Label fx:id="fibbA3Title" text="%label.municion.zonas.fibb.a3" />
+                                        <TextField fx:id="fibbA30" />
+                                        <TextField fx:id="fibbA31" />
+                                        <TextField fx:id="fibbA32" />
+                                        <TextField fx:id="fibbA33" />
+                                        <TextField fx:id="fibbA34" />
+                                        <TextField fx:id="fibbA35" />
+                                        <TextField fx:id="fibbA36" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="fibbB1" GridPane.columnSpan="2147483647" GridPane.rowIndex="30" >
+                                    <children>
+                                        <Label fx:id="fibbB1Title" text="%label.municion.zonas.fibb.b1" />
+                                        <TextField fx:id="fibbB10" />
+                                        <TextField fx:id="fibbB11" />
+                                        <TextField fx:id="fibbB12" />
+                                        <TextField fx:id="fibbB13" />
+                                        <TextField fx:id="fibbB14" />
+                                        <TextField fx:id="fibbB15" />
+                                        <TextField fx:id="fibbB16" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="fibbB2" GridPane.columnSpan="2147483647" GridPane.rowIndex="31" >
+                                    <children>
+                                        <Label fx:id="fibbB2Title" text="%label.municion.zonas.fibb.b2" />
+                                        <TextField fx:id="fibbB20" />
+                                        <TextField fx:id="fibbB21" />
+                                        <TextField fx:id="fibbB22" />
+                                        <TextField fx:id="fibbB23" />
+                                        <TextField fx:id="fibbB24" />
+                                        <TextField fx:id="fibbB25" />
+                                        <TextField fx:id="fibbB26" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="fibbB3" GridPane.columnSpan="2147483647" GridPane.rowIndex="32" >
+                                    <children>
+                                        <Label fx:id="fibbB3Title" text="%label.municion.zonas.fibb.b3" />
+                                        <TextField fx:id="fibbB30" />
+                                        <TextField fx:id="fibbB31" />
+                                        <TextField fx:id="fibbB32" />
+                                        <TextField fx:id="fibbB33" />
+                                        <TextField fx:id="fibbB34" />
+                                        <TextField fx:id="fibbB35" />
+                                        <TextField fx:id="fibbB36" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="tdiA0" GridPane.columnSpan="2147483647" GridPane.rowIndex="33" >
+                                    <children>
+                                        <Label fx:id="tdiA0Title" text="%label.municion.zonas.tdi.a0" />
+                                        <TextField fx:id="tdiA00" />
+                                        <TextField fx:id="tdiA01" />
+                                        <TextField fx:id="tdiA02" />
+                                        <TextField fx:id="tdiA03" />
+                                        <TextField fx:id="tdiA04" />
+                                        <TextField fx:id="tdiA05" />
+                                        <TextField fx:id="tdiA06" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="tdiA1" GridPane.columnSpan="2147483647" GridPane.rowIndex="34" >
+                                    <children>
+                                        <Label fx:id="tdiA1Title" text="%label.municion.zonas.tdi.a1" />
+                                        <TextField fx:id="tdiA10"/>
+                                        <TextField fx:id="tdiA11"/>
+                                        <TextField fx:id="tdiA12"/>
+                                        <TextField fx:id="tdiA13"/>
+                                        <TextField fx:id="tdiA14"/>
+                                        <TextField fx:id="tdiA15"/>
+                                        <TextField fx:id="tdiA16"/>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="tdiA2" GridPane.columnSpan="2147483647" GridPane.rowIndex="35" >
+                                    <children>
+                                        <Label fx:id="tdiA2Title" text="%label.municion.zonas.tdi.a2" />
+                                        <TextField fx:id="tdiA20" />
+                                        <TextField fx:id="tdiA21" />
+                                        <TextField fx:id="tdiA22" />
+                                        <TextField fx:id="tdiA23" />
+                                        <TextField fx:id="tdiA24" />
+                                        <TextField fx:id="tdiA25" />
+                                        <TextField fx:id="tdiA26" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="tdiA3" GridPane.columnSpan="2147483647" GridPane.rowIndex="36" >
+                                    <children>
+                                        <Label fx:id="tdiA3Title" text="%label.municion.zonas.tdi.a3" />
+                                        <TextField fx:id="tdiA30" />
+                                        <TextField fx:id="tdiA31" />
+                                        <TextField fx:id="tdiA32" />
+                                        <TextField fx:id="tdiA33" />
+                                        <TextField fx:id="tdiA34" />
+                                        <TextField fx:id="tdiA35" />
+                                        <TextField fx:id="tdiA36" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="tbA0" GridPane.columnSpan="2147483647" GridPane.rowIndex="37" >
+                                    <children>
+                                        <Label fx:id="tbA0Title" text="%label.municion.zonas.tb.a0" />
+                                        <TextField fx:id="tbA00" />
+                                        <TextField fx:id="tbA01" />
+                                        <TextField fx:id="tbA02" />
+                                        <TextField fx:id="tbA03" />
+                                        <TextField fx:id="tbA04" />
+                                        <TextField fx:id="tbA05" />
+                                        <TextField fx:id="tbA06" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="tbA1" GridPane.columnSpan="2147483647" GridPane.rowIndex="38" >
+                                    <children>
+                                        <Label fx:id="tbA1Title" text="%label.municion.zonas.tb.a1" />
+                                        <TextField fx:id="tbA10"/>
+                                        <TextField fx:id="tbA11"/>
+                                        <TextField fx:id="tbA12"/>
+                                        <TextField fx:id="tbA13"/>
+                                        <TextField fx:id="tbA14"/>
+                                        <TextField fx:id="tbA15"/>
+                                        <TextField fx:id="tbA16"/>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="tbA2" GridPane.columnSpan="2147483647" GridPane.rowIndex="39" >
+                                    <children>
+                                        <Label fx:id="tbA2Title" text="%label.municion.zonas.tb.a2" />
+                                        <TextField fx:id="tbA20" />
+                                        <TextField fx:id="tbA21" />
+                                        <TextField fx:id="tbA22" />
+                                        <TextField fx:id="tbA23" />
+                                        <TextField fx:id="tbA24" />
+                                        <TextField fx:id="tbA25" />
+                                        <TextField fx:id="tbA26" />
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="tbA3" GridPane.columnSpan="2147483647" GridPane.rowIndex="40" >
+                                    <children>
+                                        <Label fx:id="tbA3Title" text="%label.municion.zonas.tb.a3" />
+                                        <TextField fx:id="tbA30" />
+                                        <TextField fx:id="tbA31" />
+                                        <TextField fx:id="tbA32" />
+                                        <TextField fx:id="tbA33" />
+                                        <TextField fx:id="tbA34" />
+                                        <TextField fx:id="tbA35" />
+                                        <TextField fx:id="tbA36" />
+                                    </children>
+                                </HBox>
+                                <padding>
+                                    <Insets bottom="16.0"/>
+                                </padding>
+                            </GridPane>
+
+                            <GridPane hgap="5.0" maxWidth="612.0" prefWidth="612.0" vgap="5.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <Label text="%label.municion.espoletas" />
+                                    <Label text="%label.municion.espoletas.nombre" GridPane.rowIndex="1" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="espoleta1" GridPane.rowIndex="2" />
+                                    <Label text="%label.municion.espoletas.peso" GridPane.columnIndex="1" GridPane.rowIndex="1" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="pesoEspoleta1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="%label.municion.espoletas.efecto" GridPane.columnIndex="2" GridPane.rowIndex="1" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <ComboBox fx:id="efectoEspoleta1" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <Label text="%label.municion.espoletas.nombre" GridPane.rowIndex="3" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="espoleta2" GridPane.rowIndex="4" />
+                                    <Label text="%label.municion.espoletas.peso" GridPane.columnIndex="1" GridPane.rowIndex="3" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="pesoEspoleta2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label text="%label.municion.espoletas.efecto" GridPane.columnIndex="2" GridPane.rowIndex="3" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <ComboBox fx:id="efectoEspoleta2" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <Label text="%label.municion.espoletas.nombre" GridPane.rowIndex="5" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="espoleta3" GridPane.rowIndex="6" />
+                                    <Label text="%label.municion.espoletas.peso" GridPane.columnIndex="1" GridPane.rowIndex="5" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="pesoEspoleta3" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label text="%label.municion.espoletas.efecto" GridPane.columnIndex="2" GridPane.rowIndex="5" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <ComboBox fx:id="efectoEspoleta3" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                </children>
+                                    <padding>
+                                        <Insets bottom="16.0" top="8.0"/>
+                                    </padding>
+                            </GridPane>
+
+                            <GridPane hgap="5.0" maxWidth="612.0" prefWidth="612.0" vgap="5.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <Label text="%label.municion.parametros.bb" />
+                                    <Label text="%label.municion.parametros.bb.mcb" GridPane.rowIndex="1" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="parametrosBbMcb" GridPane.rowIndex="2" />
+                                    <Label text="%label.municion.parametros.bb.mf" GridPane.columnIndex="1" GridPane.rowIndex="1" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="parametrosBbMf" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="%label.municion.parametros.bb.pp" GridPane.columnIndex="2" GridPane.rowIndex="1" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="parametrosBbPp" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <Label text="%label.municion.parametros.bb.xcg" GridPane.rowIndex="3" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="parametrosBbXcg" GridPane.rowIndex="4" />
+                                    <Label text="%label.municion.parametros.bb.xcgb" GridPane.columnIndex="1" GridPane.rowIndex="3" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="parametrosBbXcgb" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label text="%label.municion.parametros.bb.vc" GridPane.columnIndex="2" GridPane.rowIndex="3" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="parametrosBbVc" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <Label text="%label.municion.parametros.bb.beta" GridPane.rowIndex="5" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="parametrosBbBeta" GridPane.rowIndex="6" />
+                                    <Label text="%label.municion.parametros.bb.k" GridPane.columnIndex="1" GridPane.rowIndex="5" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="parametrosBbK" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label text="%label.municion.parametros.bb.n" GridPane.columnIndex="2" GridPane.rowIndex="5" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="parametrosBbN" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <Label text="%label.municion.parametros.bb.db" GridPane.rowIndex="7" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="parametrosBbDb" GridPane.rowIndex="8" />
+                                    <Label text="%label.municion.parametros.bb.aj.fibb" GridPane.columnIndex="1" GridPane.rowIndex="7" >
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="parametrosBbAjFibb" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                </children>
+                                <padding>
+                                    <Insets bottom="16.0" top="8.0"/>
+                                </padding>
+                            </GridPane>
+
+                            <GridPane hgap="5.0" maxWidth="612.0" prefWidth="612.0" vgap="5.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <Label text="%label.municion.ajuste" />
+                                    <Label text="%label.municion.velocidad.boca" GridPane.rowIndex="1">
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="municionVelocidad" GridPane.rowIndex="2" />
+                                    <Label text="%label.municion.drag" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="municionDrag" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="%label.municion.elevacion" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="municionElevacion" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <Label text="%label.municion.a0" GridPane.rowIndex="3">
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="municionA0" GridPane.rowIndex="4" />
+                                    <Label text="%label.municion.a1" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="municionA1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                </children>
+                                <padding>
+                                    <Insets bottom="16.0" top="8.0"/>
+                                </padding>
+                            </GridPane>
+
+                            <GridPane hgap="5.0" maxWidth="612.0" prefWidth="612.0" vgap="5.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                    <ColumnConstraints hgrow="SOMETIMES" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                    <RowConstraints vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <Label text="%label.municion.desviacion" />
+                                    <Label text="%label.municion.desviacion.superficie" GridPane.rowIndex="1">
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="municionDesviacionSuperficie" GridPane.rowIndex="2"/>
+                                    <Label text="%label.municion.desviacion.azimmut" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="municionDesviacionAzimut" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="%label.municion.desviacion.ubicaion.distancia" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="municionDesviacionUbicacionDistancia" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <Label text="%label.municion.desviacion.ubicacion.azimut" GridPane.rowIndex="3">
+                                        <padding>
+                                            <Insets top="16.0"/>
+                                        </padding>
+                                    </Label>
+                                    <TextField fx:id="municionDesviacionUbicacionAzimut" GridPane.rowIndex="4" />
+                                </children>
+                            </GridPane>
+                        </children>
+                        <padding>
+                            <Insets bottom="10.0" top="10.0" left="5.0" right="5.0"/>
+                        </padding>
+                        <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                            <children>
+                                <Button fx:id="cancel" mnemonicParsing="false" styleClass="form-button" text="%button.cancel">
+                                    <graphic>
+                                        <Region styleClass="svg-icon, close" />
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="accept" mnemonicParsing="false" styleClass="form-button" text="%button.accept">
+                                    <graphic>
+                                        <Region styleClass="svg-icon, save" />
+                                    </graphic>
+                                </Button>
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" top="10.0"/>
+                            </padding>
+                        </HBox>
+                        <padding>
+                            <Insets left="8.0" right="8.0"/>
+                        </padding>
+                    </VBox>
+                </content>
+            </ScrollPane>
+        </children>
+    </HBox>
+    <stylesheets>
+        <URL value="@../../css/variables.css" />
+        <URL value="@../../css/general.css" />
+        <URL value="@../../css/add_ammo.css" />
+    </stylesheets>
+</fx:root>

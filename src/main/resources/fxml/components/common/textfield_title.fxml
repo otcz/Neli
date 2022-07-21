@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root fx:id="labelWrapperCMS" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/common/style_textfield_title.css" />
+    </stylesheets>
+    <children>
+        <Label fx:id="titleLabelCMS" ellipsisString="" text="" />
+        <TextField fx:id="measureLabelCMS" text="" />
+    </children>
+</fx:root>

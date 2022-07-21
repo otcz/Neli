@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root fx:id="coordenadaWrapper" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.231"
+         xmlns:fx="http://javafx.com/fxml/1">
+
+    <stylesheets>
+        <URL value="@/css/objetivoMovil/style_latitud_longitud.css"/>
+    </stylesheets>
+
+    <children>
+        <Label fx:id="titleLatitudLongitud" text="Label"/>
+        <HBox fx:id="coordenadaHBox">
+            <children>
+                <HBox fx:id="orientationHBox">
+                    <children>
+                        <Label fx:id="orientationLeft" text="N" styleClass="orientationYellow"/>
+                        <Label fx:id="orientationRight" text="S" styleClass="orientationGray"/>
+                    </children>
+                </HBox>
+                <TextField fx:id="degrees" promptText="0" styleClass="coordinate-text-field"/>
+                <ImageView fx:id="degreesIV" fitHeight="8.0" fitWidth="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/coordenadas/circle3x.png"/>
+                    </image>
+                </ImageView>
+                <TextField fx:id="inchs" promptText="1" styleClass="coordinate-text-field"/>
+                <ImageView fx:id="inchsIV" fitHeight="8.0" fitWidth="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/coordenadas/inchs3x.png"/>
+                    </image>
+                </ImageView>
+                <TextField fx:id="inch" promptText="2" styleClass="coordinate-text-field"/>
+                <ImageView fx:id="inchIV" fitHeight="8.0" fitWidth="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/coordenadas/inch3x.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+    </children>
+</fx:root>

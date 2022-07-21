@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.dynamicts.neli.ui.component.home.NoCylinderClock?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root alignment="TOP_CENTER" maxHeight="190.0" prefHeight="130.0" prefWidth="110.0" spacing="10.0" styleClass="clock, elevation" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1">
+    <Label fx:id="titleLabel" ellipsisString="" maxWidth="152.0" minWidth="152.0" prefWidth="152.0" styleClass="title" text="Elevation" />
+    <HBox alignment="CENTER" spacing="8.0">
+        <children>
+            <StackPane maxHeight="116.0" maxWidth="64.0" minHeight="116" minWidth="64.0" prefHeight="116.0" prefWidth="64.0">
+                <children>
+                    <NoCylinderClock fx:id="elevationNoCylinder" />
+                    <Pane fx:id="clockPane" minHeight="116" minWidth="64.0" prefHeight="116.0" prefWidth="64.0" />
+                    <Pane fx:id="gradientPane" minHeight="116" minWidth="64.0" prefHeight="116.0" prefWidth="64.0" styleClass="gradient" />
+                </children>
+            </StackPane>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="4.0">
+                <children>
+                    <Label fx:id="maxLabel" styleClass="max" text="Max. 000000" />
+                    <ImageView fx:id="upArrow" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../images/arrow-up-move.png" />
+                        </image>
+                    </ImageView>
+                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="8.0">
+                        <children>
+                            <ImageView fitHeight="14.0" fitWidth="7.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@../../images/arrow-left.png" />
+                                </image>
+                            </ImageView>
+                            <Label fx:id="valueLabel" ellipsisString="" maxWidth="65.0" minWidth="65.0" style="-fx-font-size: 20;" styleClass="value" text="0" />
+                        </children>
+                    </HBox>
+                    <ImageView fx:id="downArrow" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../images/arrow-down-move.png" />
+                        </image>
+                    </ImageView>
+                    <Label fx:id="minLabel" styleClass="min" text="Min. 000000" />
+                </children>
+            </VBox>
+        </children>
+    </HBox>
+</fx:root>

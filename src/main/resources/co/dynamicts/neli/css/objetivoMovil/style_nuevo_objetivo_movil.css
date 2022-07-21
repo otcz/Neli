@@ -1,0 +1,118 @@
+.nuevoObjetivoMovil {
+    -fx-min-width: 634px;
+    -fx-max-width: 634px;
+    -fx-pref-width: 634px;
+    -fx-min-height: 608px;
+    -fx-max-height: 608px;
+    -fx-pref-height: 608px;
+    -fx-background-color: #191919;
+    -fx-border-color: #606060;
+    -fx-padding: 16px 0px 0px 17px;
+    -fx-spacing: 16px;
+}
+
+#HBoxBotones {
+    -fx-translate-y: 27px;
+    -fx-spacing: 10px;
+}
+
+#HBoxAltura {
+    -fx-spacing: 20px;
+    -fx-translate-y: -12px;
+}
+
+#nuevoObjetivoMovil .button {
+    -fx-min-width: 129px;
+    -fx-max-width: 129px;
+    -fx-pref-width: 129px;
+    -fx-min-height: 44px;
+    -fx-max-height: 44px;
+    -fx-pref-height: 44px;
+}
+
+#measureLabelCMS {
+    -fx-min-width: 268px;
+    -fx-max-width: 268px;
+    -fx-pref-width: 268px;
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+    -fx-pref-height: 34px;
+}
+
+#cdp1 {
+    -fx-min-width: 340px;
+    -fx-max-width: 340px;
+    -fx-pref-width: 340px;
+    -fx-min-height: 16px;
+    -fx-max-height: 16px;
+    -fx-pref-height: 16px;
+    -fx-text-fill: #d8d8d8;
+    -fx-font-size: 14px;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+}
+
+#cdp2 {
+    -fx-min-width: 340px;
+    -fx-max-width: 340px;
+    -fx-pref-width: 340px;
+    -fx-min-height: 16px;
+    -fx-max-height: 16px;
+    -fx-pref-height: 16px;
+    -fx-text-fill: #d8d8d8;
+    -fx-font-size: 14px;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+}
+
+#cdp {
+    -fx-min-width: 340px;
+    -fx-max-width: 340px;
+    -fx-pref-width: 340px;
+    -fx-min-height: 16px;
+    -fx-max-height: 16px;
+    -fx-pref-height: 16px;
+    -fx-text-fill: #d8d8d8;
+    -fx-font-size: 14px;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+}
+
+
+#altura {
+    -fx-min-width: 72px;
+    -fx-max-width: 72px;
+    -fx-pref-width: 72px;
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+    -fx-pref-height: 34px;
+    -fx-border-color: #606060;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+#msnm {
+    -fx-min-width: 340px;
+    -fx-max-width: 340px;
+    -fx-pref-width: 340px;
+    -fx-min-height: 16px;
+    -fx-max-height: 16px;
+    -fx-pref-height: 16px;
+    -fx-text-fill: #d8d8d8;
+    -fx-font-size: 14px;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+    -fx-translate-y: 19px;
+}
+
+.buttonNOM .button{
+    -fx-background-color: red;
+    -fx-fill: red;
+}
+
+
+

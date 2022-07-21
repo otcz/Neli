@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<?import java.net.URL?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.shape.SVGPath?>
+<fx:root xmlns="http://javafx.com/javafx/8.0.231"
+         xmlns:fx="http://javafx.com/fxml/1"
+         type="javafx.scene.layout.HBox"
+         styleClass="weapon-state, height-30, center, spacing-4"
+>
+
+    <children>
+        <StackPane layoutX="1.0" styleClass="icon-container">
+            <children>
+                <Region fx:id="iconRegion" styleClass="icon-region">
+                    <shape>
+                        <SVGPath fx:id="icon"  />
+                    </shape>
+                </Region>
+            </children>
+        </StackPane>
+        <Text fx:id="text" styleClass="top-menu-text" />
+        <Text fx:id="value" styleClass="top-menu-text" />
+    </children>
+
+    <stylesheets>
+        <URL value="@../../../../css/variables.css"/>
+        <URL value="@../../../../css/general.css"/>
+        <URL value="@../../../../css/home/top_menu.css"/>
+    </stylesheets>
+</fx:root>

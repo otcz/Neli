@@ -1,0 +1,59 @@
+@font-face {
+    -fx-font-family: "DINPro-Regular";
+    src: url('/fonts/DINPro-Regular.otf');
+}
+
+@font-face {
+    -fx-font-family: "DINPro-Bold";
+    src: url('/fonts/DINPro-Bold.otf');
+}
+
+@font-face {
+    -fx-font-family: "DINPro-Black";
+    src: url('/fonts/DINPro-Black.otf');
+}
+
+@font-face {
+    -fx-font-family: "DINPro-Medium";
+    src: url('/fonts/DINPro-Medium.otf');
+}
+
+* {
+    -color-real-black: #000000;
+    -color-black: #303030;
+    -color-black-two: #191919;
+    -color-black-two-50: #19191988;
+    -color-black-50: #00000088;
+    -color-white: #FFFFFF;
+    -color-white-two: #D8D8D8;
+    -color-brownish-gray: #606060;
+    -color-brownish-gray-50: #60606088;
+    -color-grayish: #ACACAC;
+    -color-yellow: #FCB400;
+    -color-grapefruit: #FF5555;
+    -color-grapefruit-50: #FF555588;
+    -color-seaweed: #16DB71;
+
+    -custom-primary-color: #d8d8d8;
+    -custom-background-color: #303030;
+}
+
+/**{*/
+/*    -color-real-black: #ffffff;*/
+/*    -color-black: rgba(232, 229, 229, 0.98);*/
+/*    -color-black-two: #ece6e6;*/
+/*    -color-black-two-50: rgba(164, 163, 163, 0.53);*/
+/*    -color-black-50: rgba(238, 232, 232, 0.53);*/
+/*    -color-white: #171717;*/
+/*    -color-white-two: #1c1c1c;*/
+/*    -color-brownish-gray: #939292;*/
+/*    -color-brownish-gray-50: rgba(192, 189, 189, 0.53);*/
+/*    -color-grayish: #d0cece;*/
+/*    -color-yellow: #FCB400;*/
+/*    -color-grapefruit: #FF5555;*/
+/*    -color-grapefruit-50: #FF555588;*/
+/*    -color-seaweed: #16DB71;*/
+
+/*    -custom-primary-color: #2a2a2a;*/
+/*    -custom-background-color: #e0e0e0;*/
+/*}*/

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root alignment="CENTER" prefHeight="30.0" prefWidth="86.75" styleClass="data-viewer" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text fx:id="valueLabel"   styleClass="data-viewer-text"  style="-fx-font-size: 20.0"  text="0" textAlignment="CENTER" />
+        <Label fx:id="titleLabel" alignment="CENTER" style="-fx-font-size: 12;" contentDisplay="CENTER" ellipsisString="" prefHeight="15.0" prefWidth="86.75" styleClass="title" text="Elevacion Des." wrapText="false" />
+    </children>
+    <padding>
+        <Insets bottom="4.0" left="4.0" top="4.0" />
+    </padding>
+
+    <stylesheets>
+        <URL value="@/css/home/home_location.css" />
+    </stylesheets>
+</fx:root>

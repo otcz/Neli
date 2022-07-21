@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.geometry.Insets?>
+<fx:root type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TextField fx:id="textField" />
+        <Group>
+            <children>
+                <SVGPath fx:id="svgPath" content="M4 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-.6A3.4 3.4 0 1 0 4 .6a3.4 3.4 0 0 0 0 6.8z" fill="#d8d8d8" />
+            </children>
+            <HBox.margin>
+                <Insets bottom="2.0" left="4.0" right="2.0" top="0.0" />
+            </HBox.margin>
+        </Group>
+    </children>
+</fx:root>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root fx:id="machWrapper" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+
+    <stylesheets>
+        <URL value="@/css/municion/style_mach_table.css" />
+    </stylesheets>
+
+    <children>
+        <HBox fx:id="header">
+
+            <children>
+                <Label fx:id="headerTitle" text="Mach" />
+                <TextField fx:id="mach0" text="0.1">
+               <font>
+                  <Font size="10.0" />
+               </font></TextField>
+                <TextField fx:id="mach1" text="0000" />
+                <TextField fx:id="mach2" text="0000" />
+                <TextField fx:id="mach3" text="0000" />
+                <TextField fx:id="mach4" text="0000" />
+                <TextField fx:id="mach5" alignment="CENTER" text="0000" />
+                <TextField fx:id="mach6" text="0000">
+               <font>
+                  <Font size="10.0" />
+               </font></TextField>
+                <TextField fx:id="mach7" text="0000" />
+                <TextField fx:id="mach8" text="0000" />
+                <TextField fx:id="mach9" text="0000" />
+                <TextField fx:id="mach10" text="0000" />
+                <TextField fx:id="mach11" text="0000" />
+                <TextField fx:id="mach12" text="0000" />
+                <TextField fx:id="mach13" text="0000" />
+            </children>
+
+        </HBox>
+        <HBox fx:id="cd">
+            <children>
+                <Label fx:id="cdTitle" text="CD" />
+                <TextField fx:id="cd0" text="0000" />
+                <TextField fx:id="cd1" text="0000" />
+                <TextField fx:id="cd2" text="0000" />
+                <TextField fx:id="cd3" text="0000" />
+                <TextField fx:id="cd4" text="0000" />
+                <TextField fx:id="cd5" text="0000" />
+                <TextField fx:id="cd6" text="0000" />
+                <TextField fx:id="cd7" text="0000" />
+                <TextField fx:id="cd8" text="0000" />
+                <TextField fx:id="cd9" text="0000" />
+                <TextField fx:id="cd10" text="0000" />
+                <TextField fx:id="cd11" text="0000" />
+                <TextField fx:id="cd12" text="0000" />
+                <TextField fx:id="cd13" text="0000" />
+            </children>
+        </HBox>
+
+        <HBox fx:id="cl">
+
+            <children>
+                <Label fx:id="clTitle" text="CL" />
+                <TextField fx:id="cl0" text="0000" />
+                <TextField fx:id="cl1" text="0000" />
+                <TextField fx:id="cl2" text="0000" />
+                <TextField fx:id="cl3" text="0000" />
+                <TextField fx:id="cl4" text="0000" />
+                <TextField fx:id="cl5" text="0000" />
+                <TextField fx:id="cl6" text="0000" />
+                <TextField fx:id="cl7" text="0000" />
+                <TextField fx:id="cl8" text="0000" />
+                <TextField fx:id="cl9" text="0000" />
+                <TextField fx:id="cl10" text="0000" />
+                <TextField fx:id="cl11" text="0000" />
+                <TextField fx:id="cl12" text="0000" />
+                <TextField fx:id="cl13" text="0000" />
+            </children>
+
+        </HBox>
+
+        <HBox fx:id="cb">
+
+            <children>
+                <Label fx:id="cbTitle" text="CB" />
+                <TextField fx:id="cb0" text="0000" />
+                <TextField fx:id="cb1" text="0000" />
+                <TextField fx:id="cb2" text="0000" />
+                <TextField fx:id="cb3" text="0000" />
+                <TextField fx:id="cb4" text="0000" />
+                <TextField fx:id="cb5" text="0000" />
+                <TextField fx:id="cb6" text="0000" />
+                <TextField fx:id="cb7" text="0000" />
+                <TextField fx:id="cb8" text="0000" />
+                <TextField fx:id="cb9" text="0000" />
+                <TextField fx:id="cb10" text="0000" />
+                <TextField fx:id="cb11" text="0000" />
+                <TextField fx:id="cb12" text="0000" />
+                <TextField fx:id="cb13" text="0000" />
+            </children>
+
+        </HBox>
+    </children>
+</fx:root>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.dynamicts.neli.ui.component.home.HorizontalNoCylinderClock?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root alignment="TOP_CENTER" maxHeight="320" prefHeight="80.0" prefWidth="320.0" spacing="8.0" styleClass="clock"
+         type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1">
+    <Label fx:id="titleLabel" styleClass="title" text="Azimut"/>
+    <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="65.0">
+        <children>
+            <StackPane maxHeight="-Infinity" prefHeight="65.0">
+                <children>
+                    <HorizontalNoCylinderClock fx:id="azimutNoCylinder" layoutX="20.0"/>
+                    <Pane fx:id="clockPane" maxHeight="-Infinity" maxWidth="320" minHeight="65.0" minWidth="320.0"
+                          prefHeight="65.0" prefWidth="320.0"/>
+                    <Pane fx:id="gradientPane" maxHeight="-Infinity" maxWidth="320" minHeight="-Infinity"
+                          minWidth="-Infinity" prefHeight="65.0" prefWidth="320.0" styleClass="h-gradient"/>
+
+                    <VBox alignment="BOTTOM_CENTER" spacing="8.0">
+                        <HBox alignment="CENTER" spacing="8.0">
+                            <children>
+                                <ImageView fx:id="leftArrow" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../images/arrow-right-move.png"/>
+                                    </image>
+                                </ImageView>
+                                <Label fx:id="valueLabel" alignment="CENTER" prefWidth="258.0"
+                                       style="-fx-font-size: 20;" styleClass="value" text="0" VBox.vgrow="ALWAYS"/>
+                                <ImageView fx:id="rightArrow" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../images/arrow-left-move.png"/>
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                        <ImageView fitHeight="7.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/arrow-up.png"/>
+                            </image>
+                            <VBox.margin>
+                                <Insets top="25.0"/>
+                            </VBox.margin>
+                        </ImageView>
+                    </VBox>
+                </children>
+            </StackPane>
+        </children>
+    </HBox>
+</fx:root>

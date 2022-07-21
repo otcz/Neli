@@ -1,0 +1,211 @@
+.tableHistorial .table-view {
+    -fx-min-height: 458px;
+    -fx-max-height: 458px;
+    -fx-pref-height: 458px;
+    -fx-min-width: 602px;
+    -fx-max-width: 602px;
+    -fx-pref-width: 602px;
+    -fx-border-width: 0px;
+    -fx-table-cell-border-color: #191919;
+    -fx-background-color: #191919;
+}
+
+
+.tableHistorial .table-view:focused {
+    -fx-background-color: transparent;
+    -fx-background-insets: -1.4, 0, 1;
+    -fx-background-radius: 1.4, 0, 0;
+    -fx-padding: 1;
+}
+
+.tableHistorial .table-view .column-header, .table-view .filler {
+    -fx-background-color: #606060;
+    -fx-border-width: 0 0 0 0;
+}
+
+.tableHistorial .table-view .column-header .label {
+    -fx-background-color: #606060;
+    -fx-border-color: #606060;
+    -fx-min-height: 30px;
+    -fx-max-height: 30px;
+    -fx-pref-height: 30px;
+    -fx-text-fill: #fcb400;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER-LEFT;
+    -fx-text-alignment: LEFT;
+    -fx-font-size: 10px;
+    -fx-table-cell-border-color: #606060;
+}
+
+.tableHistorial .table-view .column-header {
+    -fx-background-color: #606060;
+    -fx-border-color: #606060;
+    -fx-min-height: 30px;
+    -fx-max-height: 30px;
+    -fx-pref-height: 30px;
+    -fx-min-width: 2000px;
+    -fx-max-width: 900px;
+    -fx-pref-width: 900px;
+    -fx-alignment: CENTER-LEFT;
+
+}
+
+.tableHistorial .table-row-cell:even {
+    -fx-background-color: #191919;
+    -fx-background-insets: 0px 0px 0px 0px 0px;
+    -fx-table-cell-border-color: transparent;
+    -fx-alignment: CENTER-LEFT;
+}
+
+.tableHistorial .table-row-cell:odd {
+    -fx-background-color: #303030;
+    -fx-background-insets: 0px 0px 0px 0px 0px;
+    -fx-table-cell-border-color: transparent;
+}
+
+
+.tableHistorial .table-cell {
+    -fx-font: 12px "DIN Alternate";
+    -fx-text-fill: #ffff;
+
+    -fx-alignment: CENTER-LEFT;
+    -fx-min-height: 30px;
+    -fx-max-height: 30px;
+    -fx-pref-height: 30px;
+}
+
+#columnaMunicion {
+    -fx-min-width: 134px;
+    -fx-max-width: 134px;
+    -fx-pref-width: 134px;
+}
+
+#columnaZona {
+    -fx-min-width: 119px;
+    -fx-max-width: 119px;
+    -fx-pref-width: 119px;
+}
+
+#columnaFecha {
+    -fx-min-width: 124px;
+    -fx-max-width: 124px;
+    -fx-pref-width: 124px;
+}
+
+#columnaTemperatura {
+    -fx-min-width: 122px;
+    -fx-max-width: 122px;
+    -fx-pref-width: 122px;
+}
+
+#columnaVelocidad {
+    -fx-min-width: 100px;
+    -fx-max-width: 100px;
+    -fx-pref-width: 100px;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: #191919;
+    -fx-border-color: #191919;
+    -fx-background-radius: 0.0em;
+    -fx-border-radius: 2.0em;
+}
+
+.scroll-bar:horizontal .track {
+    -fx-background-radius: 0.0em;
+    -fx-border-radius: 0.0em;
+}
+
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0.0em;
+    -fx-padding: 0.0 0.0 0.0 0.0;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: #191919;
+    -fx-background-radius: 0.0em;
+    -fx-padding: 0.0 10.0 0.0 0.0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0.0em 0.0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0.0 0.0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #d8d8d8;
+    -fx-background-insets: 2.0, 0.0, 0.0;
+    -fx-background-radius: 2.0em;
+}
+
+.button {
+    -fx-min-height: 44px;
+    -fx-max-height: 44px;
+    -fx-pref-height: 44px;
+    -fx-min-width: 142px;
+    -fx-max-width: 142px;
+    -fx-pref-width: 142px;
+    -fx-translate-y: 16px;
+}
+
+#titleLabel {
+    -fx-min-height: 16px;
+    -fx-max-height: 16px;
+    -fx-pref-height: 16px;
+    -fx-min-width: 340px;
+    -fx-max-width: 340px;
+    -fx-pref-width: 340px;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-color: #191919;
+}
+
+#ammunitionSetupWrapper {
+    -fx-background-color: #191919;
+    -fx-min-height: 608px;
+    -fx-max-height: 608px;
+    -fx-pref-height: 608px;
+    -fx-min-width: 634px;
+    -fx-max-width: 634px;
+    -fx-pref-width: 634px;
+    -fx-spacing: 16px;
+    -fx-padding: 16px 0px 16px 16px;
+}
+
+#historialWrapper {
+    -fx-background-color: #191919;
+    -fx-padding: 16px 16px 16px 16px;
+    -fx-spacing: 16px;
+}
+
+.contenidoHistorial {
+    -fx-background-color: #191919;
+
+    -fx-border-color: #606060;
+    -fx-border-width:1px;
+
+
+    -fx-min-height: 608px;
+    -fx-max-height: 608px;
+    -fx-pref-height: 608px;
+
+    -fx-min-width: 634px;
+    -fx-max-width: 634px;
+    -fx-pref-width: 634px;
+}
+
+
+

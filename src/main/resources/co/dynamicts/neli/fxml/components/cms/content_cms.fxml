@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.dynamicts.neli.ui.component.common.*?>
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="VboxCMS" prefHeight="400.0" prefWidth="600.0" styleClass="bordeContenido" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/cms/content_cms.css" />
+        <URL value="@/css/common/common_paginas.css" />
+
+    </stylesheets>
+    <children>
+        <AnchorPane>
+            <children>
+                <LineChart fx:id="lineChart" maxWidth="600.0" minWidth="600.0" prefWidth="600.0">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis fx:id="yAxis" side="LEFT" />
+                    </yAxis>
+                </LineChart>
+            </children>
+        </AnchorPane>
+        <GridPane fx:id="dataGridCMS" prefWidth="263.0">
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <LabelTitle fx:id="tubeTemperature" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <LabelTitle fx:id="maxRecoil" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <LabelTitle fx:id="muzzleVelocity" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <LabelTitle fx:id="tempCut" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <ButtonImage fx:id="changeTube" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <LabelTitle fx:id="mctTubeTemperature" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <LabelTitle fx:id="lastShotEfc" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <LabelTitle fx:id="shotAction" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <LabelTitle fx:id="totalEFC" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <LabelTitle fx:id="recoilDistance" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                <LabelTitle fx:id="maxEfc" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <LabelTitle fx:id="tubeTotalShot" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            </children>
+        </GridPane>
+    </children>
+</fx:root>

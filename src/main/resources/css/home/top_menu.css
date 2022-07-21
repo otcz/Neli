@@ -1,0 +1,90 @@
+
+.center {
+    -fx-alignment: center;
+}
+
+.spacing-4 {
+    -fx-spacing: 4;
+}
+
+.top-menu {
+    -fx-pref-width: 665;
+    -fx-min-width: 665;
+    -fx-max-width: 665;
+
+    -fx-pref-height: 30px;
+    -fx-max-height: 30px;
+    -fx-min-height: 30px;
+
+    -fx-alignment: center_left;
+
+    -fx-padding: 10 0 10 0;
+    -fx-border-insets: 10 0 10 0;
+    -fx-background-insets: 10 0 10 0;
+}
+
+.top-menu-text {
+    -fx-fill: #ffffff;
+    -fx-font-size: 10;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-font-family: "DINAlternate-Regular";
+}
+
+
+.weapon-status {
+    -fx-padding: 0 0 0 16px;
+    -fx-border-insets: 0 0 0 5px;
+    -fx-background-insets: 0 0 0 5px;
+    -fx-spacing: 12px;
+    -fx-min-width: 255;
+    -fx-max-width: 255;
+    -fx-pref-width: 255;
+}
+
+.info {
+    -fx-spacing: 4px;
+}
+
+
+.icon-container {
+    -fx-pref-height: 10px;
+    -fx-max-height: 10px;
+    -fx-min-height: 10px;
+
+    -fx-pref-width: 10px;
+    -fx-max-width: 10px;
+    -fx-min-width: 10px;
+
+    -fx-alignment: center;
+
+}
+
+.icon-region {
+    -size: 10;
+    -fx-min-height: -size;
+    -fx-max-height: -size;
+    -fx-background-color: #ffffff;
+}
+
+.cannon-status {
+    -fx-pref-width: 256px;
+    -fx-max-width: 256px;
+    -fx-min-width: 256px;
+    -fx-spacing: 20px;
+}
+
+.bad {
+    -fx-fill: -color-grapefruit;
+    -fx-background-color: -color-grapefruit;
+}
+
+.ok {
+    -fx-fill: -color-seaweed;
+    -fx-border-color: -color-seaweed;
+}
+
+.med, .medium {
+    -fx-fill: -color-yellow;
+    -fx-border-color: -color-yellow;
+}

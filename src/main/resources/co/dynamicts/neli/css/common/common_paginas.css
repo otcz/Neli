@@ -1,0 +1,4 @@
+.bordeContenido {
+    -fx-border-color: -color-brownish-gray;
+    -fx-border-width: 1px;
+}

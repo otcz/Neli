@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?><?import java.net.URL?>
+<fx:root type="javafx.scene.layout.VBox"
+         xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1" spacing="8">
+    <stylesheets>
+        <URL value="@/css/style_coordenadas.css"/>
+    </stylesheets>
+    <children>
+        <Label fx:id="tituloCoordenada" text="Label"/>
+        <VBox fx:id="coordenadaWrapper" >
+            <children>
+                <HBox fx:id="wWrapper">
+                    <children>
+                        <Label fx:id="cardinalidadLongitud" text="W"/>
+                        <Label fx:id="longitudGrados"/>
+                        <Label fx:id="longitudMinutos"/>
+                        <Label fx:id="longitudSegundos"/>
+                    </children>
+                </HBox>
+                <HBox fx:id="nWrapper">
+                    <children>
+                        <Label fx:id="cardinalidadLatitud" text="N"/>
+                        <Label fx:id="latitudGrados"/>
+                        <Label fx:id="latitudMinutos"/>
+                        <Label fx:id="latitudSegundos"/>
+                    </children>
+                </HBox>
+                <Label fx:id="metros"/>
+            </children>
+        </VBox>
+    </children>
+</fx:root>

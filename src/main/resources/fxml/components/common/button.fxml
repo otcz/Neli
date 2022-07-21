@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<?import java.net.URL?>
+<fx:root maxHeight="44.0" maxWidth="98.0" minHeight="44.0" minWidth="98.0" prefHeight="44.0" prefWidth="98.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/common/button.css"/>
+    </stylesheets>
+       <children>
+
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="44.0" strokeType="INSIDE" width="98.0" />
+        <Label fx:id="buttonLabel" layoutX="12.0" layoutY="12.0" text="Label" styleClass="buttonLabel">
+            <font>
+                <Font size="12.0" />
+            </font></Label>
+        <ImageView fx:id="buttonImage" fitHeight="10.0" fitWidth="10.0" layoutX="78.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/" />
+            </image>
+        </ImageView>
+    </children>
+</fx:root>

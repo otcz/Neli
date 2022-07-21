@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.dynamicts.neli.ui.component.home.top.menu.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<fx:root styleClass="page" type="VBox" xmlns="http://javafx.com/javafx/10.0.2-internal"
+         xmlns:fx="http://javafx.com/fxml/1">
+
+    <children>
+        <StackPane styleClass="top-menu" prefHeight="32" maxHeight="32" minHeight="32"/>
+        <Label styleClass="h2" text="%title.interface.graphs.grid" wrapText="true">
+            <graphic>
+                <SVGPath content="%svg.path.graphs.grid" fill="#d8d8d8" scaleX="0.75" scaleY="0.75" styleClass="icon"/>
+            </graphic>
+            <VBox.margin>
+                <Insets bottom="10.0"/>
+            </VBox.margin>
+        </Label>
+
+        <HBox spacing="8" alignment="CENTER_RIGHT">
+            <children>
+
+                <Button fx:id="zoomOut" styleClass="buttonGraficacion">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@/images/minusGraficacion3x.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="zoomIn" styleClass="buttonGraficacion">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@/images/plusGraficacion3x.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+            </children>
+            <padding>
+                <Insets bottom="8.0" />
+            </padding>
+
+        </HBox>
+
+        <VBox styleClass="graphics">
+            <Canvas fx:id="canvas" height="580" width="620"/>
+        </VBox>
+
+    </children>
+
+    <stylesheets>
+        <URL value="@../../css/variables.css"/>
+        <URL value="@/css/graficacion/graficacion.css"/>
+    </stylesheets>
+
+</fx:root>

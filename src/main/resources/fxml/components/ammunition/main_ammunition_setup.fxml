@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.dynamicts.neli.ui.component.common.*?>
+<?import co.dynamicts.neli.ui.component.home.top.menu.*?>
+<?import co.dynamicts.neli.ui.component.ammunition.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root styleClass="pageSize" spacing="16.0" style="-fx-background-color: #191919;"
+         type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/10.0.2-internal"
+         xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/common/style_scrollPane.css"/>
+        <URL value="@/css/common/common_paginas.css"/>
+        <URL value="@/css/common/style_page_title.css"/>
+
+    </stylesheets>
+
+    <children>
+        <TopMenu/>
+        <PageTitle fx:id="titleEditAmmunition"/>
+        <ScrollPane  styleClass="contentScrollSize">
+            <content>
+                <EditAmmunitionSetUp styleClass="contentScrollSize" fx:id="editAmmunitionSetup"/>
+            </content>
+        </ScrollPane>
+    </children>
+
+</fx:root>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="titleWrapper" prefHeight="400.0" prefWidth="600.0" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/common/style_page_title.css" />
+    </stylesheets>
+    <children>
+        <ImageView fx:id="titleImage" fitHeight="31.0" fitWidth="31.0" layoutY="2.0" />
+        <Label fx:id="titleLabel" />
+    </children>
+
+</fx:root>

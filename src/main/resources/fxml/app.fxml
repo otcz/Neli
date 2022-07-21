@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import co.dynamicts.neli.ui.block.MenuNavBlock?>
+<?import co.dynamicts.neli.ui.block.CoordinatesBlock?>
+<?import co.dynamicts.neli.ui.component.common.Loading?>
+<?import co.dynamicts.neli.ui.component.common.Password?>
+<?import co.dynamicts.neli.ui.component.common.Success?>
+<?import co.dynamicts.neli.ui.component.common.Confirm?>
+<?import co.dynamicts.neli.ui.component.home.top.menu.TopMenu?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Region?>
+<StackPane
+        alignment="center"
+        prefHeight="768"
+        prefWidth="1024"
+        xmlns="http://javafx.com/javafx/8.0.172-ea"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="co.dynamicts.neli.ui.controller.AppController">
+    <children>
+        <BorderPane style="-fx-background-color: -custom-background-color;">
+            <top>
+                <HBox fx:id="info" alignment="CENTER" styleClass="infobar">
+                    <children>
+                        <Label fx:id="infoBox" styleClass="infobar-label"
+                               text="Ajustar coordenadas del cañon para hacer el disparo deseado.">
+                            <effect>
+                                <DropShadow color="#00000088"/>
+                            </effect>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </HBox>
+            </top>
+            <center>
+
+                <StackPane>
+                    <StackPane fx:id="interfacesPane">
+                        <padding>
+                            <Insets bottom="8.0" top="8.0"/>
+                        </padding>
+                    </StackPane>
+
+
+                    <Password fx:id="password"/>
+
+                    <Success fx:id="success"/>
+
+                    <Loading fx:id="loadingSplash"/>
+
+                    <Confirm fx:id="confirm"/>
+
+                    <TopMenu fx:id="topMenu" translateY="-340"/>
+
+                </StackPane>
+
+            </center>
+            <left>
+                <MenuNavBlock fx:id="menuBlock"/>
+            </left>
+            <right>
+                <CoordinatesBlock fx:id="coordinatesBlock"/>
+            </right>
+        </BorderPane>
+        <!--SPLASH-->
+        <StackPane fx:id="splash" style="-fx-background-color: -custom-background-color;" visible="true" StackPane.alignment="CENTER">
+            <children>
+                <VBox maxHeight="400.0" maxWidth="660.0" minHeight="400.0" minWidth="660.0" prefHeight="400.0"
+                      prefWidth="660.0">
+                    <children>
+                        <HBox maxHeight="160.0" maxWidth="660.0" minHeight="160.0" minWidth="660.0" prefHeight="160.0"
+                              prefWidth="660.0" spacing="8.0">
+                            <children>
+                                <ImageView fitHeight="160.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/logo.png"/>
+                                    </image>
+                                </ImageView>
+                                <VBox prefHeight="160.0" prefWidth="500.0">
+                                    <children>
+                                        <Label text="%label.general.title">
+                                            <styleClass>
+                                                <String fx:value="h1"/>
+                                                <String fx:value="title"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label text="%label.general.subtitle">
+                                            <styleClass>
+                                                <String fx:value="h1"/>
+                                                <String fx:value="subtitle"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label text="%label.general.version">
+                                            <styleClass>
+                                                <String fx:value="h1"/>
+                                                <String fx:value="subtitle"/>
+                                            </styleClass>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="24.0">
+                            <children>
+                                <Button fx:id="fine" mnemonicParsing="false" styleClass="form-button" text="%button.splash.fine">
+                                    <graphic>
+                                        <Region styleClass="svg-icon, splash" />
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="normal" mnemonicParsing="false" styleClass="form-button" text="%button.splash.normal">
+                                    <graphic>
+                                        <Region styleClass="svg-icon, splash" />
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="quick" mnemonicParsing="false" styleClass="form-button" text="%button.splash.quick">
+                                    <graphic>
+                                        <Region styleClass="svg-icon, splash" />
+                                    </graphic>
+                                </Button>
+                            </children>
+                            <padding>
+                                <Insets bottom="32.0" top="96.0" />
+                            </padding>
+                        </HBox>
+                        <ProgressBar fx:id="progressBar" minWidth="660.0" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets top="150.0"/>
+                            </VBox.margin>
+                        </ProgressBar>
+                        <Label fx:id="countdown" minWidth="660.0" styleClass="countdown" text="00:00"
+                               textAlignment="RIGHT"/>
+                    </children>
+                </VBox>
+            </children>
+        </StackPane>
+<!--        &lt;!&ndash;FIRST TIME&ndash;&gt;-->
+<!--        <StackPane fx:id="initianConfiguration" style="-fx-background-color: #303030;" visible="true" StackPane.alignment="CENTER">-->
+<!--            <children>-->
+<!--                <VBox maxHeight="400.0" maxWidth="660.0" minHeight="400.0" minWidth="660.0" prefHeight="400.0"-->
+<!--                      prefWidth="660.0">-->
+<!--                    <children>-->
+<!--                        <VBox maxHeight="160.0" maxWidth="660.0" minHeight="160.0" minWidth="660.0" prefHeight="160.0"-->
+<!--                              prefWidth="660.0" spacing="8.0">-->
+<!--                            <children>-->
+<!--                                <ImageView fitHeight="160.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                                    <image>-->
+<!--                                        <Image url="@../images/logo.png"/>-->
+<!--                                    </image>-->
+<!--                                </ImageView>-->
+<!--                                <VBox prefHeight="160.0" prefWidth="500.0">-->
+<!--                                    <children>-->
+<!--                                        <Label text="%label.general.title">-->
+<!--                                            <styleClass>-->
+<!--                                                <String fx:value="h1"/>-->
+<!--                                                <String fx:value="title"/>-->
+<!--                                            </styleClass>-->
+<!--                                        </Label>-->
+<!--                                        <Label text="%label.general.subtitle">-->
+<!--                                            <styleClass>-->
+<!--                                                <String fx:value="h1"/>-->
+<!--                                                <String fx:value="subtitle"/>-->
+<!--                                            </styleClass>-->
+<!--                                        </Label>-->
+<!--                                        <Label text="%label.general.version">-->
+<!--                                            <styleClass>-->
+<!--                                                <String fx:value="h1"/>-->
+<!--                                                <String fx:value="subtitle"/>-->
+<!--                                            </styleClass>-->
+<!--                                        </Label>-->
+<!--                                    </children>-->
+<!--                                </VBox>-->
+<!--                            </children>-->
+<!--                        </VBox>-->
+<!--                    </children>-->
+<!--                </VBox>-->
+<!--            </children>-->
+<!--        </StackPane>-->
+    </children>
+    <stylesheets>
+        <URL value="@../css/variables.css"/>
+        <URL value="@../css/general.css"/>
+    </stylesheets>
+</StackPane>

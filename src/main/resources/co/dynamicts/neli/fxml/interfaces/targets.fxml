@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.shape.SVGPath?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<fx:root styleClass="interface" type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml">
+    <Label styleClass="h2" text="%title.interface.targets" wrapText="true">
+        <graphic>
+            <SVGPath content="%svg.path.target" fill="#d8d8d8" scaleX="0.75" scaleY="0.75" styleClass="icon" />
+        </graphic>
+        <VBox.margin>
+            <Insets bottom="10.0" top="40.0" />
+        </VBox.margin>
+    </Label>
+    <TableView fx:id="targetTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn prefWidth="65.0" text="%column.name" >
+                <cellValueFactory>
+                    <PropertyValueFactory property="name" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="198.0" text="%column.target.coordinates">
+                <cellValueFactory>
+                    <PropertyValueFactory property="targetCoordinates" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="60.0" text="%column.distance">
+                <cellValueFactory>
+                    <PropertyValueFactory property="distance" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="60.0" text="%column.azimuth">
+                <cellValueFactory>
+                    <PropertyValueFactory property="azimuth" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="60.0" text="%column.interval">
+                <cellValueFactory>
+                    <PropertyValueFactory property="interval" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="198.0" text="%column.obus.coordinates">
+                <cellValueFactory>
+                    <PropertyValueFactory property="obusCoordinates" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <HBox alignment="CENTER_RIGHT" spacing="10.0">
+        <children>
+            <Button fx:id="add" mnemonicParsing="false" styleClass="form-button" text="%button.add">
+                <graphic>
+                    <Region styleClass="svg-icon, add" />
+                </graphic>
+            </Button>
+            <Button fx:id="edit" mnemonicParsing="false" styleClass="form-button" text="%button.edit">
+                <graphic>
+                    <Region styleClass="svg-icon, edit" />
+                </graphic>
+            </Button>
+            <Button fx:id="upload" mnemonicParsing="false" styleClass="form-button" text="%button.upload">
+                <graphic>
+                    <Region styleClass="svg-icon, upload" />
+                </graphic>
+            </Button>
+            <Button fx:id="delete" mnemonicParsing="false" styleClass="form-button" text="%button.deleted">
+                <graphic>
+                    <Region styleClass="svg-icon, close" />
+                </graphic>
+            </Button>
+        </children>
+        <padding>
+            <Insets bottom="10.0" top="10.0" />
+        </padding>
+    </HBox>
+    <stylesheets>
+        <URL value="@../../css/variables.css" />
+        <URL value="@../../css/general.css" />
+    </stylesheets>
+</fx:root>

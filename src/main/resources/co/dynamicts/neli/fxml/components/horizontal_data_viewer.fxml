@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<fx:root alignment="CENTER" maxWidth="150.0" minWidth="150.0" prefHeight="25.0" prefWidth="150.0" styleClass="data-viewer" type="javafx.scene.layout.HBox" spacing="9" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="leftLabel" ellipsisString="" prefWidth="160.0" text="left" />
+        <Label fx:id="rightLabel" alignment="CENTER_RIGHT" ellipsisString="" prefWidth="160.0" text="right" textAlignment="RIGHT" />
+    </children>
+    <padding>
+        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+    </padding>
+    <stylesheets>
+        <URL value="@/css/home/home_location.css" />
+    </stylesheets>
+</fx:root>

@@ -1,0 +1,93 @@
+.icon {
+    -fx-padding: 4;
+    -fx-border-insets: 4;
+    -fx-background-insets: 4;
+}
+
+.white-two {
+    -fx-fill: -color-white-two;
+}
+
+.spacing-7 {
+    -fx-spacing: 7;
+}
+
+.data-field {
+    -fx-border-color: -color-brownish-gray;
+    -fx-border-insets: 0;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+
+    -fx-pref-width: 201px;
+    -fx-max-width: 201px;
+    -fx-min-width: 201px;
+
+    -fx-pref-height: 32px;
+    -fx-max-height: 32px;
+    -fx-min-height: 32px;
+}
+
+.height-16 {
+    -fx-pref-height: 14px;
+    -fx-max-height: 14px;
+    -fx-min-height: 14px;
+}
+
+.align-left {
+    -fx-alignment: left;
+    -fx-text-alignment: left;
+}
+
+.align-right {
+    -fx-alignment: right;
+    -fx-text-alignment: right;
+}
+
+.font-12 {
+    -fx-font-size: 12px;
+}
+
+.font-14 {
+    -fx-font-size: 14px;
+}
+
+.value {
+    -fx-pref-width: 40px;
+}
+
+.icon-container {
+    -fx-pref-height: 32px;
+    -fx-max-height: 32px;
+    -fx-min-height: 32px;
+
+    -fx-pref-width: 22px;
+    -fx-max-width: 22px;
+    -fx-min-width: 22px;
+
+    -fx-alignment: top_center;
+
+    -fx-padding: 4px 0 0 0;
+}
+
+.icon-region {
+    -size: 16;
+    -fx-min-height: -size;
+     -fx-max-height: -size;
+     -fx-background-color: -color-white;
+}
+
+.width-176 {
+    -fx-pref-width: 176px;
+    -fx-max-width: 176px;
+    -fx-min-width: 176px;
+}
+
+.icon {
+    -fx-pref-width: 10;
+    -fx-pref-height: 10;
+    -fx-min-width: 10;
+    -fx-max-width: 10;
+    -fx-min-height: 10;
+    -fx-max-height: 10;
+    -fx-fill: #ffffff;
+}

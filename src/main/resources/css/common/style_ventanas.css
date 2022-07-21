@@ -1,0 +1,121 @@
+.password-field {
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+    -fx-pref-height: 34px;
+    -fx-min-width: 268px;
+    -fx-max-width: 268px;
+    -fx-pref-width: 268px;
+    -fx-translate-x: 37px;
+    -fx-translate-y: 123px;
+    -fx-text-fill: #606060;
+    -fx-background-color: #191919;
+    -fx-border-color: #606060;
+}
+
+.password-field-wrong {
+    -fx-min-height: 34px;
+    -fx-max-height: 34px;
+    -fx-pref-height: 34px;
+    -fx-max-width: 268px;
+    -fx-min-width: 268px;
+    -fx-pref-width: 268px;
+    -fx-translate-x: 37px;
+    -fx-translate-y: 123px;
+    -fx-text-fill: #606060;
+    -fx-background-color: #191919;
+    -fx-border-color: -color-grapefruit;
+}
+
+#confirmacionMunicion {
+    -fx-border-width: 1px;
+    -fx-border-color: #606060;
+}
+
+.passwordWrapper {
+    -fx-min-height: 260px;
+    -fx-max-height: 260px;
+    -fx-pref-height: 260px;
+    -fx-min-width: 341px;
+    -fx-max-width: 341px;
+    -fx-pref-width: 341px;
+    -fx-background-color: #191919;
+    -fx-border-color: #606060;
+    -fx-border-width: 1px;
+}
+
+#baseButton {
+    -fx-min-width: 151px;
+    -fx-max-width: 151px;
+    -fx-pref-width: 151px;
+    -fx-min-height: 44px;
+    -fx-max-height: 44px;
+    -fx-pref-height: 44px;
+}
+
+#buttonBox {
+    -fx-spacing: 7px;
+    -fx-translate-y: 200px;
+    -fx-translate-x: 16px;
+}
+
+.ingresar {
+    -fx-min-width: 309px;
+    -fx-max-width: 309px;
+    -fx-pref-width: 309px;
+    -fx-font-family: DINPro-Bold;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-translate-x: 16px;
+    -fx-translate-y: 55px;
+}
+
+.ingresar2 {
+    -fx-min-width: 268px;
+    -fx-max-width: 268px;
+    -fx-pref-width: 268px;
+    -fx-font-family: DINPro-Bold;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #d8d8d8;
+    -fx-translate-x: 37px;
+    -fx-translate-y: 103px;
+}
+
+.texto-advertencia {
+    -fx-min-width: 268px;
+    -fx-max-width: 268px;
+    -fx-pref-width: 268px;
+    -fx-font-family: DINPro-Bold;
+    -fx-font-weight: bold;
+    -fx-text-fill: #d8d8d8;
+    -fx-font-size: 10px;
+    -fx-translate-x: 37px;
+    -fx-translate-y: 157px;
+}
+
+.texto-advertencia-wrong {
+    -fx-min-width: 268px;
+    -fx-max-width: 268px;
+    -fx-pref-width: 268px;
+    -fx-font-family: DINPro-Bold;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-grapefruit;
+    -fx-font-size: 10px;
+    -fx-translate-x: 37px;
+    -fx-translate-y: 157px;
+}
+
+.fullPagePane {
+
+    -fx-min-width: 667px;
+    -fx-max-width: 667px;
+    -fx-pref-width: 667px;
+
+    -fx-min-height: 718px;
+    -fx-max-height: 718px;
+    -fx-pref-height: 718px;
+
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import co.dynamicts.neli.ui.component.common.TextfieldTitle?>
+<?import co.dynamicts.neli.ui.component.common.MenuTitle?>
+<?import java.net.URL?>
+<fx:root type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         fx:id="espoletaHBox" styleClass="spacingHBox">
+    <stylesheets>
+        <URL value="@/css/municion/style_editar_config_municion.css"/>
+        <URL value="@/css/common/common_paginas.css"/>
+    </stylesheets>
+    <children>
+        <TextfieldTitle fx:id="gunFuseName"/>
+        <TextfieldTitle fx:id="gunFuseWeight"/>
+        <TextfieldTitle fx:id="deflectionAcceleration"/>
+    </children>
+</fx:root>
+

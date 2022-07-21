@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import co.dynamicts.neli.ui.component.common.MenuTitle?>
+<?import co.dynamicts.neli.ui.component.common.LabelTitle?>
+<?import co.dynamicts.neli.ui.component.common.ButtonImage?>
+<fx:root type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8.0.231"
+         xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox fx:id="bigTitleWrapper">
+            <children>
+                <VBox fx:id="menuWrapper" prefHeight="200.0" prefWidth="100.0">
+                    <stylesheets>
+                        <URL value="@/css/common/style_menu_title.css"/>
+                    </stylesheets>
+                    <children>
+                        <MenuTitle fx:id="ammunitionType"/>
+                        <MenuTitle fx:id="gunFuseType"/>
+                        <MenuTitle fx:id="propellantType"/>
+                        <MenuTitle fx:id="zona"/>
+                        <LabelTitle fx:id="temperatura"/>
+                        <MenuTitle fx:id="explosionHeight"/>
+                        <HBox fx:id="twoButtonContainer">
+                            <children>
+                                <ButtonImage fx:id="cancelar"/>
+                                <ButtonImage fx:id="guardar"/>
+                            </children>
+                        </HBox>
+                        <Label fx:id="textManejoDeMunicion" text="Label"/>
+                        <HBox fx:id="threeButtonContainer">
+                            <children>
+                                <ButtonImage fx:id="addAmmunition"/>
+                                <ButtonImage fx:id="deleteAmmunition"/>
+                                <ButtonImage fx:id="editAmmunition"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</fx:root>

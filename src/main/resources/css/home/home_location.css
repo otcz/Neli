@@ -1,0 +1,89 @@
+
+.paneGraficasHome {
+
+    -fx-padding: 24px 0px 16px 24px;
+    -fx-spacing: 12px;
+
+    -fx-max-width: 673px;
+    -fx-min-width: 673px;
+    -fx-pref-width: 673px;
+
+    -fx-min-height: 270px;
+    -fx-max-height: 270px;
+    -fx-pref-height: 270px;
+
+}
+
+.paneGraficasHome2 {
+
+    -fx-padding: 24px 0px 16px 24px;
+    -fx-spacing: 12px;
+
+    -fx-max-width: 673px;
+    -fx-min-width: 673px;
+    -fx-pref-width: 673px;
+
+    -fx-min-height: 270px;
+    -fx-max-height: 270px;
+    -fx-pref-height: 270px;
+
+}
+
+.orientacionDataViewer {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.data-viewer-text .badData {
+    -fx-text-fill: -color-grapefruit;
+    -fx-font-family: DINPro-Bold;
+    -fx-fill: -color-grapefruit;
+}
+
+.badData {
+    -fx-text-fill: -color-grapefruit;
+    -fx-font-family: DINPro-Bold;
+    -fx-fill: -color-grapefruit;
+
+}
+
+.medData {
+    -fx-text-fill: -color-yellow;
+    -fx-font-family: DINPro-Bold;
+    -fx-fill: -color-yellow;
+}
+
+.okData .label {
+    -fx-text-fill: -color-seaweed;
+    -fx-font-family: DINPro-Bold;
+    -fx-fill:-color-seaweed;
+
+}
+
+.okData {
+    -fx-text-fill: -color-seaweed;
+    -fx-font-family: DINPro-Bold;
+    -fx-fill: -color-seaweed;
+
+}
+
+.defaultData {
+    -fx-text-fill: -color-white;
+    -fx-font-family: DINPro-Bold;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-fill: -color-white;
+}
+
+.reachTitle {
+    -fx-alignment: RIGHT;
+    -fx-text-alignment: RIGHT;
+}
+
+.data-viewer-text {
+    -fx-font-size: 10;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-font-family: "DINAlternate-Regular";
+
+}

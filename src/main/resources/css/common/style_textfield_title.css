@@ -1,0 +1,33 @@
+#labelWrapperCMS {
+    -fx-spacing: 4px;
+    -fx-background-color: #191919;
+    -fx-pref-height: 54px;
+    -fx-pref-width: 196px;
+}
+
+#titleLabelCMS {
+    -fx-min-height: 16px;
+    -fx-max-height: 16px;
+    -fx-pref-height: 16px;
+    -fx-min-width: 196px;
+    -fx-max-width: 196px;
+    -fx-pref-width: 196px;
+    -fx-background-color: #191919;
+    -fx-font-size: 14px;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+    -fx-text-fill: #d8d8d8;
+}
+
+#measureLabelCMS {
+    -fx-pref-height: 34px;
+    -fx-pref-width: 196px;
+    -fx-background-color: #191919;
+    -fx-border-color: #606060;
+    -fx-border-width: 1px;
+    -fx-font-size: 18px;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 4px 4px 4px 4px;
+}

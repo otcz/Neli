@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.shape.SVGPath?>
+
+<?import javafx.geometry.Insets?>
+<fx:root styleClass="interface" type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml">
+    <Label styleClass="h2" text="Funciones" wrapText="true">
+        <graphic>
+            <SVGPath content="%svg.path.functions" fill="#d8d8d8" scaleX="0.75" scaleY="0.75" styleClass="icon" />
+        </graphic>
+        <VBox.margin>
+            <Insets bottom="10.0" />
+        </VBox.margin>
+    </Label>
+    <stylesheets>
+        <URL value="@../../css/variables.css" />
+        <URL value="@../../css/general.css" />
+    </stylesheets>
+</fx:root>

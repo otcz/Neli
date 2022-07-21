@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.TextField?>
+<fx:root styleClass="interface" type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.172-ea">
+    <HBox spacing="10.0">
+        <children>
+            <VBox>
+                <children>
+                    <GridPane hgap="5.0" maxWidth="612.0" prefWidth="612.0" vgap="5.0">
+                        <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                            <RowConstraints vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <Label text="%label.municion.zonas" />
+                        <HBox fx:id="headerZone" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" >
+                            <children>
+                                <Label fx:id="headerZoneTitle" text="%label.municion.zonas.zona" />
+                                <TextField fx:id="zone0" />
+                                <TextField fx:id="zone1" />
+                                <TextField fx:id="zone2" />
+                                <TextField fx:id="zone3" />
+                                <TextField fx:id="zone4" />
+                                <TextField fx:id="zone5" />
+                                <TextField fx:id="zone6" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="vel" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" >
+                            <children>
+                                <Label fx:id="velTitle" text="%label.municion.zonas.velocidad.std" />
+                                <TextField fx:id="vel0" />
+                                <TextField fx:id="vel1" />
+                                <TextField fx:id="vel2" />
+                                <TextField fx:id="vel3" />
+                                <TextField fx:id="vel4" />
+                                <TextField fx:id="vel5" />
+                                <TextField fx:id="vel6" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="ajCD" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" >
+                            <children>
+                                <Label fx:id="ajCDTitle" text="%label.municion.zonas.ajuste.fd" />
+                                <TextField fx:id="ajCD0" />
+                                <TextField fx:id="ajCD1" />
+                                <TextField fx:id="ajCD2" />
+                                <TextField fx:id="ajCD3" />
+                                <TextField fx:id="ajCD4" />
+                                <TextField fx:id="ajCD5" />
+                                <TextField fx:id="ajCD6" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="ajCL" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" >
+                            <children>
+                                <Label fx:id="ajCLTitle" text="%label.municion.zonas.ajuste.fl.a0" />
+                                <TextField fx:id="ajCL0" />
+                                <TextField fx:id="ajCL1" />
+                                <TextField fx:id="ajCL2" />
+                                <TextField fx:id="ajCL3" />
+                                <TextField fx:id="ajCL4" />
+                                <TextField fx:id="ajCL5" />
+                                <TextField fx:id="ajCL6" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="ajK" GridPane.columnSpan="2147483647" GridPane.rowIndex="5" >
+                            <children>
+                                <Label fx:id="kpTitle" text="%label.municion.zonas.k.p" />
+                                <TextField fx:id="ajK0" />
+                                <TextField fx:id="ajK1" />
+                                <TextField fx:id="ajK2" />
+                                <TextField fx:id="ajK3" />
+                                <TextField fx:id="ajK4" />
+                                <TextField fx:id="ajK5" />
+                                <TextField fx:id="ajK6" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="ajFibb" GridPane.columnSpan="2147483647" GridPane.rowIndex="6" >
+                            <children>
+                                <Label fx:id="ajFibbTitle" text="%label.municion.zonas.ajuste.fibb" />
+                                <TextField fx:id="ajFibb0" />
+                                <TextField fx:id="ajFibb1" />
+                                <TextField fx:id="ajFibb2" />
+                                <TextField fx:id="ajFibb3" />
+                                <TextField fx:id="ajFibb4" />
+                                <TextField fx:id="ajFibb5" />
+                                <TextField fx:id="ajFibb6" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="prop" GridPane.columnSpan="2147483647" GridPane.rowIndex="7" >
+                            <children>
+                                <Label fx:id="propTitle" text="%label.municion.zonas.prop.name" />
+                                <TextField fx:id="prop0" />
+                                <TextField fx:id="prop1" />
+                                <TextField fx:id="prop2" />
+                                <TextField fx:id="prop3" />
+                                <TextField fx:id="prop4" />
+                                <TextField fx:id="prop5" />
+                                <TextField fx:id="prop6" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="gradTemp" GridPane.columnSpan="2147483647" GridPane.rowIndex="8" >
+                            <children>
+                                <Label fx:id="gradTempTitle" text="%label.municion.zonas.grad.temp" />
+                                <TextField fx:id="gradTemp0" />
+                                <TextField fx:id="gradTemp1" />
+                                <TextField fx:id="gradTemp2" />
+                                <TextField fx:id="gradTemp3" />
+                                <TextField fx:id="gradTemp4" />
+                                <TextField fx:id="gradTemp5" />
+                                <TextField fx:id="gradTemp6" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="pesoVel" GridPane.columnSpan="2147483647" GridPane.rowIndex="9" >
+                            <children>
+                                <Label fx:id="pesoVelTitle" text="%label.municion.zonas.peso.vel" />
+                                <TextField fx:id="pesoVel0" />
+                                <TextField fx:id="pesoVel1" />
+                                <TextField fx:id="pesoVel2" />
+                                <TextField fx:id="pesoVel3" />
+                                <TextField fx:id="pesoVel4" />
+                                <TextField fx:id="pesoVel5" />
+                                <TextField fx:id="pesoVel6" />
+                            </children>
+                        </HBox>
+                    </GridPane>
+                </children>
+            </VBox>
+        </children>
+    </HBox>
+    <stylesheets>
+        <URL value="@../../../css/variables.css" />
+        <URL value="@../../../css/general.css" />
+        <URL value="@../../../css/add_ammo.css" />
+    </stylesheets>
+</fx:root>

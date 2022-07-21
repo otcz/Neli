@@ -1,0 +1,30 @@
+.bigTarget {
+    -fx-fill: #191919;
+    -fx-opacity: 0.804;
+}
+
+.targetDefault {
+    -fx-fill: #d8d8d8;
+}
+
+.targetOk {
+    -fx-fill: #16DB71;
+}
+
+.targetMed {
+    -fx-fill: #FCB400;
+}
+
+.targetBad {
+    -fx-fill: #FF5555;
+}
+
+.grayCircle {
+    -fx-fill: #ffffff;
+    -fx-stroke: #ffffff;
+}
+
+.greenCircle {
+    -fx-fill: #16DB71;
+    -fx-stroke: #16DB71;
+}

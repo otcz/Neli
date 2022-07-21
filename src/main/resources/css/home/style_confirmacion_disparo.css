@@ -1,0 +1,83 @@
+.efectPane {
+    -fx-min-width: 341px;
+    -fx-max-width: 341px;
+    -fx-pref-width: 341px;
+    -fx-min-height: 163px;
+    -fx-max-height: 163px;
+    -fx-pref-height: 163px;
+
+    -fx-border-color: #ff5555;
+    -fx-background-color: #191919;
+
+    -fx-opacity: 0.9;
+    -fx-scale-z: 2;
+
+
+}
+
+#paneControlarDisparo {
+    -fx-min-width: 341px;
+    -fx-max-width: 341px;
+    -fx-pref-width: 341px;
+    -fx-min-height: 163px;
+    -fx-max-height: 163px;
+    -fx-pref-height: 163px;
+    -fx-border-color: #ff5555;
+    -fx-background-color: transparent;
+}
+
+#alertaImage {
+    -fx-translate-x: 155px;
+    -fx-translate-y: 16px;
+}
+
+#close {
+    -fx-min-width: 10px;
+    -fx-max-width: 10px;
+    -fx-pref-width: 10px;
+    -fx-min-height: 10px;
+    -fx-max-height: 10px;
+    -fx-pref-height: 10px;
+    -fx-fit-to-height: 10px;
+
+}
+
+#seguro {
+    -fx-min-width: 341px;
+    -fx-max-width: 341px;
+    -fx-pref-width: 341px;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-text-fill: #ff5555;
+    -fx-translate-y: 55px;
+}
+
+#baseButton {
+    -fx-min-width: 151px;
+    -fx-max-width: 151px;
+    -fx-pref-width: 151px;
+
+    -fx-min-height: 44px;
+    -fx-max-height: 44px;
+    -fx-pref-height: 44px;
+}
+
+#buttonBox {
+    -fx-spacing: 7px;
+    -fx-translate-y: 103px;
+    -fx-translate-x: 16px;
+}
+
+.confirmarBigPane {
+
+    -fx-min-width: 667px;
+    -fx-max-width: 667px;
+    -fx-pref-width: 667px;
+
+    -fx-min-height: 718px;
+    -fx-max-height: 718px;
+    -fx-pref-height: 718px;
+
+}

@@ -1,0 +1,46 @@
+#baseButton {
+    -fx-pref-width: 129px;
+
+    -fx-pref-height: 44px;
+    -fx-min-height: 44px;
+    -fx-max-height: 44px;
+    -fx-translate-y: 0px;
+
+    -fx-background-insets: 0 0 0 0;
+
+    -fx-border-width: 1px;
+    -fx-border-color: #606060;
+    -fx-background-color: #60606088;
+}
+
+#flowWrapper {
+    -fx-padding: 15px, 15px, 15px, 15px;
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+
+}
+
+#flowWrapper .label {
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-family: "DIN Alternate";
+    -fx-font-size: 12px;
+    -fx-pref-width: 134px;
+    -fx-pref-height: 14px;
+    -fx-min-width: 124px;
+    -fx-min-height: 14px;
+    -fx-background-color: transparent;
+}
+
+
+#baseButton:hover {
+    -fx-background-color: #FCB400;
+    -fx-border-color: #FCB400;
+
+}
+
+#baseButton:pressed {
+    -fx-border-color: #FCB400;
+    -fx-background-color: #FCB400;
+}

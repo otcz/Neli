@@ -1,0 +1,124 @@
+.buttonGraficacion {
+
+    -fx-min-height: 25px;
+    -fx-max-height: 25px;
+    -fx-pref-height: 25px;
+
+    -fx-min-width: 25px;
+    -fx-max-width: 25px;
+    -fx-pref-width: 25px;
+
+    -fx-text-fill: -color-white;
+    -fx-min-height: 25;
+    -fx-padding: 0 0 0 0;
+    -fx-border-radius: 0;
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+
+    -fx-border-color: #525252;
+    -fx-background-color: #383838;
+
+}
+
+.buttonGraficacion .button {
+
+    -fx-min-height: 25px;
+    -fx-max-height: 25px;
+    -fx-pref-height: 25px;
+
+    -fx-min-width: 25px;
+    -fx-max-width: 25px;
+    -fx-pref-width: 25px;
+
+    -fx-border-radius: 0;
+    -fx-border-width: 1;
+
+    -fx-border-color: #525252;
+    -fx-background-color: #383838;
+
+}
+
+.buttonGraficacion:hover {
+
+    -fx-border-color: -color-yellow;
+    -fx-background-color: -color-yellow;
+}
+
+.labelTituloGraficacion {
+
+    -fx-min-width: 550px;
+    -fx-max-width: 550px;
+    -fx-pref-width: 550px;
+
+
+}
+
+.page {
+    -fx-min-height: 718px;
+    -fx-max-height: 718px;
+    -fx-pref-height: 718px;
+
+    -fx-min-width: 667px;
+    -fx-max-width: 667px;
+    -fx-pref-width: 667px;
+
+    -fx-background-color: -color-black-two;
+    -fx-border-color: -color-brownish-gray;
+
+    -fx-padding: 0 16 16 16;
+
+
+}
+
+.pageContent {
+    -fx-background-color: -color-black-two;
+    -fx-border-color: -color-brownish-gray;
+    -fx-border-width: 1px;
+    -fx-spacing: 8px;
+    -fx-padding: 16 13 16 13;
+
+}
+
+.graphics {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-border-width: 1px;
+    -fx-border-color: -color-brownish-gray;
+}
+
+.twoGraphics {
+
+    -fx-min-height: 618px;
+    -fx-max-height: 618px;
+    -fx-pref-height: 618px;
+
+    -fx-min-width: 634px;
+    -fx-max-width: 634px;
+    -fx-pref-width: 634px;
+
+    -fx-border-width: 1px;
+    -fx-border-color: -color-brownish-gray;
+    -fx-padding: 10 13 10 13;
+    -fx-spacing: 32px;
+}
+
+
+.chart-vertical-grid-lines {
+    -fx-stroke: rgb(85, 85, 85);
+    -fx-stroke-width: 0.5;
+    -fx-stroke-dash-array: 10000;
+
+}
+
+.chart-horizontal-grid-lines {
+    -fx-stroke: rgb(85, 85, 85);
+    -fx-stroke-dash-array: 10000;
+
+}
+
+.axis-tick-mark {
+    -fx-stroke-width: 0px;
+}
+
+.axis-minor-tick-mark {
+    -fx-stroke-width: 0px;
+}

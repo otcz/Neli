@@ -1,0 +1,179 @@
+
+VBox {
+    -fx-max-width: 602px;
+    -fx-min-width: 602px;
+    -fx-pref-width: 602px;
+}
+
+
+#header {
+    -fx-background-color: #606060;
+    -fx-border-color: #acacacac;
+    -fx-border-width: 1px;
+    -fx-spacing: 8px;
+    -fx-padding: 9px 19px 9px 8px;
+    -fx-max-width: 602px;
+    -fx-min-width: 602px;
+    -fx-pref-width: 602px;
+    -fx-max-height: 30px;
+    -fx-min-height: 30px;
+    -fx-pref-height: 30px;
+}
+
+#headerTitle {
+    -fx-max-width: 36px;
+    -fx-min-width: 36px;
+    -fx-pref-width: 36px;
+    -fx-max-height: 12px;
+    -fx-min-height: 12px;
+    -fx-pref-height: 12px;
+    -fx-font-size: 10px;
+    -fx-background-color: #606060;
+    -fx-font-family: DINPro-Bold;
+    -fx-text-fill: #fcb400;
+    -fx-translate-y: -3px;
+}
+
+#header .text-field {
+    -fx-max-width: 30px;
+    -fx-min-width: 30px;
+    -fx-pref-width: 30px;
+    -fx-max-height: 16px;
+    -fx-min-height: 16px;
+    -fx-pref-height: 16px;
+    -fx-font-size: 10px;
+    -fx-background-color: #606060;
+    -fx-font-family: DINPro-Bold;
+    -fx-text-alignment: bottom-left;
+    -fx-text-fill: #fcb400;
+    -fx-padding: 0px 0px 0px 0px;
+    -fx-translate-y: -3px;
+}
+
+#row0 {
+    -fx-background-color: #191919;
+    -fx-border-color: rgba(96, 96, 96, 0.5);
+    -fx-border-width: 0px;
+    -fx-spacing: 0px;
+    -fx-padding: 9px 19px 9px 8px;
+    -fx-max-width: 602px;
+    -fx-min-width: 602px;
+    -fx-pref-width: 602px;
+    -fx-max-height: 30px;
+    -fx-min-height: 30px;
+    -fx-pref-height: 30px;
+}
+
+#cdTitle {
+    -fx-max-width: 51px;
+    -fx-min-width: 51px;
+    -fx-pref-width: 51px;
+    -fx-font-size: 12px;
+    -fx-background-color: #191919;
+    -fx-font-family: DINPro-Bold;
+    -fx-text-fill: #ffffff;
+    -fx-translate-y: -2px;
+}
+
+#row0 .text-field {
+    -fx-max-width: 38px;
+    -fx-min-width: 38px;
+    -fx-pref-width: 38px;
+    -fx-font-size: 12px;
+    -fx-background-color: transparent;
+    -fx-font-family: DINPro-Bold;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 0px;
+    -fx-alignment: CENTER-LEFT;
+    -fx-text-alignment: top;
+    -fx-translate-y: -10px;
+    -fx-padding: 0px 0px 0px 0px;
+
+}
+
+
+#cb {
+    -fx-background-color: #191919;
+    -fx-border-color: rgba(96, 96, 96, 0.5);
+    -fx-border-width: 0px;
+    -fx-spacing: 0px;
+    -fx-padding: 9px 19px 9px 8px;
+    -fx-max-width: 602px;
+    -fx-min-width: 602px;
+    -fx-pref-width: 602px;
+    -fx-max-height: 30px;
+    -fx-min-height: 30px;
+    -fx-pref-height: 30px;
+}
+
+#cbTitle {
+    -fx-max-width: 51px;
+    -fx-min-width: 51px;
+    -fx-pref-width: 51px;
+    -fx-font-size: 12px;
+    -fx-background-color: #191919;
+    -fx-font-family: DINPro-Bold;
+    -fx-text-fill: #ffffff;
+    -fx-translate-y: -2px;
+}
+
+#cb .text-field {
+    -fx-max-width: 38px;
+    -fx-min-width: 38px;
+    -fx-pref-width: 38px;
+    -fx-font-size: 12px;
+    -fx-background-color: transparent;
+    -fx-font-family: DINPro-Bold;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 0px;
+    -fx-alignment: CENTER-LEFT;
+    -fx-text-alignment: top;
+    -fx-translate-y: -3;
+    -fx-padding: 0px 0px 0px 0px;
+
+
+}
+
+
+#row2 {
+
+    -fx-background-color: #303030;
+    -fx-border-color: rgba(96, 96, 96, 0.5);
+
+    -fx-border-width: 0px;
+    -fx-spacing: 0px;
+    -fx-padding: 9px 19px 9px 8px;
+    -fx-max-width: 602px;
+    -fx-min-width: 602px;
+    -fx-pref-width: 602px;
+    -fx-max-height: 30px;
+    -fx-min-height: 30px;
+    -fx-pref-height: 30px;
+}
+
+#clTitle {
+    -fx-max-width: 51px;
+    -fx-min-width: 51px;
+    -fx-pref-width: 51px;
+    -fx-font-size: 12px;
+    -fx-font-family: DINPro-Bold;
+    -fx-text-fill: #ffffff;
+    -fx-translate-y: -2px;
+}
+
+#row2 .text-field {
+    -fx-max-width: 38px;
+    -fx-min-width: 38px;
+    -fx-pref-width: 38px;
+    -fx-font-size: 12px;
+    -fx-background-color: transparent;
+    -fx-font-family: DINPro-Bold;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 0px;
+    -fx-alignment: CENTER-LEFT;
+    -fx-text-alignment: top;
+    -fx-translate-y: -10px;
+    -fx-padding: 0px 0px 0px 0px;
+
+
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.geometry.Insets?>
+<fx:root
+        alignment="CENTER_LEFT"
+        maxHeight="-Infinity"
+        prefHeight="27.0"
+        prefWidth="245.0"
+        styleClass="witness"
+        type="javafx.scene.layout.VBox"
+        xmlns="http://javafx.com/javafx/8.0.172-ea"
+        xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox alignment="CENTER_LEFT" minHeight="27.0" prefHeight="27.0" prefWidth="245.0">
+            <children>
+                <Label fx:id="title" minHeight="27.0" minWidth="118.0" styleClass="title" text="Title">
+                    <padding>
+                        <Insets left="8.0" right="8.0"/>
+                    </padding>
+                </Label>
+                <ToggleButton fx:id="toggle" styleClass="toggle-on-off" text="la/lo"/>
+            </children>
+        </HBox>
+    </children>
+</fx:root>
+
+        <!--<fx:root alignment="CENTER_LEFT" prefWidth="265.0" styleClass="sidebar-item" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">-->
+        <!--    <children>-->
+        <!--        <Label fx:id="title" minWidth="113.0" text="Text" />-->
+        <!--        <ToggleButton fx:id="toggle" styleClass="toggle-on-off" text="On/Off" />-->
+        <!--    </children>-->
+        <!--</fx:root>-->

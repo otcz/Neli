@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.dynamicts.neli.ui.component.Coordinate?>
+<?import co.dynamicts.neli.ui.component.CoordinateUTM?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.StackPane?>
+
+<?import co.dynamicts.neli.ui.component.common.MenuTitle?>
+<?import co.dynamicts.neli.ui.component.common.ToggleButton ?>
+<?import javafx.scene.layout.BorderPane?>
+<fx:root type="javafx.scene.layout.BorderPane" prefWidth="263.0" maxWidth="263.0" minWidth="263.0" styleClass="sidebar"
+         xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets left="9.0" right="10.0" />
+    </padding>
+    <top>
+        <HBox spacing="8.0">
+            <children>
+                <ImageView fitHeight="53.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/logo.png"/>
+                    </image>
+                </ImageView>
+                <VBox>
+                    <children>
+                        <Label text="%label.general.title">
+                            <styleClass>
+                                <String fx:value="h3" />
+                                <String fx:value="title" />
+                            </styleClass>
+                        </Label>
+                        <HBox spacing="8.0" alignment="TOP_LEFT">
+                            <Label fx:id="version" text="version">
+                                <styleClass>
+                                    <String fx:value="h3" />
+                                    <String fx:value="subtitle" />
+                                </styleClass>
+                            </Label>
+                        </HBox>
+                        <HBox spacing="10.0" alignment="TOP_LEFT">
+                            <Label fx:id="date" text="Date" >
+                                <styleClass>
+                                    <String fx:value="h3" />
+                                    <String fx:value="subtitle" />
+                                </styleClass>
+                            </Label>
+                            <Label fx:id="time" text="Time" >
+                                <styleClass>
+                                    <String fx:value="h3" />
+                                    <String fx:value="subtitle" />
+                                </styleClass>
+                            </Label>
+                            <Label fx:id="number" text="S/N" visible="false">
+                                <styleClass>
+                                    <String fx:value="h3" />
+                                    <String fx:value="subtitle" />
+                                </styleClass>
+                            </Label>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="16.0"/>
+            </padding>
+        </HBox>
+    </top>
+    <center>
+        <StackPane>
+            <children>
+                <VBox fx:id="systemGeo">
+                    <Coordinate fx:id="wantedCoordinates" text="%label.coordinate.wanted.geo"
+                                innerBoxStyleClass="background-brownish-grey">
+                        <padding>
+                            <Insets bottom="8.0"/>
+                        </padding>
+                    </Coordinate>
+                    <Coordinate fx:id="systemCoordinates" text="%label.coordinate.system.geo">
+                        <padding>
+                            <Insets bottom="8.0"/>
+                        </padding>
+                    </Coordinate>
+                    <Coordinate fx:id="impactCoordinates" text="%label.coordinate.impact.geo">
+                        <padding>
+                            <Insets bottom="16.0"/>
+                        </padding>
+                    </Coordinate>
+                </VBox>
+                <VBox fx:id="systemUTM">
+                    <CoordinateUTM fx:id="wantedCoordinatesUTM" text="%label.coordinate.wanted.utm"
+                                   innerBoxStyleClass="background-brownish-grey">
+                        <padding>
+                            <Insets bottom="8.0"/>
+                        </padding>
+                    </CoordinateUTM>
+                    <CoordinateUTM fx:id="systemCoordinatesUTM" text="%label.coordinate.system.utm">
+                        <padding>
+                            <Insets bottom="8.0"/>
+                        </padding>
+                    </CoordinateUTM>
+                    <CoordinateUTM fx:id="impactCoordinatesUTM" text="%label.coordinate.impact.utm">
+                        <padding>
+                            <Insets bottom="16.0"/>
+                        </padding>
+                    </CoordinateUTM>
+                </VBox>
+            </children>
+        </StackPane>
+    </center>
+    <bottom>
+        <VBox spacing="8.0">
+            <children>
+                <MenuTitle  menuWidth="242" prefWidth="242" maxWidth="242" minWidth="242"  fx:id="menuCriterio" />
+                <MenuTitle  menuWidth="242" prefWidth="242" maxWidth="242" minWidth="242"  fx:id="menuArea"   >
+                    <padding>
+                        <Insets bottom="16.0"/>
+                    </padding>
+                </MenuTitle>
+
+
+                <ToggleButton fx:id="toggleTrinca" labelText="%toggle.trinca" textOn="%toggle.trinca.text.on"  textOff="%toggle.trinca.text.off" />
+                <ToggleButton fx:id="toggleTrayectoria" labelText="%toggle.trayectoria" textOn="%toggle.trayectoria.text.on" textOff="%toggle.trayectoria.text.off"  />
+                <ToggleButton fx:id="toggleEstacion" labelText="%toggle.estacion" textOn="%toggle.estacion.text.on" textOff="%toggle.estacion.text.off" />
+                <ToggleButton fx:id="toggleZupt" labelText="%toggle.zupt" textOn="%toggle.zupt.text.on" textOff="%toggle.zupt.text.off" />
+
+            </children>
+        </VBox>
+    </bottom>
+    <stylesheets>
+        <URL value="@../../css/variables.css"/>
+        <URL value="@../../css/general.css"/>
+        <URL value="@../../css/common/style_menu_title.css"/>
+    </stylesheets>
+</fx:root>

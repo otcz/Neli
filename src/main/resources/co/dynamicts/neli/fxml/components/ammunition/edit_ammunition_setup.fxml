@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.dynamicts.neli.ui.component.ammunition.AddGunFuse?>
+<?import co.dynamicts.neli.ui.component.ammunition.MachTable?>
+<?import co.dynamicts.neli.ui.component.ammunition.ZoneTable?>
+<?import co.dynamicts.neli.ui.component.common.ButtonImage?>
+<?import co.dynamicts.neli.ui.component.common.TextfieldTitle?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import co.dynamicts.neli.ui.component.common.Confirm?>
+<?import javafx.scene.layout.StackPane?>
+<?import co.dynamicts.neli.ui.component.home.top.menu.TopMenu?>
+<fx:root fx:id="ammunitionSetupWrapper" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.231"
+         xmlns:fx="http://javafx.com/fxml/1">
+
+    <stylesheets>
+        <URL value="@/css/municion/style_editar_config_municion.css"/>
+        <URL value="@/css/common/common_paginas.css"/>
+    </stylesheets>
+
+    <children>
+        <StackPane>
+            <children>
+                <VBox>
+                    <Label fx:id="titleLabel" text="PROPIEDADES FISICAS"/>
+                    <HBox fx:id="HBox1" spacing="12.5">
+                        <children>
+                            <TextfieldTitle fx:id="type"/>
+                            <TextfieldTitle fx:id="diameter"/>
+                            <TextfieldTitle fx:id="acceleration"/>
+                        </children>
+                    </HBox>
+                    <HBox fx:id="projectilInfo" spacing="12.5">
+                        <children>
+                            <TextfieldTitle fx:id="zones"/>
+                            <TextfieldTitle fx:id="projectileWeight"/>
+                            <TextfieldTitle fx:id="stdWeight"/>
+                            <TextfieldTitle fx:id="kgWeight"/>
+                        </children>
+                    </HBox>
+                    <Label text=""/>
+                    <Label text="COEFICIENTES"/>
+                    <MachTable fx:id="machTable" maxWidth="602.0" minWidth="602.0" prefWidth="602.0"/>
+                    <Label text=""/>
+                    <Label text="ZONAS"/>
+                    <ZoneTable fx:id="tableZone" maxWidth="602.0" prefWidth="602.0"/>
+
+                    <VBox fx:id="fuseVBbox" styleClass="spacingVBox">
+                        <children>
+                            <Label text=""/>
+                            <Label text="ESPOLETAS"/>
+                            <HBox fx:id="fuse1" styleClass="spacingHBox">
+                                <children>
+                                    <TextfieldTitle fx:id="gunFuseName1"/>
+                                    <TextfieldTitle fx:id="gunFuseWeight1"/>
+                                    <TextfieldTitle fx:id="deflectionAcceleration1"/>
+
+                                </children>
+                            </HBox>
+                            <HBox fx:id="fuse2" styleClass="spacingHBox">
+                                <children>
+                                    <TextfieldTitle fx:id="gunFuseName2"/>
+                                    <TextfieldTitle fx:id="gunFuseWeight2"/>
+                                    <TextfieldTitle fx:id="deflectionAcceleration2"/>
+
+                                </children>
+                            </HBox>
+                            <HBox fx:id="fuse3" styleClass="spacingHBox">
+                                <children>
+                                    <TextfieldTitle fx:id="gunFuseName3"/>
+                                    <TextfieldTitle fx:id="gunFuseWeight3"/>
+                                    <TextfieldTitle fx:id="deflectionAcceleration3"/>
+
+                                </children>
+                            </HBox>
+                            <Label text=""/>
+                            <Label text="AJUSTES DE PRECISION"/>
+                            <HBox fx:id="accuracy" maxHeight="50.0" minHeight="50.0" prefHeight="50.0">
+                                <children>
+                                    <TextfieldTitle fx:id="muzzleVelocity"/>
+                                    <TextfieldTitle fx:id="drag"/>
+                                    <TextfieldTitle fx:id="elevationThousandths"/>
+                                </children>
+                            </HBox>
+                            <HBox fx:id="accuracy2">
+                                <children>
+                                    <TextfieldTitle fx:id="a0"/>
+                                    <TextfieldTitle fx:id="a1"/>
+                                </children>
+                            </HBox>
+                            <Label text="DESVIACIÓN MPI"/>
+                            <HBox fx:id="desviacion1">
+                                <children>
+                                    <TextfieldTitle fx:id="surface"/>
+                                    <TextfieldTitle fx:id="azimuth"/>
+                                    <TextfieldTitle fx:id="location"/>
+
+                                </children>
+                            </HBox>
+                            <HBox fx:id="desviacion2">
+                                <children>
+                                    <TextfieldTitle fx:id="azimuthLocation"/>
+                                </children>
+
+                            </HBox>
+                            <HBox fx:id="bottomButton">
+
+                                <children>
+
+                                    <ButtonImage fx:id="cancel"/>
+
+                                    <ButtonImage fx:id="save"/>
+
+                                </children>
+
+                            </HBox>
+                        </children>
+                    </VBox>
+
+                </VBox>
+
+                <Confirm fx:id="confirmarDisparo" visible="false"/>
+
+            </children>
+        </StackPane>
+    </children>
+
+
+</fx:root>

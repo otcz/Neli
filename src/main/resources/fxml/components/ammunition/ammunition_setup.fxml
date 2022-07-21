@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import co.dynamicts.neli.ui.component.common.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="608.0" maxWidth="634.0" minHeight="608.0" minWidth="634.0" prefHeight="608.0" prefWidth="634.0"
+         styleClass="bordeContenido" type="javafx.scene.layout.AnchorPane"
+         xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/common/style_menu_title.css"/>
+        <URL value="@/css/common/common_paginas.css"/>
+
+    </stylesheets>
+
+    <children>
+        <VBox fx:id="bigTitleWrapper">
+            <children>
+                <VBox fx:id="menuWrapper">
+
+                    <children>
+                        <HBox fx:id="fistRow">
+                            <children>
+                                <MenuTitle fx:id="ammunitionType"/>
+                                <TextfieldTitle fx:id="quantity"/>
+                            </children>
+                        </HBox>
+                        <MenuTitle fx:id="gunFuseType"/>
+                                <MenuTitle fx:id="zone"/>
+                                <TextfieldTitle fx:id="squareQuanty"/>
+                                <LabelTitle fx:id="propellantType"/>
+                                <TextfieldTitle fx:id="temperature"/>
+                                <TextfieldTitle fx:id="explosionHeight"/>
+
+
+                        <HBox fx:id="twoButtonContainer">
+                            <children>
+                                <ButtonImage fx:id="cancel"/>
+                                <ButtonImage fx:id="save"/>
+                            </children>
+                        </HBox>
+                        <HBox fx:id="threeButtonContainer">
+                            <children>
+                                <ButtonImage fx:id="add"/>
+                                <ButtonImage fx:id="delete"/>
+                                <ButtonImage fx:id="edit"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</fx:root>

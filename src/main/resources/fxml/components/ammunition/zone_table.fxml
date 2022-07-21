@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root fx:id="ZonaWrapper" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/css/municion/style_zona_table.css" />
+    </stylesheets>
+    <children>
+        <HBox fx:id="header" maxWidth="602.0" minWidth="602.0" prefWidth="602.0">
+            <children>
+                <Label fx:id="headerTitle" text="Zona" />
+                <Label fx:id="headerTitle0" text="1" />
+                <Label fx:id="headerTitle1" text="2" />
+                <Label fx:id="headerTitle2" text="3" />
+                <Label fx:id="headerTitle3" text="4" />
+                <Label fx:id="headerTitle4" text="5" />
+                <Label fx:id="headerTitle5" text="6" />
+                <Label fx:id="headerTitle6" text="7" />
+                <Label fx:id="headerTitle7" text="8" />
+                <Label fx:id="headerTitle8" text="9" />
+                <Label fx:id="headerTitle9" text="10" />
+            </children>
+        </HBox>
+        <HBox fx:id="cd">
+            <children>
+                <Label fx:id="cdTitle" ellipsisString="" text="Vel Std [m/s]" />
+                <TextField fx:id="cd0" text="0000" />
+                <TextField fx:id="cd1" text="0000" />
+                <TextField fx:id="cd2" text="0000" />
+                <TextField fx:id="cd3" text="0000" />
+                <TextField fx:id="cd4" text="0000" />
+                <TextField fx:id="cd5" text="0000" />
+                <TextField fx:id="cd6" text="0000" />
+                <TextField fx:id="cd7" text="0000" />
+                <TextField fx:id="cd8" text="0000" />
+                <TextField fx:id="cd9" text="0000" />
+            </children>
+        </HBox>
+        <HBox fx:id="cb" maxWidth="602.0" minWidth="602.0" prefWidth="602.0">
+            <children>
+                <Label fx:id="cbTitle" text="Ajuste CD" />
+                <TextField fx:id="cb0" text="0000" />
+                <TextField fx:id="cb1" text="0000" />
+                <TextField fx:id="cb2" text="0000" />
+                <TextField fx:id="cb3" text="0000" />
+                <TextField fx:id="cb4" text="0000" />
+                <TextField fx:id="cb5" text="0000" />
+                <TextField fx:id="cb6" text="0000" />
+                <TextField fx:id="cb7" text="0000" />
+                <TextField fx:id="cb8" text="0000" />
+                <TextField fx:id="cb9" text="0000" />
+            </children>
+        </HBox>
+
+        <HBox fx:id="cl" maxWidth="602.0" minWidth="602.0" prefWidth="602.0">
+            <children>
+                <Label fx:id="clTitle" text="Ajuste CL" />
+                <TextField fx:id="cl0" text="0000" />
+                <TextField fx:id="cl1" text="0000" />
+                <TextField fx:id="cl2" text="0000" />
+                <TextField fx:id="cl3" text="0000" />
+                <TextField fx:id="cl4" text="0000" />
+                <TextField fx:id="cl5" text="0000" />
+                <TextField fx:id="cl6" text="0000" />
+                <TextField fx:id="cl7" text="0000" />
+                <TextField fx:id="cl8" text="0000" />
+                <TextField fx:id="cl9" text="0000" />
+            </children>
+        </HBox>
+        <HBox fx:id="propName" maxWidth="602.0" minWidth="602.0" prefWidth="602.0">
+            <children>
+                <Label fx:id="propNameTitle" text="Prop Name" />
+                <TextField fx:id="propName0" text="0000" />
+                <TextField fx:id="propName1" text="0000" />
+                <TextField fx:id="propName2" text="0000" />
+                <TextField fx:id="propName3" text="0000" />
+                <TextField fx:id="propName4" text="0000" />
+                <TextField fx:id="propName5" text="0000" />
+                <TextField fx:id="propName6" text="0000" />
+                <TextField fx:id="propName7" text="0000" />
+                <TextField fx:id="propName8" text="0000" />
+                <TextField fx:id="propName9" text="0000" />
+            </children>
+        </HBox>
+        <HBox fx:id="gradTemp" maxWidth="602.0" minWidth="602.0" prefWidth="602.0">
+            <children>
+                <Label fx:id="gradTempTitle" text="Grad Temp" />
+                <TextField fx:id="gradTemp0" text="0000" />
+                <TextField fx:id="gradTemp1" text="0000" />
+                <TextField fx:id="gradTemp2" text="0000" />
+                <TextField fx:id="gradTemp3" text="0000" />
+                <TextField fx:id="gradTemp4" text="0000" />
+                <TextField fx:id="gradTemp5" text="0000" />
+                <TextField fx:id="gradTemp6" text="0000" />
+                <TextField fx:id="gradTemp7" text="0000" />
+                <TextField fx:id="gradTemp8" text="0000" />
+                <TextField fx:id="gradTemp9" text="0000" />
+            </children>
+            
+        </HBox>
+        <HBox fx:id="gradPesoVel" maxWidth="602.0" minWidth="602.0" prefWidth="602.0">
+            <children>
+                <Label fx:id="gradPesoVelTitle" text="Peso-Vel[1m/s 100g]" />
+                <TextField fx:id="gradPesoVel0" text="0000" />
+                <TextField fx:id="gradPesoVel1" text="0000" />
+                <TextField fx:id="gradPesoVel2" text="0000" />
+                <TextField fx:id="gradPesoVel3" text="0000" />
+                <TextField fx:id="gradPesoVel4" text="0000" />
+                <TextField fx:id="gradPesoVel5" text="0000" />
+                <TextField fx:id="gradPesoVel6" text="0000" />
+                <TextField fx:id="gradPesoVel7" text="0000" />
+                <TextField fx:id="gradPesoVel8" text="0000" />
+                <TextField fx:id="gradPesoVel9" text="0000" />
+            </children>
+
+        </HBox>
+    </children>
+</fx:root>

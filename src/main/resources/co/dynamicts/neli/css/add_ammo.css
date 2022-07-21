@@ -1,0 +1,403 @@
+#machTitle, #cdTitle, #cdaTitle, #clTitle, #claTitle, #cmTitle, #cmaTitle, #cmagTitle, #cspinTitle,
+#cxbbTitle, #iformTitle, #iTitle {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 10;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center;
+    -fx-text-fill: -color-yellow;
+    -fx-min-height: 22;
+    -fx-max-height: 22;
+    -fx-pref-height: 22;
+}
+
+#header {
+    -fx-background-color: -color-brownish-gray-50;
+    -fx-border-color: -color-brownish-gray;
+    -fx-border-radius: 0;
+    -fx-alignment: center;
+    -fx-spacing: 4;
+    -fx-padding: 4 4 4 4;
+    -fx-min-height: 30;
+    -fx-max-height: 30;
+    -fx-pref-height: 30;
+ }
+
+#row0, #row2, #row4, #row6, #row8, #row10, #row12, #row14 {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-alignment: center;
+    -fx-spacing: 4;
+    -fx-padding: 4 4 4 4;
+    -fx-min-height: 30;
+    -fx-max-height: 30;
+    -fx-pref-height: 30;
+}
+
+#row0 .text-field, #row2 .text-field, #row4 .text-field, #row6 .text-field, #row8 .text-field,
+#row10 .text-field, #row12 .text-field, #row14 .text-field {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 11;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center;
+    -fx-text-fill: -color-white;
+    -fx-min-height: 22;
+    -fx-max-height: 22;
+    -fx-pref-height: 22;
+}
+
+#row0 .text-field:focused, #row2 .text-field:focused, #row4 .text-field:focused, #row6 .text-field:focused,
+#row8 .text-field:focused, #row10 .text-field:focused, #row12 .text-field:focused, #row14 .text-field:focused {
+    -fx-border-color: -color-yellow;
+}
+
+#row0 .text-field.error, #row2 .text-field.error, #row4 .text-field.error, #row6 .text-field.error,
+#row8 .text-field.error, #row10 .text-field.error, #row12 .text-field.error, #row14 .text-field.error {
+    -fx-border-color: -color-grapefruit;
+}
+
+#row1, #row3, #row5, #row7, #row9, #row11, #row13 {
+    -fx-background-color: -color-brownish-gray-50;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-alignment: center;
+    -fx-spacing: 4;
+    -fx-padding: 4 4 4 4;
+    -fx-min-height: 30;
+    -fx-max-height: 30;
+    -fx-pref-height: 30;
+}
+
+#row1 .text-field, #row3 .text-field, #row5 .text-field, #row7 .text-field, #row9 .text-field,
+#row11 .text-field, #row13 .text-field {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 11;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center;
+    -fx-text-fill: -color-white;
+    -fx-min-height: 22;
+    -fx-max-height: 22;
+    -fx-pref-height: 22;
+}
+
+#row1 .text-field:focused, #row3 .text-field:focused, #row5 .text-field:focused, #row7 .text-field:focused,
+#row9 .text-field:focused, #row11 .text-field:focused, #row13 .text-field:focused {
+    -fx-border-color: -color-yellow;
+}
+
+#row1 .text-field.error, #row3 .text-field.error, #row5 .text-field.error, #row7 .text-field.error,
+#row9 .text-field.error, #row11 .text-field.error, #row13 .text-field.error {
+    -fx-border-color: -color-grapefruit;
+}
+
+#headerMcb {
+    -fx-background-color: -color-brownish-gray-50;
+    -fx-border-color: -color-brownish-gray;
+    -fx-border-radius: 0;
+    -fx-alignment: center;
+    -fx-spacing: 4;
+    -fx-padding: 4 4 4 4;
+    -fx-min-height: 30;
+    -fx-max-height: 30;
+    -fx-pref-height: 30;
+}
+
+#headerMcbTitle {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 10;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center-left;
+    -fx-text-fill: -color-yellow;
+    -fx-min-height: 20;
+    -fx-max-height: 20;
+    -fx-pref-height: 20;
+    -fx-max-width: 35;
+    -fx-min-width: 35;
+    -fx-pref-width: 35;
+}
+
+#headerMcb .text-field {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 10;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center;
+    -fx-text-fill: -color-yellow;
+    -fx-min-height: 20;
+    -fx-max-height: 20;
+    -fx-pref-height: 20;
+}
+
+#headerMcb .text-field:focused {
+    -fx-border-color: -color-yellow;
+}
+
+#headerMcb .text-field.error {
+    -fx-border-color: -color-grapefruit;
+}
+
+#sc{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-alignment: center;
+    -fx-spacing: 4;
+    -fx-padding: 4 4 4 4;
+    -fx-min-height: 30;
+    -fx-max-height: 30;
+    -fx-pref-height: 30;
+}
+
+#scTitle {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 11;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center-left;
+    -fx-text-fill: -color-white;
+    -fx-min-height: 20;
+    -fx-max-height: 20;
+    -fx-pref-height: 20;
+    -fx-max-width: 35;
+    -fx-min-width: 35;
+    -fx-pref-width: 35;
+}
+
+#sc .text-field {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 11;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center;
+    -fx-text-fill: -color-white;
+    -fx-min-height: 22;
+    -fx-max-height: 22;
+    -fx-pref-height: 22;
+}
+
+#sc .text-field:focused {
+    -fx-border-color: -color-yellow;
+}
+
+#sc .text-field.error {
+    -fx-border-color: -color-grapefruit;
+}
+
+#headerZone {
+    -fx-background-color: -color-brownish-gray-50;
+    -fx-border-color: -color-brownish-gray;
+    -fx-border-radius: 0;
+    -fx-alignment: center;
+    -fx-spacing: 4;
+    -fx-padding: 4 4 4 4;
+    -fx-min-height: 30;
+    -fx-max-height: 30;
+    -fx-pref-height: 30;
+}
+
+#headerZoneTitle {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 10;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center-left;
+    -fx-text-fill: -color-yellow;
+    -fx-min-height: 20;
+    -fx-max-height: 20;
+    -fx-pref-height: 20;
+    -fx-max-width: 140;
+    -fx-min-width: 140;
+    -fx-pref-width: 140;
+}
+
+#headerZone .text-field {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 10;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center;
+    -fx-text-fill: -color-yellow;
+    -fx-min-height: 20;
+    -fx-max-height: 20;
+    -fx-pref-height: 20;
+}
+
+#headerZone .text-field:focused {
+    -fx-border-color: -color-yellow;
+}
+
+#headerZone .text-field.error {
+    -fx-border-color: -color-grapefruit;
+}
+
+#checkZone, #vel, #ajFMag, #ajFLA1, #ajFLA3, #ajiA0, #ajiA2, #ajiA4, #ajTimeA1, #ajTimeA3, #prop, #pesoVel,
+#kp, #fibbA1, #fibbA3, #fibbB2, #tdiA0, #tdiA2, #tbA0, #tbA2 {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-alignment: center;
+    -fx-spacing: 4;
+    -fx-padding: 4 4 4 4;
+    -fx-min-height: 30;
+    -fx-max-height: 30;
+    -fx-pref-height: 30;
+}
+
+#checkZoneTitle, #velTitle, #ajFMagTitle, #ajFLA1Title, #ajFLA3Title, #ajiA0Title, #ajiA2Title, #ajiA4Title, 
+#ajTimeA1Title, #ajTimeA3Title, #propTitle, #pesoVelTitle, #kpTitle, #fibbA1Title, #fibbA3Title, #fibbB2Title, 
+#tdiA0Title, #tdiA2Title, #tbA0Title, #tbA2Title {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 11;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center-left;
+    -fx-text-fill: -color-white;
+    -fx-min-height: 20;
+    -fx-max-height: 20;
+    -fx-pref-height: 20;
+    -fx-max-width: 140;
+    -fx-min-width: 140;
+    -fx-pref-width: 140;
+}
+
+#checkZone .text-field, #vel .text-field, #ajFMag .text-field, #ajFLA1 .text-field, #ajFLA3 .text-field,
+#ajiA0 .text-field, #ajiA2 .text-field, #ajiA4 .text-field, #ajTimeA1 .text-field, #ajTimeA3 .text-field,
+#prop .text-field, #pesoVel .text-field, #kp .text-field, #fibbA1 .text-field, #fibbA3 .text-field,
+#fibbB2 .text-field, #tdiA0 .text-field, #tdiA2 .text-field, #tbA0 .text-field, #tbA2 .text-field {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 11;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center;
+    -fx-text-fill: -color-white;
+    -fx-min-height: 22;
+    -fx-max-height: 22;
+    -fx-pref-height: 22;
+}
+
+#checkZone .text-field:focused, #vel .text-field:focused, #ajFMag .text-field:focused, 
+#ajFLA1 .text-field:focused, #ajFLA3 .text-field:focused, #ajiA0 .text-field:focused, 
+#ajiA2 .text-field:focused, #ajiA4 .text-field:focused, #ajTimeA1 .text-field:focused, 
+#ajTimeA3 .text-field:focused, #prop .text-field:focused, #pesoVel .text-field:focused,
+#kp .text-field:focused, #fibbA1 .text-field:focused, #fibbA3 .text-field:focused, 
+#fibbB2 .text-field:focused, #tdiA0 .text-field:focused, #tdiA2 .text-field:focused, 
+#tbA0 .text-field:focused, #tbA2 .text-field:focused {
+    -fx-border-color: -color-yellow;
+}
+
+#checkZone .text-field.error, #vel .text-field.error, #ajFMag .text-field.error, #ajFLA1 .text-field.error,
+#ajFLA3 .text-field.error, #ajiA0 .text-field.error, #ajiA2 .text-field.error, #ajiA4 .text-field.error,
+#ajTimeA1 .text-field.error, #ajTimeA3 .text-field.error, #prop .text-field.error, #pesoVel .text-field.error,
+#kp .text-field.error, #fibbA1 .text-field.error, #fibbA3 .text-field.error, #fibbB2 .text-field.error,
+#tdiA0 .text-field.error, #tdiA2 .text-field.error, #tbA0 .text-field.error, #tbA2 .text-field.error {
+    -fx-border-color: -color-grapefruit;
+}
+
+#checkZone .check-box {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 11;
+    -fx-padding: 40 15 0 20;
+    -fx-alignment: center;
+    -fx-text-fill: -color-white;
+    -fx-min-height: 22;
+    -fx-max-height: 22;
+    -fx-pref-height: 22;
+}
+
+#checkZone .check-box:focused {
+    -fx-border-color: transparent;
+}
+
+#ajFD, #ajFLA0, #ajFLA2, #ajFLA4, #ajiA1, #ajiA3, #ajTimeA0, #ajTimeA2, #ajTimeA4, #gradTemp, #qemaxr,
+#fibbA0, #fibbA2, #fibbB1, #fibbB3, #tdiA1, #tdiA3, #tbA1, #tbA3 {
+    -fx-background-color: -color-brownish-gray-50;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-alignment: center;
+    -fx-spacing: 4;
+    -fx-padding: 4 4 4 4;
+    -fx-min-height: 30;
+    -fx-max-height: 30;
+    -fx-pref-height: 30;
+}
+
+#ajFDTitle, #ajFLA0Title, #ajFLA2Title, #ajFLA4Title, #ajiA1Title, #ajiA3Title, #ajTimeA0Title,
+#ajTimeA2Title, #ajTimeA4Title, #gradTempTitle, #qemaxrTitle, #fibbA0Title, #fibbA2Title, #fibbB1Title,
+#fibbB3Title, #tdiA1Title, #tdiA3Title, #tbA1Title, #tbA3Title {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 11;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center-left;
+    -fx-text-fill: -color-white;
+    -fx-min-height: 20;
+    -fx-max-height: 20;
+    -fx-pref-height: 20;
+    -fx-max-width: 140;
+    -fx-min-width: 140;
+    -fx-pref-width: 140;
+}
+
+#ajFD .text-field, #ajFLA0 .text-field, #ajFLA2 .text-field, #ajFLA4 .text-field, #ajiA1 .text-field,
+#ajiA3 .text-field, #ajTimeA0 .text-field, #ajTimeA2 .text-field, #ajTimeA4 .text-field,
+#gradTemp .text-field, #qemaxr .text-field, #fibbA0 .text-field, #fibbA2 .text-field, #fibbB1 .text-field,
+#fibbB3 .text-field, #tdiA1 .text-field, #tdiA3 .text-field, #tbA1 .text-field, #tbA3 .text-field {
+    -fx-font-family: "DINPro-Bold", "sans-serif";
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-font-size: 11;
+    -fx-padding: 0 0 0 0;
+    -fx-alignment: center;
+    -fx-text-fill: -color-white;
+    -fx-min-height: 22;
+    -fx-max-height: 22;
+    -fx-pref-height: 22;
+}
+
+#ajFD .text-field:focused, #ajFLA0 .text-field:focused, #ajFLA2 .text-field:focused, #ajFLA4 .text-field:focused,
+#ajiA1 .text-field:focused, #ajiA3 .text-field:focused, #ajTimeA0 .text-field:focused,
+#ajTimeA2 .text-field:focused, #ajTimeA4 .text-field:focused, #gradTemp .text-field:focused, #qemaxr .text-field:focused,
+#fibbA0 .text-field:focused, #fibbA2 .text-field:focused, #fibbB1 .text-field:focused, #fibbB3 .text-field:focused,
+#tdiA1 .text-field:focused, #tdiA3 .text-field:focused, #tbA1 .text-field:focused, #tbA3 .text-field:focused {
+    -fx-border-color: -color-yellow;
+}
+
+#ajFD .text-field.error, #ajFLA0 .text-field.error, #ajFLA2 .text-field.error, #ajFLA4 .text-field.error,
+#ajiA1 .text-field.error, #ajiA3 .text-field.error, #ajTimeA0 .text-field.error,
+#ajTimeA2 .text-field.error, #ajTimeA4 .text-field.error, #gradTemp .text-field.error, #qemaxr .text-field.error,
+#fibbA0 .text-field.error, #fibbA2 .text-field.error, #fibbB1 .text-field.error, #fibbB3 .text-field.error,
+#tdiA1 .text-field.error, #tdiA3 .text-field.error, #tbA1 .text-field.error, #tbA3 .text-field.error {
+    -fx-border-color: -color-grapefruit;
+}

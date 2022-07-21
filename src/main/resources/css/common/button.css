@@ -1,0 +1,15 @@
+
+.amarilloHabilitado {
+    -fx-background-color: #ffb400;
+    -fx-border-color: #606060;
+}
+
+.rojoHabilitado {
+    -fx-background-color: #ff5555;
+    -fx-border-color: #606060;
+}
+
+.buttonLabel {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: DINPro-Bold;
+}
