@@ -190,7 +190,7 @@ public class Main extends Application {
         } else {
           Locale.setDefault(Locale.ENGLISH);
         } 
-        AppConfig.getInstance().setResouce(ResourceBundle.getBundle("language", Locale.getDefault()));
+        //AppConfig.getInstance().setResouce(ResourceBundle.getBundle("language", Locale.getDefault()));
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/app.fxml"));
         loader.setResources(AppConfig.getInstance().getResouce());
         Parent root = null;

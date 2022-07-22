@@ -74,8 +74,8 @@ public class Principal extends Tools {
       this.displayKeys.start();
     } 
     if (this.configuracion.isSimulado) {
-      HWObus interfaz = new HWObus();
-      interfaz.setVisible(true);
+     // HWObus interfaz = new HWObus();
+     // interfaz.setVisible(true);
     } 
     Thread hiloIns = new Thread((Runnable)this.ins);
     hiloIns.start();

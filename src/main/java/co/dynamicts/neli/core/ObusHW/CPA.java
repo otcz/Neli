@@ -21,7 +21,7 @@ public class CPA extends Thread {
   
   final Ins ins = Ins.getSingletonInstance();
   
-  private MuzzleRadar radar = MuzzleRadar.getSingletonInstance();
+ // private MuzzleRadar radar = MuzzleRadar.getSingletonInstance();
   
   private Trinca trinca = Trinca.getSingletonInstance();
   
@@ -86,7 +86,7 @@ public class CPA extends Thread {
     while (true) {
       if (!this.ejecutar)
         this.funcionesCPA.TomarPuerto(); 
-      this.funcionesCPA.run();
+     // this.funcionesCPA.run();
       FuncionesCPA.AzimuthActual = (float)this.ins.actitud.getAzimut();
       FuncionesCPA.PitchActual = (float)this.ins.actitud.getElevacion();
       FuncionesCPA.Latitud = (float)this.ins.obus.getLatitud();
@@ -172,9 +172,9 @@ public class CPA extends Thread {
   }
   
   public void disparar() {
-    this.radar.coutnAux++;
-    this.radar.lastVelocity = Double.parseDouble(String.valueOf(this.configuracion.municion.zonaSelec.getVelBoca(this.configuracion.getTempProp(), this.configuracion.getDifPeso())));
-    this.radar.listenerFire();
+   // this.radar.coutnAux++;
+   // this.radar.lastVelocity = Double.parseDouble(String.valueOf(this.configuracion.municion.zonaSelec.getVelBoca(this.configuracion.getTempProp(), this.configuracion.getDifPeso())));
+   // this.radar.listenerFire();
   }
   
   private void testIsPointingOK() {

@@ -23,7 +23,7 @@ public class Configuracion {
   
   public boolean isForPCSimulado = true;
   
-  public boolean isPassword = true;
+  public boolean isPassword = false;
   
   public boolean isProduction = false;
   
