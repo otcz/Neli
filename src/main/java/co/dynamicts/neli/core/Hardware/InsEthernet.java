@@ -88,6 +88,7 @@ public class InsEthernet extends EventDispatcher {
         this.estadoINS = Ins.EstadoINS.DISCONNECTED;
         System.out.println("Ins Desconectado en updateInsEthernet");
         e.printStackTrace();
+        System.out.println("PRUEBA");
       } 
     } else {
       try {
